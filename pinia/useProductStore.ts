@@ -1,8 +1,8 @@
 import product_data from '@/data/product-data';
-import { defineStore } from "pinia";
-import { ref } from "vue";
 
-export const useProductStore = defineStore("product", () => {
+export const useProductStore = defineStore(
+    "product",
+    () => {
 
   let activeImg = ref<string>(product_data[0].img);
   let openFilterDropdown = ref<boolean>(false);

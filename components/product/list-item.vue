@@ -18,7 +18,7 @@
             <svg-quick-view />
             <span class="tp-product-tooltip tp-product-tooltip-right">Quick View</span>
           </button>
-          
+
           <button
             @click="wishlistStore.add_wishlist_product(item)"
             type="button"
@@ -83,10 +83,6 @@
 
 <script setup lang="ts">
 import { type IProduct } from "@/types/product-type";
-import { useUtilityStore } from "@/pinia/useUtilityStore";
-import { useCompareStore } from "@/pinia/useCompareStore";
-import { useCartStore } from "@/pinia/useCartStore";
-import { useWishlistStore } from "@/pinia/useWishlistStore";
 
 defineProps<{ item: IProduct }>();
 
