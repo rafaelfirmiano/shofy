@@ -2234,4 +2234,8 @@ span.tp-header-action-badge {
     .quick-search-container .container ul.category-links li a {
         width: 100%;
     }
+    .dropdown-filter ul li button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
