@@ -2,8 +2,10 @@ export interface IMenuItem {
   id: number;
   link: string;
   title: string;
+  attr_id?: string;
   mega_menu?: boolean;
   drop_down?: boolean;
+  drop_down_type?: string;
   home_pages?: {
     id: number;
     title: string;
@@ -33,12 +35,15 @@ export interface IMenuItem {
   }[];
 }
 
-// mobile menu type 
+// mobile menu type
 export interface IMobileType {
   id: number;
   homes?: boolean;
   sub_menu?: boolean;
   single_link?: boolean;
+  drop_down?: boolean;
+  drop_down_type?: string;
+  attr_id?: string;
   title: string;
   link: string;
   home_pages?: {

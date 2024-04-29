@@ -1,64 +1,105 @@
 <template>
-    <nav class="tp-main-menu-content">
-      <ul v-for="(menu, i) in mobile_menu" :key="i">
-        <li
-          v-if="menu.homes"
-          :class="`has-dropdown has-mega-menu ${isActiveMenu === menu.title?'dropdown-opened':''}`"
-        >
-          <a :class="`${isActiveMenu === menu.title?'expanded':''}`">
-            Home
-            <button
-              @click="handleOpenSubMenu(menu.title)"
-              :class="`dropdown-toggle-btn ${isActiveMenu === menu.title?'dropdown-opened':''}`"
-            >
-              <i class="fa-regular fa-angle-right"></i>
-            </button>
-          </a>
-          <div
-            :class="`home-menu tp-submenu tp-mega-menu ${isActiveMenu === menu.title ? 'active':''}`"
-          >
-            <div class="row row-cols-1 row-cols-lg-4 row-cols-xl-5">
-              <div v-for="(home, i) in menu.home_pages" :key="i" class="col">
-                <div class="home-menu-item">
-                  <nuxt-link :to="home.link">
-                    <div class="home-menu-thumb p-relative fix">
-                      <img :src="home.img" alt="home img" />
-                    </div>
-                    <div class="home-menu-content">
-                      <h5 class="home-menu-title">{{ home.title }}</h5>
-                    </div>
-                  </nuxt-link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
+  <nav class="tp-main-menu-content">
+    <ul>
+      <li v-for="(menu, i) in mobile_menu" :key="i">
+        <nuxt-link v-if="!menu.drop_down" :key="i" :to="menu.link">{{ menu.title }}</nuxt-link>
 
-        <li
-          v-else-if="menu.sub_menu"
-          :key="menu.id"
-          :class="`has-dropdown ${isActiveMenu === menu.title?'dropdown-opened':''}`"
-        >
-          <a :class="`${isActiveMenu === menu.title?'expanded':''}`">
-            {{ menu.title }}
-            <button
-              @click="handleOpenSubMenu(menu.title)"
-              :class="`dropdown-toggle-btn ${isActiveMenu === menu.title?'dropdown-opened':''}`"
-            >
-              <i class="fa-regular fa-angle-right"></i>
-            </button>
-          </a>
-          <ul :class="`tp-submenu ${isActiveMenu === menu.title ? 'active':''}`">
-            <li v-for="(subMenu, i) in menu.sub_menus" :key="i">
-              <nuxt-link :to="subMenu.link">{{ subMenu.title }}</nuxt-link>
-            </li>
-          </ul>
-        </li>
-        <li v-else :key="i">
-          <nuxt-link :to="menu.link">{{ menu.title }}</nuxt-link>
-        </li>
-      </ul>
-    </nav>
+        <nuxt-link class="dropdown-link" v-else :href="menu.link" role="button" id="dropdownMobileMenuLink" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+          {{ menu.title }} <div class="arrow"></div>
+        </nuxt-link>
+        <div class="divider"></div>
+        <ul v-if="menu.drop_down && menu.drop_down_type == 'shop'" class="dropdown-menu dropdown-parent" :aria-labelledby="menu.attr_id">
+          <li>
+            <a class="dropdown-item" href="#" role="button" id="RVDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+              <div class="image-menu-item RV">
+                <svg-rv />
+              </div>
+              RV<div class="arrow"></div>
+            </a>
+            <ul class="dropdown-menu dropdown-submenu" aria-labelledby="RVDropdownMenuLink">
+              <li>
+                <a class="dropdown-item" href="/shop/rvs">Browse All RVs</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Toy Haulers</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">5th Wheels</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Travel Trailers</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Motorhomes</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" role="button" id="vehiclesDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+              <div class="image-menu-item Vehicles">
+                <svg-vehicles />
+              </div>
+              Vehicles<div class="arrow"></div>
+            </a>
+            <ul class="dropdown-menu dropdown-submenu" aria-labelledby="vehiclesDropdownMenuLink">
+              <li>
+                <a class="dropdown-item" href="#">Cars</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Trucks</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">SUV</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Vans</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a class="dropdown-item" href="#" role="button" id="PowersportsDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+              <div class="image-menu-item Powersports">
+                <svg-powersports />
+              </div>
+              Powersports<div class="arrow"></div>
+            </a>
+            <ul class="dropdown-menu dropdown-submenu" aria-labelledby="PowersportsDropdownMenuLink">
+              <li>
+                <a class="dropdown-item" href="#">Motorhomes</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">ATV</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Utility</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              <div class="image-menu-item Boats">
+                <svg-boats />
+              </div>
+              Boats
+            </a>
+            <div class="divider"></div>
+          </li>
+        </ul>
+        <ul v-if="menu.drop_down && menu.drop_down_type == 'default'" class="dropdown-menu dropdown-parent default" :aria-labelledby="menu.attr_id" >
+          <li>
+            <a class="dropdown-item" href="/company/about">About Us</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="/company/team">Our Team</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="/company/contact">Contact Us</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script setup lang="ts">
@@ -74,3 +115,5 @@ const handleOpenSubMenu = (title: string) => {
   }
 };
 </script>
+
+

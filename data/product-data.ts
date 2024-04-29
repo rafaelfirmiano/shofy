@@ -4,7 +4,7 @@ const product_data: IProduct[] = [
   {
     id: "641e887d05f9ee1717e1348a",
     sku: "NTB7SDVX44",
-    img: "https://i.ibb.co/WVdTgR8/headphone-1.png",
+    img: "https://www.midwayautorv.com/media/com_expautospro/images/middle/2002-fleetwood-elkhorn-9-k-le-9986c-29.jpg",
     title: "Headphones Wireless.",
     slug: "headphones-wireless.",
     unit: "3pcs",
@@ -14,28 +14,56 @@ const product_data: IProduct[] = [
           name: "Purply Blue",
           clrCode: "#C1BAE4",
         },
-        img: "https://i.ibb.co/WVdTgR8/headphone-1.png",
+        img: "https://www.midwayautorv.com/media/com_expautospro/images/middle/2002-fleetwood-elkhorn-9-k-le-9986c-29.jpg",
       },
       {
         color: {
           name: "Light Grey",
           clrCode: "#D8D7DD",
         },
-        img: "https://i.ibb.co/zh9x3Q0/headphone-2.png",
+        img: "/img/custom/prod2.svg",
       },
       {
         color: {
           name: "Baby Pink",
           clrCode: "#F3C0D1",
         },
-        img: "https://i.ibb.co/JBZk7sS/headphone-3.png",
+        img: "/img/custom/prod2.svg",
       },
       {
         color: {
           name: "Bluish Cyan",
           clrCode: "#64BFD1",
         },
-        img: "https://i.ibb.co/SrPq3r0/headphone-4.png",
+        img: "/img/custom/prod2.svg",
+      },
+      {
+        color: {
+          name: "Bluish Cyan",
+          clrCode: "#64BFD1",
+        },
+        img: "/img/custom/prod2.svg",
+      },
+      {
+        color: {
+          name: "Bluish Cyan",
+          clrCode: "#64BFD1",
+        },
+        img: "/img/custom/prod2.svg",
+      },
+      {
+        color: {
+          name: "Bluish Cyan",
+          clrCode: "#64BFD1",
+        },
+        img: "/img/custom/prod2.svg",
+      },
+      {
+        color: {
+          name: "Bluish Cyan",
+          clrCode: "#64BFD1",
+        },
+        img: "/img/custom/prod2.svg",
       },
     ],
     parent: "Headphones",
@@ -54,7 +82,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-3.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "06 March, 2023",
         name: "John doe",
         email: "john@gmail.com",
@@ -63,7 +91,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-2.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "07 March, 2023",
         name: "Smith Doe",
         email: "smith@gmail.com",
@@ -72,7 +100,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-3.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "09 March, 2023",
         name: "Mark Smith",
         email: "mark@gmail.com",
@@ -81,7 +109,7 @@ const product_data: IProduct[] = [
     ],
     productType: "electronics",
     description:
-      "Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra Evolve2 75 USB-A MS Teams Stereo Headset has replaced previous hybrid working standards. Industry-leading call quality thanks to top-notch audio engineering. With this intelligent headset, you can stay connected and productive from the first call of the day to the last train home. With an ergonomic earcup design, this headset invented a brand-new dual-foam technology. You will be comfortable from the first call to the last thanks to the re-engineered leatherette ear cushion design that allows for better airflow. We can provide exceptional noise isolation and the best all-day comfort by mixing firm foam for the outer with soft foam for the interior of the ear cushions. So that you may receive Active Noise-Cancellation (ANC) performance that is even greater in a headset that you can wear for whatever length you wish. The headset also offers MS Teams Certifications and other features like Busylight, Calls controls, Voice guiding, and Wireless range (ft): Up to 100 feet. Best-in-class. Boom The most recent Jabra Evolve2 75 USB-A MS Teams Stereo Headset offers professional-grade call performance that leads the industry, yet Evolve2 75 wins best-in-class. Additionally, this includes a redesigned microphone boom arm that is 33 percent shorter than the Evolve 75 and offers the industry-leading call performance for which Jabra headsets are known. It complies with Microsoft's Open Office criteria and is specially tuned for outstanding conversations in open-plan workplaces and other loud environments when the microphone boom arm is lowered in Performance Mode.",
+        "Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra Evolve2 75 USB-A MS Teams Stereo Headset has replaced previous hybrid working standards. Industry-leading call quality thanks to top-notch audio engineering. With this intelligent headset, you can stay connected and productive from the first call of the day to the last train home. With an ergonomic earcup design, this headset invented a brand-new dual-foam technology. You will be comfortable from the first call to the last thanks to the re-engineered leatherette ear cushion design that allows for better airflow. We can provide exceptional noise isolation and the best all-day comfort by mixing firm foam for the outer with soft foam for the interior of the ear cushions. So that you may receive Active Noise-Cancellation (ANC) performance that is even greater in a headset that you can wear for whatever length you wish. The headset also offers MS Teams Certifications and other features like Busylight, Calls controls, Voice guiding, and Wireless range (ft): Up to 100 feet. Best-in-class. Boom The most recent Jabra Evolve2 75 USB-A MS Teams Stereo Headset offers professional-grade call performance that leads the industry, yet Evolve2 75 wins best-in-class. Additionally, this includes a redesigned microphone boom arm that is 33 percent shorter than the Evolve 75 and offers the industry-leading call performance for which Jabra headsets are known. It complies with Microsoft's Open Office criteria and is specially tuned for outstanding conversations in open-plan workplaces and other loud environments when the microphone boom arm is lowered in Performance Mode.",
     additionalInformation: [
       {
         key: "Standing screen display size",
@@ -119,7 +147,7 @@ const product_data: IProduct[] = [
   {
     id: "641e887d05f9ee1717e1348f",
     sku: "NVB7SDVX45",
-    img: "https://i.ibb.co/n1YRvWJ/headphone-5.png",
+    img: "https://www.midwayautorv.com/media/com_expautospro/images/middle/2022-alliance-rv-paradigm-385fl-c1351l-0.jpg",
     title: "Gaming Headphone",
     slug: "gaming-headphone",
     unit: "5pcs",
@@ -129,7 +157,7 @@ const product_data: IProduct[] = [
           name: "Cyan",
           clrCode: "#03E2DD",
         },
-        img: "https://i.ibb.co/n1YRvWJ/headphone-5.png",
+        img: "https://www.midwayautorv.com/media/com_expautospro/images/middle/2022-alliance-rv-paradigm-385fl-c1351l-0.jpg",
       },
       {
         color: {
@@ -162,7 +190,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-3.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "06 March, 2023",
         name: "John doe",
         email: "john@gmail.com",
@@ -171,7 +199,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-2.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "07 March, 2023",
         name: "Smith Doe",
         email: "smith@gmail.com",
@@ -180,7 +208,7 @@ const product_data: IProduct[] = [
     ],
     productType: "electronics",
     description:
-      "Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra Evolve2 75 USB-A MS Teams Stereo Headset has replaced previous hybrid working standards. Industry-leading call quality thanks to top-notch audio engineering. With this intelligent headset, you can stay connected and productive from the first call of the day to the last train home. With an ergonomic earcup design, this headset invented a brand-new dual-foam technology. You will be comfortable from the first call to the last thanks to the re-engineered leatherette ear cushion design that allows for better airflow. We can provide exceptional noise isolation and the best all-day comfort by mixing firm foam for the outer with soft foam for the interior of the ear cushions. So that you may receive Active Noise-Cancellation (ANC) performance that is even greater in a headset that you can wear for whatever length you wish. The headset also offers MS Teams Certifications and other features like Busylight, Calls controls, Voice guiding, and Wireless range (ft): Up to 100 feet. Best-in-class. Boom The most recent Jabra Evolve2 75 USB-A MS Teams Stereo Headset offers professional-grade call performance that leads the industry, yet Evolve2 75 wins best-in-class. Additionally, this includes a redesigned microphone boom arm that is 33 percent shorter than the Evolve 75 and offers the industry-leading call performance for which Jabra headsets are known. It complies with Microsoft's Open Office criteria and is specially tuned for outstanding conversations in open-plan workplaces and other loud environments when the microphone boom arm is lowered in Performance Mode.",
+        "Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra Evolve2 75 USB-A MS Teams Stereo Headset has replaced previous hybrid working standards. Industry-leading call quality thanks to top-notch audio engineering. With this intelligent headset, you can stay connected and productive from the first call of the day to the last train home. With an ergonomic earcup design, this headset invented a brand-new dual-foam technology. You will be comfortable from the first call to the last thanks to the re-engineered leatherette ear cushion design that allows for better airflow. We can provide exceptional noise isolation and the best all-day comfort by mixing firm foam for the outer with soft foam for the interior of the ear cushions. So that you may receive Active Noise-Cancellation (ANC) performance that is even greater in a headset that you can wear for whatever length you wish. The headset also offers MS Teams Certifications and other features like Busylight, Calls controls, Voice guiding, and Wireless range (ft): Up to 100 feet. Best-in-class. Boom The most recent Jabra Evolve2 75 USB-A MS Teams Stereo Headset offers professional-grade call performance that leads the industry, yet Evolve2 75 wins best-in-class. Additionally, this includes a redesigned microphone boom arm that is 33 percent shorter than the Evolve 75 and offers the industry-leading call performance for which Jabra headsets are known. It complies with Microsoft's Open Office criteria and is specially tuned for outstanding conversations in open-plan workplaces and other loud environments when the microphone boom arm is lowered in Performance Mode.",
     additionalInformation: [
       {
         key: "Standing screen display size",
@@ -222,7 +250,7 @@ const product_data: IProduct[] = [
   {
     id: "641e887d05f9ee1717e13496",
     sku: "BVB7SDVX50",
-    img: "https://i.ibb.co/5FPhGtq/headphone-8.png",
+    img: "https://www.midwayautorv.com/media/com_expautospro/images/middle/1995-other-other-1133c-3.jpg",
     title: "Headphone with Mic",
     slug: "headphone-with-mic",
     unit: "4pcs",
@@ -265,7 +293,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-3.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "06 March, 2023",
         name: "John doe",
         email: "john@gmail.com",
@@ -274,7 +302,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-2.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "10 March, 2023",
         name: "John doe",
         email: "john@gmail.com",
@@ -283,7 +311,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-3.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "07 March, 2023",
         name: "Smith Doe",
         email: "smith@gmail.com",
@@ -292,7 +320,7 @@ const product_data: IProduct[] = [
     ],
     productType: "electronics",
     description:
-      "Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra Evolve2 75 USB-A MS Teams Stereo Headset has replaced previous hybrid working standards. Industry-leading call quality thanks to top-notch audio engineering. With this intelligent headset, you can stay connected and productive from the first call of the day to the last train home. With an ergonomic earcup design, this headset invented a brand-new dual-foam technology. You will be comfortable from the first call to the last thanks to the re-engineered leatherette ear cushion design that allows for better airflow. We can provide exceptional noise isolation and the best all-day comfort by mixing firm foam for the outer with soft foam for the interior of the ear cushions. So that you may receive Active Noise-Cancellation (ANC) performance that is even greater in a headset that you can wear for whatever length you wish. The headset also offers MS Teams Certifications and other features like Busylight, Calls controls, Voice guiding, and Wireless range (ft): Up to 100 feet. Best-in-class. Boom The most recent Jabra Evolve2 75 USB-A MS Teams Stereo Headset offers professional-grade call performance that leads the industry, yet Evolve2 75 wins best-in-class. Additionally, this includes a redesigned microphone boom arm that is 33 percent shorter than the Evolve 75 and offers the industry-leading call performance for which Jabra headsets are known. It complies with Microsoft's Open Office criteria and is specially tuned for outstanding conversations in open-plan workplaces and other loud environments when the microphone boom arm is lowered in Performance Mode.",
+        "Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra Evolve2 75 USB-A MS Teams Stereo Headset has replaced previous hybrid working standards. Industry-leading call quality thanks to top-notch audio engineering. With this intelligent headset, you can stay connected and productive from the first call of the day to the last train home. With an ergonomic earcup design, this headset invented a brand-new dual-foam technology. You will be comfortable from the first call to the last thanks to the re-engineered leatherette ear cushion design that allows for better airflow. We can provide exceptional noise isolation and the best all-day comfort by mixing firm foam for the outer with soft foam for the interior of the ear cushions. So that you may receive Active Noise-Cancellation (ANC) performance that is even greater in a headset that you can wear for whatever length you wish. The headset also offers MS Teams Certifications and other features like Busylight, Calls controls, Voice guiding, and Wireless range (ft): Up to 100 feet. Best-in-class. Boom The most recent Jabra Evolve2 75 USB-A MS Teams Stereo Headset offers professional-grade call performance that leads the industry, yet Evolve2 75 wins best-in-class. Additionally, this includes a redesigned microphone boom arm that is 33 percent shorter than the Evolve 75 and offers the industry-leading call performance for which Jabra headsets are known. It complies with Microsoft's Open Office criteria and is specially tuned for outstanding conversations in open-plan workplaces and other loud environments when the microphone boom arm is lowered in Performance Mode.",
     additionalInformation: [
       {
         key: "Standing screen display size",
@@ -331,7 +359,7 @@ const product_data: IProduct[] = [
   {
     id: "641e887d05f9ee1717e1349a",
     sku: "BD7SDVX62",
-    img: "https://i.ibb.co/jvGv6qf/mobile-1.png",
+    img: "https://www.midwayautorv.com/media/com_expautospro/images/middle/2022-crossroads-crusier-air-22rbs-1707la-0.jpg",
     title: "Galaxy Android Tablet",
     slug: "galaxy-android-tablet",
     unit: "8pcs",
@@ -381,7 +409,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-3.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "06 March, 2023",
         name: "John doe",
         email: "john@gmail.com",
@@ -390,7 +418,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-2.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "07 March, 2023",
         name: "Smith Doe",
         email: "smith@gmail.com",
@@ -399,7 +427,7 @@ const product_data: IProduct[] = [
     ],
     productType: "electronics",
     description:
-      "Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra Evolve2 75 USB-A MS Teams Stereo Headset has replaced previous hybrid working standards. Industry-leading call quality thanks to top-notch audio engineering. With this intelligent headset, you can stay connected and productive from the first call of the day to the last train home. With an ergonomic earcup design, this headset invented a brand-new dual-foam technology. You will be comfortable from the first call to the last thanks to the re-engineered leatherette ear cushion design that allows for better airflow. We can provide exceptional noise isolation and the best all-day comfort by mixing firm foam for the outer with soft foam for the interior of the ear cushions. So that you may receive Active Noise-Cancellation (ANC) performance that is even greater in a headset that you can wear for whatever length you wish. The headset also offers MS Teams Certifications and other features like Busylight, Calls controls, Voice guiding, and Wireless range (ft): Up to 100 feet. Best-in-class. Boom The most recent Jabra Evolve2 75 USB-A MS Teams Stereo Headset offers professional-grade call performance that leads the industry, yet Evolve2 75 wins best-in-class. Additionally, this includes a redesigned microphone boom arm that is 33 percent shorter than the Evolve 75 and offers the industry-leading call performance for which Jabra headsets are known. It complies with Microsoft's Open Office criteria and is specially tuned for outstanding conversations in open-plan workplaces and other loud environments when the microphone boom arm is lowered in Performance Mode.",
+        "Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra Evolve2 75 USB-A MS Teams Stereo Headset has replaced previous hybrid working standards. Industry-leading call quality thanks to top-notch audio engineering. With this intelligent headset, you can stay connected and productive from the first call of the day to the last train home. With an ergonomic earcup design, this headset invented a brand-new dual-foam technology. You will be comfortable from the first call to the last thanks to the re-engineered leatherette ear cushion design that allows for better airflow. We can provide exceptional noise isolation and the best all-day comfort by mixing firm foam for the outer with soft foam for the interior of the ear cushions. So that you may receive Active Noise-Cancellation (ANC) performance that is even greater in a headset that you can wear for whatever length you wish. The headset also offers MS Teams Certifications and other features like Busylight, Calls controls, Voice guiding, and Wireless range (ft): Up to 100 feet. Best-in-class. Boom The most recent Jabra Evolve2 75 USB-A MS Teams Stereo Headset offers professional-grade call performance that leads the industry, yet Evolve2 75 wins best-in-class. Additionally, this includes a redesigned microphone boom arm that is 33 percent shorter than the Evolve 75 and offers the industry-leading call performance for which Jabra headsets are known. It complies with Microsoft's Open Office criteria and is specially tuned for outstanding conversations in open-plan workplaces and other loud environments when the microphone boom arm is lowered in Performance Mode.",
     additionalInformation: [
       {
         key: "Announced",
@@ -437,7 +465,7 @@ const product_data: IProduct[] = [
   {
     id: "641e887d05f9ee1717e1349f",
     sku: "AF7SDVX65",
-    img: "https://i.ibb.co/3WMPkkf/mobile-5.png",
+    img: "https://www.midwayautorv.com/media/com_expautospro/images/middle/2023-crossroads-redwood-4200fl-8602b-0.jpg",
     title: "iPhone 14 Pro",
     slug: "iPhone-14-pro",
     unit: "10pcs",
@@ -487,7 +515,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-3.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "06 March, 2023",
         name: "John doe",
         email: "john@gmail.com",
@@ -496,7 +524,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-2.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "07 March, 2023",
         name: "Smith Doe",
         email: "smith@gmail.com",
@@ -505,7 +533,7 @@ const product_data: IProduct[] = [
     ],
     productType: "electronics",
     description:
-      "Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra Evolve2 75 USB-A MS Teams Stereo Headset has replaced previous hybrid working standards. Industry-leading call quality thanks to top-notch audio engineering. With this intelligent headset, you can stay connected and productive from the first call of the day to the last train home. With an ergonomic earcup design, this headset invented a brand-new dual-foam technology. You will be comfortable from the first call to the last thanks to the re-engineered leatherette ear cushion design that allows for better airflow. We can provide exceptional noise isolation and the best all-day comfort by mixing firm foam for the outer with soft foam for the interior of the ear cushions. So that you may receive Active Noise-Cancellation (ANC) performance that is even greater in a headset that you can wear for whatever length you wish. The headset also offers MS Teams Certifications and other features like Busylight, Calls controls, Voice guiding, and Wireless range (ft): Up to 100 feet. Best-in-class. Boom The most recent Jabra Evolve2 75 USB-A MS Teams Stereo Headset offers professional-grade call performance that leads the industry, yet Evolve2 75 wins best-in-class. Additionally, this includes a redesigned microphone boom arm that is 33 percent shorter than the Evolve 75 and offers the industry-leading call performance for which Jabra headsets are known. It complies with Microsoft's Open Office criteria and is specially tuned for outstanding conversations in open-plan workplaces and other loud environments when the microphone boom arm is lowered in Performance Mode.",
+        "Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra Evolve2 75 USB-A MS Teams Stereo Headset has replaced previous hybrid working standards. Industry-leading call quality thanks to top-notch audio engineering. With this intelligent headset, you can stay connected and productive from the first call of the day to the last train home. With an ergonomic earcup design, this headset invented a brand-new dual-foam technology. You will be comfortable from the first call to the last thanks to the re-engineered leatherette ear cushion design that allows for better airflow. We can provide exceptional noise isolation and the best all-day comfort by mixing firm foam for the outer with soft foam for the interior of the ear cushions. So that you may receive Active Noise-Cancellation (ANC) performance that is even greater in a headset that you can wear for whatever length you wish. The headset also offers MS Teams Certifications and other features like Busylight, Calls controls, Voice guiding, and Wireless range (ft): Up to 100 feet. Best-in-class. Boom The most recent Jabra Evolve2 75 USB-A MS Teams Stereo Headset offers professional-grade call performance that leads the industry, yet Evolve2 75 wins best-in-class. Additionally, this includes a redesigned microphone boom arm that is 33 percent shorter than the Evolve 75 and offers the industry-leading call performance for which Jabra headsets are known. It complies with Microsoft's Open Office criteria and is specially tuned for outstanding conversations in open-plan workplaces and other loud environments when the microphone boom arm is lowered in Performance Mode.",
     additionalInformation: [
       {
         key: "Announced",
@@ -543,7 +571,7 @@ const product_data: IProduct[] = [
   {
     id: "641d4106dbfab7b02ab28b22",
     sku: "CF7SDVX72",
-    img: "https://i.ibb.co/kxGMcrw/ipad-1.png",
+    img: "https://www.midwayautorv.com/media/com_expautospro/images/middle/2024-crossroads-volante-270bh-1917b-0.jpg",
     title: "Apple iPad Air",
     slug: "apple-iPad-air",
     unit: "12pcs",
@@ -586,7 +614,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-3.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "06 March, 2023",
         name: "John doe",
         email: "john@gmail.com",
@@ -595,7 +623,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-2.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "07 March, 2023",
         name: "Smith Doe",
         email: "smith@gmail.com",
@@ -604,7 +632,7 @@ const product_data: IProduct[] = [
     ],
     productType: "electronics",
     description:
-      "Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra Evolve2 75 USB-A MS Teams Stereo Headset has replaced previous hybrid working standards. Industry-leading call quality thanks to top-notch audio engineering. With this intelligent headset, you can stay connected and productive from the first call of the day to the last train home. With an ergonomic earcup design, this headset invented a brand-new dual-foam technology. You will be comfortable from the first call to the last thanks to the re-engineered leatherette ear cushion design that allows for better airflow. We can provide exceptional noise isolation and the best all-day comfort by mixing firm foam for the outer with soft foam for the interior of the ear cushions. So that you may receive Active Noise-Cancellation (ANC) performance that is even greater in a headset that you can wear for whatever length you wish. The headset also offers MS Teams Certifications and other features like Busylight, Calls controls, Voice guiding, and Wireless range (ft): Up to 100 feet. Best-in-class. Boom The most recent Jabra Evolve2 75 USB-A MS Teams Stereo Headset offers professional-grade call performance that leads the industry, yet Evolve2 75 wins best-in-class. Additionally, this includes a redesigned microphone boom arm that is 33 percent shorter than the Evolve 75 and offers the industry-leading call performance for which Jabra headsets are known. It complies with Microsoft's Open Office criteria and is specially tuned for outstanding conversations in open-plan workplaces and other loud environments when the microphone boom arm is lowered in Performance Mode.",
+        "Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra Evolve2 75 USB-A MS Teams Stereo Headset has replaced previous hybrid working standards. Industry-leading call quality thanks to top-notch audio engineering. With this intelligent headset, you can stay connected and productive from the first call of the day to the last train home. With an ergonomic earcup design, this headset invented a brand-new dual-foam technology. You will be comfortable from the first call to the last thanks to the re-engineered leatherette ear cushion design that allows for better airflow. We can provide exceptional noise isolation and the best all-day comfort by mixing firm foam for the outer with soft foam for the interior of the ear cushions. So that you may receive Active Noise-Cancellation (ANC) performance that is even greater in a headset that you can wear for whatever length you wish. The headset also offers MS Teams Certifications and other features like Busylight, Calls controls, Voice guiding, and Wireless range (ft): Up to 100 feet. Best-in-class. Boom The most recent Jabra Evolve2 75 USB-A MS Teams Stereo Headset offers professional-grade call performance that leads the industry, yet Evolve2 75 wins best-in-class. Additionally, this includes a redesigned microphone boom arm that is 33 percent shorter than the Evolve 75 and offers the industry-leading call performance for which Jabra headsets are known. It complies with Microsoft's Open Office criteria and is specially tuned for outstanding conversations in open-plan workplaces and other loud environments when the microphone boom arm is lowered in Performance Mode.",
     additionalInformation: [
       {
         key: "Announced",
@@ -642,7 +670,7 @@ const product_data: IProduct[] = [
   {
     id: "641e887d05f9ee1717e134ad",
     sku: "DF7SDVX72",
-    img: "https://i.ibb.co/wYZr4k6/cpu-1.png",
+    img: "https://www.midwayautorv.com/media/com_expautospro/images/middle/2024-crossroads-volante-270bh-1919b-0.jpg",
     title: "DeepCool Air Cooler",
     slug: "deepCool-air-cooler",
     unit: "15pcs",
@@ -692,7 +720,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-3.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "06 March, 2023",
         name: "John doe",
         email: "john@gmail.com",
@@ -701,7 +729,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-2.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "07 March, 2023",
         name: "Smith Doe",
         email: "smith@gmail.com",
@@ -710,7 +738,7 @@ const product_data: IProduct[] = [
     ],
     productType: "electronics",
     description:
-      "DeepCool ICE EDGE MINI FS V2.0 CPU Air Cooler DeepCool ICE EDGE MINI FS V2.0 CPU Air Cooler is AMD AM4 Ready. (NOTE: Refer to FM2+/ FM2/ FM1/ AM3+/ AM3/ AM2+/ AM2 for the manuals). It is equipped with multiple clips to support Intel LGA1155/ 1156/ 775 and AMD AM4/ AM3/ AM2+/ AM2/ K8. It has 2 sintered metal powder heatpipes directly contacting the CPU surface for removing heat and eliminating chances of overheating. It features specialized aluminum heatsink construction for efficient heat dissipation. TPE fan housing designed to absorb operating vibration and reduce fan noise. it has a 1-year warranty.",
+        "DeepCool ICE EDGE MINI FS V2.0 CPU Air Cooler DeepCool ICE EDGE MINI FS V2.0 CPU Air Cooler is AMD AM4 Ready. (NOTE: Refer to FM2+/ FM2/ FM1/ AM3+/ AM3/ AM2+/ AM2 for the manuals). It is equipped with multiple clips to support Intel LGA1155/ 1156/ 775 and AMD AM4/ AM3/ AM2+/ AM2/ K8. It has 2 sintered metal powder heatpipes directly contacting the CPU surface for removing heat and eliminating chances of overheating. It features specialized aluminum heatsink construction for efficient heat dissipation. TPE fan housing designed to absorb operating vibration and reduce fan noise. it has a 1-year warranty.",
     additionalInformation: [
       {
         key: "Announced",
@@ -748,7 +776,7 @@ const product_data: IProduct[] = [
   {
     id: "641e887d05f9ee1717e134b2",
     sku: "DF7SDVX75",
-    img: "https://i.ibb.co/tpypd3B/cpu-5.png",
+    img: "https://www.midwayautorv.com/media/com_expautospro/images/middle/2024-keystone-volante-32sb-1914b-1.jpg",
     title: "Antec Air Cooler",
     slug: "antec-air-cooler",
     unit: "15pcs",
@@ -758,7 +786,7 @@ const product_data: IProduct[] = [
           name: "Black",
           clrCode: "#3A3A3A",
         },
-        img: "https://i.ibb.co/tpypd3B/cpu-5.png",
+        img: "https://www.midwayautorv.com/media/com_expautospro/images/middle/1995-other-other-1133c-3.jpg",
       },
       {
         color: {
@@ -798,7 +826,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-3.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "06 March, 2023",
         name: "John doe",
         email: "john@gmail.com",
@@ -807,7 +835,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-2.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "07 March, 2023",
         name: "Smith Doe",
         email: "smith@gmail.com",
@@ -816,7 +844,7 @@ const product_data: IProduct[] = [
     ],
     productType: "electronics",
     description:
-      "Antec ICE EDGE MINI FS V2.0 CPU Air Cooler DeepCool ICE EDGE MINI FS V2.0 CPU Air Cooler is AMD AM4 Ready. (NOTE: Refer to FM2+/ FM2/ FM1/ AM3+/ AM3/ AM2+/ AM2 for the manuals). It is equipped with multiple clips to support Intel LGA1155/ 1156/ 775 and AMD AM4/ AM3/ AM2+/ AM2/ K8. It has 2 sintered metal powder heatpipes directly contacting the CPU surface for removing heat and eliminating chances of overheating. It features specialized aluminum heatsink construction for efficient heat dissipation. TPE fan housing designed to absorb operating vibration and reduce fan noise. it has a 1-year warranty.",
+        "Antec ICE EDGE MINI FS V2.0 CPU Air Cooler DeepCool ICE EDGE MINI FS V2.0 CPU Air Cooler is AMD AM4 Ready. (NOTE: Refer to FM2+/ FM2/ FM1/ AM3+/ AM3/ AM2+/ AM2 for the manuals). It is equipped with multiple clips to support Intel LGA1155/ 1156/ 775 and AMD AM4/ AM3/ AM2+/ AM2/ K8. It has 2 sintered metal powder heatpipes directly contacting the CPU surface for removing heat and eliminating chances of overheating. It features specialized aluminum heatsink construction for efficient heat dissipation. TPE fan housing designed to absorb operating vibration and reduce fan noise. it has a 1-year warranty.",
     additionalInformation: [
       {
         key: "Announced",
@@ -858,7 +886,7 @@ const product_data: IProduct[] = [
   {
     id: "641e887d05f9ee1717e134b7",
     sku: "EF7SDVX72",
-    img: "https://i.ibb.co/yRRLCc5/watch-1.png",
+    img: "https://www.midwayautorv.com/media/com_expautospro/images/middle/2024-crossroads-zinger-290kb-1570b-0.jpg",
     title: "Apple Watch Sport Band",
     slug: "apple-watch-sport-band",
     unit: "18pcs",
@@ -868,7 +896,7 @@ const product_data: IProduct[] = [
           name: "Light Gray",
           clrCode: "#D9D5D4",
         },
-        img: "https://i.ibb.co/yRRLCc5/watch-1.png",
+        img: "https://www.midwayautorv.com/media/com_expautospro/images/middle/2022-alliance-rv-paradigm-385fl-c1351l-0.jpg",
       },
       {
         color: {
@@ -908,7 +936,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-3.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "06 March, 2023",
         name: "John doe",
         email: "john@gmail.com",
@@ -917,7 +945,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-2.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "07 March, 2023",
         name: "Smith Doe",
         email: "smith@gmail.com",
@@ -926,7 +954,7 @@ const product_data: IProduct[] = [
     ],
     productType: "electronics",
     description:
-      "Starlight Aluminum Case with Braided Solo Loop The aluminum case is lightweight and made from 100 percent recycled aerospace-grade alloy. The Braided Solo Loop is made from recycled yarn and silicone threads for an ultracomfortable, stretchable design with no clasps or buckles.",
+        "Starlight Aluminum Case with Braided Solo Loop The aluminum case is lightweight and made from 100 percent recycled aerospace-grade alloy. The Braided Solo Loop is made from recycled yarn and silicone threads for an ultracomfortable, stretchable design with no clasps or buckles.",
     additionalInformation: [
       {
         key: "Announced",
@@ -965,7 +993,7 @@ const product_data: IProduct[] = [
   {
     id: "641e887d05f9ee1717e134c0",
     sku: "EF7SDVX73",
-    img: "https://i.ibb.co/j4sDV3Q/watch-5.png",
+    img: "https://www.midwayautorv.com/media/com_expautospro/images/middle/2024-keystone-volante-377lf-1913b-24.jpg",
     title: "Sony Smart Watch",
     slug: "sony-smart-watch",
     unit: "12pcs",
@@ -1015,7 +1043,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-3.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "06 March, 2023",
         name: "John doe",
         email: "john@gmail.com",
@@ -1024,7 +1052,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-2.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "07 March, 2023",
         name: "Smith Doe",
         email: "smith@gmail.com",
@@ -1033,7 +1061,7 @@ const product_data: IProduct[] = [
     ],
     productType: "electronics",
     description:
-      "Starlight Aluminum Case with Braided Solo Loop The aluminum case is lightweight and made from 100 percent recycled aerospace-grade alloy. The Braided Solo Loop is made from recycled yarn and silicone threads for an ultracomfortable, stretchable design with no clasps or buckles.",
+        "Starlight Aluminum Case with Braided Solo Loop The aluminum case is lightweight and made from 100 percent recycled aerospace-grade alloy. The Braided Solo Loop is made from recycled yarn and silicone threads for an ultracomfortable, stretchable design with no clasps or buckles.",
     additionalInformation: [
       {
         key: "Announced",
@@ -1071,7 +1099,7 @@ const product_data: IProduct[] = [
   {
     id: "641e887d05f9ee1717e134c6",
     sku: "EG8SDVX74",
-    img: "https://i.ibb.co/fMhtt2T/watch-9.png",
+    img: "https://www.midwayautorv.com/media/com_expautospro/images/middle/2021-cruiser-rv-shadow-cruiser-240-bhs-1002c-0.jpg",
     title: "Sony Lady Fitness Watch",
     slug: "sony-lady-fitness-watch",
     unit: "10pcs",
@@ -1121,7 +1149,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-3.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "06 March, 2023",
         name: "John doe",
         email: "john@gmail.com",
@@ -1130,7 +1158,7 @@ const product_data: IProduct[] = [
     ],
     productType: "electronics",
     description:
-      "Starlight Aluminum Case with Braided Solo Loop The aluminum case is lightweight and made from 100 percent recycled aerospace-grade alloy. The Braided Solo Loop is made from recycled yarn and silicone threads for an ultracomfortable, stretchable design with no clasps or buckles.",
+        "Starlight Aluminum Case with Braided Solo Loop The aluminum case is lightweight and made from 100 percent recycled aerospace-grade alloy. The Braided Solo Loop is made from recycled yarn and silicone threads for an ultracomfortable, stretchable design with no clasps or buckles.",
     additionalInformation: [
       {
         key: "Announced",
@@ -1172,7 +1200,7 @@ const product_data: IProduct[] = [
   {
     id: "641e887d05f9ee1717e134cb",
     sku: "DG8SDVX32",
-    img: "https://i.ibb.co/RYST3Ym/blutooth-4.png",
+    img: "https://www.midwayautorv.com/media/com_expautospro/images/middle/2024-crossroads-zinger-211rd-1573b-0.jpg",
     title: "Lenovo Wireless Bluetooth",
     slug: "lenovo-wireless-bluetooth",
     unit: "7pcs",
@@ -1214,7 +1242,7 @@ const product_data: IProduct[] = [
     reviews: [],
     productType: "electronics",
     description:
-      "Starlight Aluminum Case with Braided Solo Loop The aluminum case is lightweight and made from 100 percent recycled aerospace-grade alloy. The Braided Solo Loop is made from recycled yarn and silicone threads for an ultracomfortable, stretchable design with no clasps or buckles.",
+        "Starlight Aluminum Case with Braided Solo Loop The aluminum case is lightweight and made from 100 percent recycled aerospace-grade alloy. The Braided Solo Loop is made from recycled yarn and silicone threads for an ultracomfortable, stretchable design with no clasps or buckles.",
     additionalInformation: [
       {
         key: "Announced",
@@ -1252,7 +1280,7 @@ const product_data: IProduct[] = [
   {
     id: "641e887d05f9ee1717e134cf",
     sku: "DF8SDVX33",
-    img: "https://i.ibb.co/fvXHr2Y/blutooth-1.png",
+    img: "https://www.midwayautorv.com/media/com_expautospro/images/middle/2023-dutchmen-astoria-2503ref-9965b-0.jpg",
     title: "Lenovo Sports Bluetooth",
     slug: "lenovo-sports-bluetooth",
     unit: "7pcs",
@@ -1295,7 +1323,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-3.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "06 March, 2023",
         name: "John doe",
         email: "john@gmail.com",
@@ -1304,7 +1332,7 @@ const product_data: IProduct[] = [
       {
         user: "/img/users/user-2.jpg",
         review:
-          "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
+            "Designed very similarly to the nearly double priced Galaxy tab S6, with the only removal being.",
         date: "07 March, 2023",
         name: "Smith Doe",
         email: "smith@gmail.com",
@@ -1313,7 +1341,7 @@ const product_data: IProduct[] = [
     ],
     productType: "electronics",
     description:
-      "Starlight Aluminum Case with Braided Solo Loop The aluminum case is lightweight and made from 100 percent recycled aerospace-grade alloy. The Braided Solo Loop is made from recycled yarn and silicone threads for an ultracomfortable, stretchable design with no clasps or buckles.",
+        "Starlight Aluminum Case with Braided Solo Loop The aluminum case is lightweight and made from 100 percent recycled aerospace-grade alloy. The Braided Solo Loop is made from recycled yarn and silicone threads for an ultracomfortable, stretchable design with no clasps or buckles.",
     additionalInformation: [
       {
         key: "Announced",
@@ -1351,1787 +1379,7 @@ const product_data: IProduct[] = [
     featured: false,
     sellCount: 0,
     tags: ["bluetooth", "sports "],
-  },
-  {
-    id: "6421258288fba3e101965dc3",
-    sku: "FAB7SDVX44",
-    img: "https://i.ibb.co/gg9yCwX/clothing-1.png",
-    title: "Whitetails Women's Dress",
-    slug: "whitetails-women's-dress",
-    unit: "10pcs",
-    imageURLs: [
-      {
-        color: {
-          name: "Wine Berry",
-          clrCode: "#642832",
-        },
-        img: "https://i.ibb.co/gg9yCwX/clothing-1.png",
-      },
-      {
-        color: {
-          name: "Wine Berry",
-          clrCode: "#642832",
-        },
-        img: "https://i.ibb.co/tZFbTWQ/clothing-2.png",
-      },
-      {
-        color: {
-          name: "Dirty Blue",
-          clrCode: "#307FA8",
-        },
-        img: "https://i.ibb.co/1JqwRnb/clothing-3.png",
-      },
-      {
-        color: {
-          name: "Dirty Blue",
-          clrCode: "#307FA8",
-        },
-        img: "https://i.ibb.co/ngwgSt2/clothing-4.png",
-      },
-    ],
-    parent: "Clothing",
-    children: "Women's",
-    price: 80,
-    discount: 5,
-    quantity: 10,
-    brand: {
-      name: "Legendary Whitetails",
-    },
-    category: {
-      name: "Clothing",
-    },
-    status: "in-stock",
-    reviews: [],
-    productType: "fashion",
-    description:
-      "PLENTY OF STORAGE: There are two chest pockets on this women's hooded flannel, making it easy to bring all your favorite things with you. VERSATILE: The Lumber Jane Hooded Flannel is a heavyweight shirt that you can wear open or snapped, depending on your mood. With it's jersey lined hood, it's as warm and comfortable as your favorite hoodie! RELAXED FIT: The women's hooded flannel was made with a relaxed fit for the days you want some room for layering or just want that extra bit of comfort. 100% SATISFACTION GUARANTEE: Designed in the USA, Legendary Whitetails is an American small business. We take pride in all our products. Love it or send it back!",
-    additionalInformation: [
-      {
-        key: "GREAT FOR LAYERING",
-        value: "Mini waffle fabric construction",
-      },
-      {
-        key: "Colors",
-        value: "Wine Berry , Dirty Blue",
-      },
-      {
-        key: "LEGENDARY STYLING",
-        value: "Cute keyhole notch neck with custom",
-      },
-      {
-        key: "CUFF DETAILS",
-        value: "Velvet details with lace trim on the cuffs",
-      },
-      {
-        key: "FEMIMINE HEMLINE",
-        value: "Fashionable curved hem",
-      },
-      {
-        key: "Graphics Coprocessor",
-        value: "Exynos 9611, Octa Core (4x2.3GHz + 4x1.7GHz)",
-      },
-      {
-        key: "Wireless Type",
-        value: "802.11a/b/g/n/ac, Bluetooth",
-      },
-    ],
-    featured: false,
-    sellCount: 1,
-    tags: ["whitetails", "Clothing", "Women's"],
-    sizes: [],
-  },
-  {
-    id: "64215fb702240f90b1138e14",
-    sku: "FBB7SDVX45",
-    img: "https://i.ibb.co/xXHLYZr/clothing-5.png",
-    title: "Boys Graphic T-Shirt",
-    slug: "boys-graphic-t-shirt",
-    unit: "12pcs",
-    imageURLs: [
-      {
-        color: {
-          name: "Terra Cotta",
-          clrCode: "#E47561",
-        },
-        img: "https://i.ibb.co/xXHLYZr/clothing-5.png",
-      },
-      {
-        color: {
-          name: "Rodeo Dust",
-          clrCode: "#CDB297",
-        },
-        img: "https://i.ibb.co/JqDrC9g/clothing-6.png",
-      },
-      {
-        color: {
-          name: "Camo Green",
-          clrCode: "#505F33",
-        },
-        img: "https://i.ibb.co/3cFJrkR/clothing-7.png",
-      },
-      {
-        color: {
-          name: "Rose",
-          clrCode: "#ECADA8",
-        },
-        img: "https://i.ibb.co/yf4LB8p/clothing-8.png",
-      },
-    ],
-    parent: "Clothing",
-    children: "Men's",
-    price: 65,
-    discount: 0,
-    quantity: 15,
-    brand: {
-      name: "Legendary Whitetails",
-    },
-    category: {
-      name: "Clothing",
-    },
-    status: "out-of-stock",
-    reviews: [],
-    productType: "fashion",
-    description:
-      "PLENTY OF STORAGE: There are two chest pockets on this women's hooded flannel, making it easy to bring all your favorite things with you. VERSATILE: The Lumber Jane Hooded Flannel is a heavyweight shirt that you can wear open or snapped, depending on your mood. With it's jersey lined hood, it's as warm and comfortable as your favorite hoodie! RELAXED FIT: The women's hooded flannel was made with a relaxed fit for the days you want some room for layering or just want that extra bit of comfort. 100% SATISFACTION GUARANTEE: Designed in the USA, Legendary Whitetails is an American small business. We take pride in all our products. Love it or send it back!",
-    additionalInformation: [
-      {
-        key: "GREAT FOR LAYERING",
-        value: "Mini waffle fabric construction",
-      },
-      {
-        key: "Colors",
-        value: "Wine Berry , Dirty Blue",
-      },
-      {
-        key: "LEGENDARY STYLING",
-        value: "Cute keyhole notch neck with custom",
-      },
-      {
-        key: "CUFF DETAILS",
-        value: "Velvet details with lace trim on the cuffs",
-      },
-      {
-        key: "FEMIMINE HEMLINE",
-        value: "Fashionable curved hem",
-      },
-      {
-        key: "Graphics Coprocessor",
-        value: "Exynos 9611, Octa Core (4x2.3GHz + 4x1.7GHz)",
-      },
-      {
-        key: "Wireless Type",
-        value: "802.11a/b/g/n/ac, Bluetooth",
-      },
-    ],
-    featured: true,
-    sellCount: 1,
-    tags: ["t-shirt", "clothing"],
-  },
-  {
-    id: "6421650a02240f90b1138e1e",
-    sku: "FCB7SDVX46",
-    img: "https://i.ibb.co/DKJr0w4/clothing-9.png",
-    title: "Milumia Blouse",
-    slug: "milumia-blouse",
-    unit: "17pcs",
-    imageURLs: [
-      {
-        color: {
-          name: "Cocoa Bean",
-          clrCode: "#4F1523",
-        },
-        img: "https://i.ibb.co/DKJr0w4/clothing-9.png",
-      },
-      {
-        color: {
-          name: "Nile Blue",
-          clrCode: "#153E54",
-        },
-        img: "https://i.ibb.co/SP3Q7b6/clothing-10.png",
-      },
-      {
-        color: {
-          name: "Brandy Rose",
-          clrCode: "#CB877E",
-        },
-        img: "https://i.ibb.co/DV3T9Cq/clothing-11.png",
-      },
-      {
-        color: {
-          name: "Dark",
-          clrCode: "#1B1C31",
-        },
-        img: "https://i.ibb.co/P9qdSXC/clothing-12.png",
-      },
-    ],
-    parent: "Clothing",
-    children: "Women's",
-    price: 70,
-    discount: 5,
-    quantity: 15,
-    brand: {
-      name: "Legendary Whitetails",
-    },
-    category: {
-      name: "Clothing",
-    },
-    status: "in-stock",
-    reviews: [],
-    productType: "fashion",
-    description:
-      "PLENTY OF STORAGE: There are two chest pockets on this women's hooded flannel, making it easy to bring all your favorite things with you. VERSATILE: The Lumber Jane Hooded Flannel is a heavyweight shirt that you can wear open or snapped, depending on your mood. With it's jersey lined hood, it's as warm and comfortable as your favorite hoodie! RELAXED FIT: The women's hooded flannel was made with a relaxed fit for the days you want some room for layering or just want that extra bit of comfort. 100% SATISFACTION GUARANTEE: Designed in the USA, Legendary Whitetails is an American small business. We take pride in all our products. Love it or send it back!",
-    additionalInformation: [
-      {
-        key: "GREAT FOR LAYERING",
-        value: "Mini waffle fabric construction",
-      },
-      {
-        key: "Colors",
-        value: "Wine Berry , Dirty Blue",
-      },
-      {
-        key: "LEGENDARY STYLING",
-        value: "Cute keyhole notch neck with custom",
-      },
-      {
-        key: "CUFF DETAILS",
-        value: "Velvet details with lace trim on the cuffs",
-      },
-      {
-        key: "FEMIMINE HEMLINE",
-        value: "Fashionable curved hem",
-      },
-      {
-        key: "Graphics Coprocessor",
-        value: "Exynos 9611, Octa Core (4x2.3GHz + 4x1.7GHz)",
-      },
-      {
-        key: "Wireless Type",
-        value: "802.11a/b/g/n/ac, Bluetooth",
-      },
-    ],
-    featured: true,
-    sellCount: 0,
-    tags: ["milumia", "blouse"],
-    sizes: [],
-  },
-  {
-    id: "642168b402240f90b1138e86",
-    sku: "ECB7SDVX56",
-    img: "https://i.ibb.co/GvXjssF/bag-1.png",
-    title: "Tall Easy Tote-2",
-    slug: "tall-easy-tote-2",
-    unit: "5pcs",
-    imageURLs: [
-      {
-        color: {
-          name: "Donkey Brown",
-          clrCode: "#A09370",
-        },
-        img: "https://i.ibb.co/GvXjssF/bag-1.png",
-      },
-      {
-        color: {
-          name: "Pale Carmine",
-          clrCode: "#AC3A30",
-        },
-        img: "https://i.ibb.co/pXXYwgF/bag-2.png",
-      },
-      {
-        color: {
-          name: "Spicy Mix",
-          clrCode: "#8B543F",
-        },
-        img: "https://i.ibb.co/ypc0tn9/bag-3.png",
-      },
-      {
-        color: {
-          name: "Black Eel",
-          clrCode: "#49443E",
-        },
-        img: "https://i.ibb.co/GxKRg51/bag-4.png",
-      },
-    ],
-    parent: "Bags",
-    children: "HandBag",
-    price: 110,
-    discount: 0,
-    quantity: 8,
-    brand: {
-      name: "Sony",
-    },
-    category: {
-      name: "Bags",
-    },
-    status: "in-stock",
-    reviews: [],
-    productType: "fashion",
-    description:
-      "PLENTY OF STORAGE: There are two chest pockets on this women's hooded flannel, making it easy to bring all your favorite things with you. VERSATILE: The Lumber Jane Hooded Flannel is a heavyweight shirt that you can wear open or snapped, depending on your mood. With it's jersey lined hood, it's as warm and comfortable as your favorite hoodie! RELAXED FIT: The women's hooded flannel was made with a relaxed fit for the days you want some room for layering or just want that extra bit of comfort. 100% SATISFACTION GUARANTEE: Designed in the USA, Legendary Whitetails is an American small business. We take pride in all our products. Love it or send it back!",
-    additionalInformation: [
-      {
-        key: "GREAT FOR LAYERING",
-        value: "Mini waffle fabric construction",
-      },
-      {
-        key: "Colors",
-        value: "Wine Berry , Dirty Blue",
-      },
-      {
-        key: "LEGENDARY STYLING",
-        value: "Cute keyhole notch neck with custom",
-      },
-      {
-        key: "CUFF DETAILS",
-        value: "Velvet details with lace trim on the cuffs",
-      },
-      {
-        key: "FEMIMINE HEMLINE",
-        value: "Fashionable curved hem",
-      },
-      {
-        key: "Graphics Coprocessor",
-        value: "Exynos 9611, Octa Core (4x2.3GHz + 4x1.7GHz)",
-      },
-      {
-        key: "Wireless Type",
-        value: "802.11a/b/g/n/ac, Bluetooth",
-      },
-    ],
-    featured: false,
-    sellCount: 0,
-    tags: ["sony", "handBag"],
-  },
-  {
-    id: "64216b0902240f90b1138e8e",
-    sku: "ECB7SDVX62",
-    img: "https://i.ibb.co/zrdMnPd/bag-5.png",
-    title: "Traveling Bag",
-    slug: "traveling-bag",
-    unit: "5pcs",
-    imageURLs: [
-      {
-        color: {
-          name: "Clay",
-          clrCode: "#B36C58",
-        },
-        img: "https://i.ibb.co/zrdMnPd/bag-5.png",
-      },
-      {
-        color: {
-          name: "English Walnut",
-          clrCode: "#402826",
-        },
-        img: "https://i.ibb.co/ts8dj9z/bag-6.png",
-      },
-      {
-        color: {
-          name: "Black",
-          clrCode: "#000000",
-        },
-        img: "https://i.ibb.co/9gY1SrG/bag-7.png",
-      },
-      {
-        color: {
-          name: "Ferra",
-          clrCode: "#725452",
-        },
-        img: "https://i.ibb.co/BcDb57T/bag-8.png",
-      },
-    ],
-    parent: "Bags",
-    children: "Traveling Bag",
-    price: 120,
-    discount: 5,
-    quantity: 10,
-    brand: {
-      name: "Sony",
-    },
-    category: {
-      name: "Bags",
-    },
-    status: "in-stock",
-    reviews: [],
-    productType: "fashion",
-    description:
-      "PLENTY OF STORAGE: There are two chest pockets on this women's hooded flannel, making it easy to bring all your favorite things with you. VERSATILE: The Lumber Jane Hooded Flannel is a heavyweight shirt that you can wear open or snapped, depending on your mood. With it's jersey lined hood, it's as warm and comfortable as your favorite hoodie! RELAXED FIT: The women's hooded flannel was made with a relaxed fit for the days you want some room for layering or just want that extra bit of comfort. 100% SATISFACTION GUARANTEE: Designed in the USA, Legendary Whitetails is an American small business. We take pride in all our products. Love it or send it back!",
-    additionalInformation: [
-      {
-        key: "GREAT FOR LAYERING",
-        value: "Mini waffle fabric construction",
-      },
-      {
-        key: "Colors",
-        value: "Wine Berry , Dirty Blue",
-      },
-      {
-        key: "LEGENDARY STYLING",
-        value: "Cute keyhole notch neck with custom",
-      },
-      {
-        key: "CUFF DETAILS",
-        value: "Velvet details with lace trim on the cuffs",
-      },
-      {
-        key: "FEMIMINE HEMLINE",
-        value: "Fashionable curved hem",
-      },
-      {
-        key: "Graphics Coprocessor",
-        value: "Exynos 9611, Octa Core (4x2.3GHz + 4x1.7GHz)",
-      },
-      {
-        key: "Wireless Type",
-        value: "802.11a/b/g/n/ac, Bluetooth",
-      },
-    ],
-    featured: true,
-    sellCount: 0,
-    tags: ["traveling", "sony"],
-    sizes: [],
-  },
-  {
-    id: "64216e2f02240f90b1138e96",
-    sku: "DCB7SDVX64",
-    img: "https://i.ibb.co/xgPThxC/shoes-1.png",
-    title: "Nike Retro GTS-2",
-    slug: "nike-retro-gts-2",
-    unit: "4pcs",
-    imageURLs: [
-      {
-        color: {
-          name: "Merlot",
-          clrCode: "#8E1125",
-        },
-        img: "https://i.ibb.co/xgPThxC/shoes-1.png",
-      },
-      {
-        color: {
-          name: "Gulf Stream",
-          clrCode: "#87B0B8",
-        },
-        img: "https://i.ibb.co/YXbFH8P/shoes-2.png",
-      },
-      {
-        color: {
-          name: "Brick Red",
-          clrCode: "#BD2B3D",
-        },
-        img: "https://i.ibb.co/zXHVJLj/shoes-3.png",
-      },
-      {
-        color: {
-          name: "Gainsboro",
-          clrCode: "#DBDADF",
-        },
-        img: "https://i.ibb.co/ZxHVh8L/shoes-4.png",
-      },
-    ],
-    parent: "Shoes",
-    children: "Men's",
-    price: 250,
-    discount: 5,
-    quantity: 18,
-    brand: {
-      name: "Nike",
-    },
-    category: {
-      name: "Shoes",
-    },
-    status: "in-stock",
-    reviews: [],
-    productType: "fashion",
-    description:
-      "PLENTY OF STORAGE: There are two chest pockets on this women's hooded flannel, making it easy to bring all your favorite things with you. VERSATILE: The Lumber Jane Hooded Flannel is a heavyweight shirt that you can wear open or snapped, depending on your mood. With it's jersey lined hood, it's as warm and comfortable as your favorite hoodie! RELAXED FIT: The women's hooded flannel was made with a relaxed fit for the days you want some room for layering or just want that extra bit of comfort. 100% SATISFACTION GUARANTEE: Designed in the USA, Legendary Whitetails is an American small business. We take pride in all our products. Love it or send it back!",
-    additionalInformation: [
-      {
-        key: "GREAT FOR LAYERING",
-        value: "Mini waffle fabric construction",
-      },
-      {
-        key: "Colors",
-        value: "Wine Berry , Dirty Blue",
-      },
-      {
-        key: "LEGENDARY STYLING",
-        value: "Cute keyhole notch neck with custom",
-      },
-      {
-        key: "CUFF DETAILS",
-        value: "Velvet details with lace trim on the cuffs",
-      },
-      {
-        key: "FEMIMINE HEMLINE",
-        value: "Fashionable curved hem",
-      },
-      {
-        key: "Graphics Coprocessor",
-        value: "Exynos 9611, Octa Core (4x2.3GHz + 4x1.7GHz)",
-      },
-      {
-        key: "Wireless Type",
-        value: "802.11a/b/g/n/ac, Bluetooth",
-      },
-    ],
-    featured: false,
-    sellCount: 0,
-    tags: ["nike", "shoes"],
-  },
-  {
-    id: "6421700802240f90b1138e9e",
-    sku: "GCB7SDVX72",
-    img: "https://i.ibb.co/SQY6zdb/shoes-5.png",
-    title: "Jefferson Star Wars™",
-    slug: "jefferson-star-wars™",
-    unit: "4pcs",
-    imageURLs: [
-      {
-        color: {
-          name: "Mustard Green",
-          clrCode: "#A7B304",
-        },
-        img: "https://i.ibb.co/SQY6zdb/shoes-5.png",
-      },
-      {
-        color: {
-          name: "Vista White",
-          clrCode: "#FCF8F5",
-        },
-        img: "https://i.ibb.co/VWcTW2t/shoes-6.png",
-      },
-      {
-        color: {
-          name: "Chalky",
-          clrCode: "#E9D69B",
-        },
-        img: "https://i.ibb.co/BcJPyh6/shoes-7.png",
-      },
-      {
-        color: {
-          name: "Liver",
-          clrCode: "#4C5054",
-        },
-        img: "https://i.ibb.co/PThjLJh/shoes-8.png",
-      },
-    ],
-    parent: "Shoes",
-    children: "Women's",
-    price: 270,
-    discount: 7,
-    quantity: 18,
-    brand: {
-      name: "Nike",
-    },
-    category: {
-      name: "Shoes",
-    },
-    status: "in-stock",
-    reviews: [],
-    productType: "fashion",
-    description:
-      "PLENTY OF STORAGE: There are two chest pockets on this women's hooded flannel, making it easy to bring all your favorite things with you. VERSATILE: The Lumber Jane Hooded Flannel is a heavyweight shirt that you can wear open or snapped, depending on your mood. With it's jersey lined hood, it's as warm and comfortable as your favorite hoodie! RELAXED FIT: The women's hooded flannel was made with a relaxed fit for the days you want some room for layering or just want that extra bit of comfort. 100% SATISFACTION GUARANTEE: Designed in the USA, Legendary Whitetails is an American small business. We take pride in all our products. Love it or send it back!",
-    additionalInformation: [
-      {
-        key: "GREAT FOR LAYERING",
-        value: "Mini waffle fabric construction",
-      },
-      {
-        key: "Colors",
-        value: "Wine Berry , Dirty Blue",
-      },
-      {
-        key: "LEGENDARY STYLING",
-        value: "Cute keyhole notch neck with custom",
-      },
-      {
-        key: "CUFF DETAILS",
-        value: "Velvet details with lace trim on the cuffs",
-      },
-      {
-        key: "FEMIMINE HEMLINE",
-        value: "Fashionable curved hem",
-      },
-      {
-        key: "Graphics Coprocessor",
-        value: "Exynos 9611, Octa Core (4x2.3GHz + 4x1.7GHz)",
-      },
-      {
-        key: "Wireless Type",
-        value: "802.11a/b/g/n/ac, Bluetooth",
-      },
-    ],
-    featured: false,
-    sellCount: 0,
-    tags: ["shoes", "jefferson"],
-    sizes: [],
-  },
-  {
-    id: "64228862253d81bc860d2092",
-    sku: "FCB7SDVX55",
-    img: "https://i.ibb.co/ThxGY6N/clothing-13.png",
-    title: "Baby Cotton Bodysuits",
-    slug: "baby-cotton-bodysuits",
-    unit: "12pcs",
-    imageURLs: [
-      {
-        color: {
-          name: "Cool Grey",
-          clrCode: "#94A2A2",
-        },
-        img: "https://i.ibb.co/ThxGY6N/clothing-13.png",
-      },
-      {
-        color: {
-          name: "Sandstone",
-          clrCode: "#7A685E",
-        },
-        img: "https://i.ibb.co/dJfjNcJ/clothing-14.png",
-      },
-      {
-        color: {
-          name: "Soft Amber",
-          clrCode: "#DBC8B1",
-        },
-        img: "https://i.ibb.co/2Yf7bqs/clothing-15.png",
-      },
-      {
-        color: {
-          name: "Natural Grey",
-          clrCode: "#878881",
-        },
-        img: "https://i.ibb.co/zf49GS3/clothing-16.png",
-      },
-    ],
-    parent: "Clothing",
-    children: "Baby",
-    price: 50,
-    discount: 0,
-    quantity: 15,
-    brand: {
-      name: "Legendary Whitetails",
-    },
-    category: {
-      name: "Clothing",
-    },
-    status: "in-stock",
-    reviews: [],
-    productType: "fashion",
-    description:
-      "PLENTY OF STORAGE: There are two chest pockets on this women's hooded flannel, making it easy to bring all your favorite things with you. VERSATILE: The Lumber Jane Hooded Flannel is a heavyweight shirt that you can wear open or snapped, depending on your mood. With it's jersey lined hood, it's as warm and comfortable as your favorite hoodie! RELAXED FIT: The women's hooded flannel was made with a relaxed fit for the days you want some room for layering or just want that extra bit of comfort. 100% SATISFACTION GUARANTEE: Designed in the USA, Legendary Whitetails is an American small business. We take pride in all our products. Love it or send it back!",
-    additionalInformation: [
-      {
-        key: "GREAT FOR LAYERING",
-        value: "Mini waffle fabric construction",
-      },
-      {
-        key: "Colors",
-        value: "Wine Berry , Dirty Blue",
-      },
-      {
-        key: "LEGENDARY STYLING",
-        value: "Cute keyhole notch neck with custom",
-      },
-      {
-        key: "CUFF DETAILS",
-        value: "Velvet details with lace trim on the cuffs",
-      },
-      {
-        key: "FEMIMINE HEMLINE",
-        value: "Fashionable curved hem",
-      },
-      {
-        key: "Graphics Coprocessor",
-        value: "Exynos 9611, Octa Core (4x2.3GHz + 4x1.7GHz)",
-      },
-      {
-        key: "Wireless Type",
-        value: "802.11a/b/g/n/ac, Bluetooth",
-      },
-    ],
-    tags: ["Whitetails", "Baby", "Clothing"],
-    featured: true,
-    sellCount: 2,
-  },
-  {
-    id: "64250d8e253d81bc860d4d26",
-    sku: "DCB7SDVX60",
-    img: "https://i.ibb.co/qNn6Pqy/powder-1.png",
-    title: "INIKA Mineral Sunkissed",
-    slug: "inika-mineral-sunkissed",
-    unit: "15pcs",
-    imageURLs: [
-      {
-        color: {
-          name: "Purple Brown",
-          clrCode: "#664536",
-        },
-        img: "https://i.ibb.co/qNn6Pqy/powder-1.png",
-      },
-      {
-        color: {
-          name: "Potters Clay",
-          clrCode: "#8B5A39",
-        },
-        img: "https://i.ibb.co/4RJLN3h/powder-2.png",
-      },
-      {
-        color: {
-          name: "Antique Brass",
-          clrCode: "#BF8A63",
-        },
-        img: "https://i.ibb.co/8PV5cC4/powder-3.png",
-      },
-      {
-        color: {
-          name: "Pale Taupe",
-          clrCode: "#BD9B76",
-        },
-        img: "https://i.ibb.co/zJ9SWcP/powder-4.png",
-      },
-    ],
-    parent: "Discover Skincare",
-    children: "Face Powder",
-    price: 85,
-    discount: 5,
-    quantity: 15,
-    brand: {
-      name: "INIKA",
-    },
-    category: {
-      name: "Discover Skincare",
-    },
-    status: "in-stock",
-    reviews: [],
-    productType: "beauty",
-    description:
-      "Achieve that sun-kissed glow with the Baked Mineral Bronzer from INIKA. Perfect for contouring, the loose powder adds a subtle and natural tanned tone to skin, perfectly complementing fair to medium complexions. Lightweight and non-cakey, it effortlessly sculpts and defines cheekbones to leave skin looking healthy and radiant. Certified Vegan. Cruelty free.",
-    additionalInformation: [
-      {
-        key: "GREAT FOR LAYERING",
-        value: "Mini waffle fabric construction",
-      },
-      {
-        key: "Colors",
-        value: "Wine Berry , Dirty Blue",
-      },
-      {
-        key: "LEGENDARY STYLING",
-        value: "Cute keyhole notch neck with custom",
-      },
-      {
-        key: "CUFF DETAILS",
-        value: "Velvet details with lace trim on the cuffs",
-      },
-      {
-        key: "FEMIMINE HEMLINE",
-        value: "Fashionable curved hem",
-      },
-      {
-        key: "Graphics Coprocessor",
-        value: "Exynos 9611, Octa Core (4x2.3GHz + 4x1.7GHz)",
-      },
-      {
-        key: "Wireless Type",
-        value: "802.11a/b/g/n/ac, Bluetooth",
-      },
-    ],
-    tags: ["inika", "sunkissed"],
-    featured: true,
-    sellCount: 4,
-    sizes: [],
-  },
-  {
-    id: "642515c0253d81bc860d4da3",
-    sku: "DEB7SDVX62",
-    img: "https://i.ibb.co/whwFFGX/lip-liner-1.png",
-    title: "Grand Plumping Highlighter",
-    slug: "grand-plumping-highlighter",
-    unit: "10pcs",
-    imageURLs: [
-      {
-        color: {
-          name: "Burning Sand",
-          clrCode: "#D18F7C",
-        },
-        img: "https://i.ibb.co/whwFFGX/lip-liner-1.png",
-      },
-      {
-        color: {
-          name: "Antique Brass",
-          clrCode: "#C88B6A",
-        },
-        img: "https://i.ibb.co/h9PYFHJ/lip-liner-2.png",
-      },
-      {
-        color: {
-          name: "Pinkish Tan",
-          clrCode: "#D1A08F",
-        },
-        img: "https://i.ibb.co/LYr2Nkp/lip-liner-3.png",
-      },
-    ],
-    parent: "Beauty of Skin",
-    children: "Lip Liner",
-    price: 60,
-    discount: 5,
-    quantity: 15,
-    brand: {
-      name: "INIKA",
-    },
-    category: {
-      name: "Beauty of Skin",
-    },
-    status: "in-stock",
-    reviews: [],
-    productType: "beauty",
-    description:
-      "Achieve that sun-kissed glow with the Baked Mineral Bronzer from INIKA. Perfect for contouring, the loose powder adds a subtle and natural tanned tone to skin, perfectly complementing fair to medium complexions. Lightweight and non-cakey, it effortlessly sculpts and defines cheekbones to leave skin looking healthy and radiant. Certified Vegan. Cruelty free.",
-    additionalInformation: [
-      {
-        key: "GREAT FOR LAYERING",
-        value: "Mini waffle fabric construction",
-      },
-      {
-        key: "Colors",
-        value: "Wine Berry , Dirty Blue",
-      },
-      {
-        key: "LEGENDARY STYLING",
-        value: "Cute keyhole notch neck with custom",
-      },
-      {
-        key: "CUFF DETAILS",
-        value: "Velvet details with lace trim on the cuffs",
-      },
-      {
-        key: "FEMIMINE HEMLINE",
-        value: "Fashionable curved hem",
-      },
-      {
-        key: "Graphics Coprocessor",
-        value: "Exynos 9611, Octa Core (4x2.3GHz + 4x1.7GHz)",
-      },
-      {
-        key: "Wireless Type",
-        value: "802.11a/b/g/n/ac, Bluetooth",
-      },
-    ],
-    tags: ["beauty of skin", "lip liner"],
-    featured: false,
-    sellCount: 3,
-  },
-  {
-    id: "64251bc0253d81bc860d4db5",
-    sku: "DFB7SDVX62",
-    img: "https://i.ibb.co/vmJzZk4/cosmetics-1.png",
-    title: "Brand Cosmetic Product",
-    slug: "brand-cosmetic-product",
-    unit: "12pcs",
-    imageURLs: [
-      {
-        color: {
-          name: "Barney",
-          clrCode: "#BF1EB2",
-        },
-        img: "https://i.ibb.co/vmJzZk4/cosmetics-1.png",
-      },
-      {
-        color: {
-          name: "Yellow Ochre",
-          clrCode: "#C99E01",
-        },
-        img: "https://i.ibb.co/kG1N7m8/cosmetics-2.png",
-      },
-      {
-        color: {
-          name: "Rich Electric Blue",
-          clrCode: "#0393C9",
-        },
-        img: "https://i.ibb.co/GTJ77k0/cosmetics-3.png",
-      },
-    ],
-    parent: "Awesome Lip Care",
-    children: "Cosmetics",
-    price: 70,
-    discount: 3,
-    quantity: 8,
-    brand: {
-      name: "INIKA",
-    },
-    category: {
-      name: "Awesome Lip Care",
-    },
-    status: "in-stock",
-    reviews: [],
-    productType: "beauty",
-    description:
-      "Achieve that sun-kissed glow with the Baked Mineral Bronzer from INIKA. Perfect for contouring, the loose powder adds a subtle and natural tanned tone to skin, perfectly complementing fair to medium complexions. Lightweight and non-cakey, it effortlessly sculpts and defines cheekbones to leave skin looking healthy and radiant. Certified Vegan. Cruelty free.",
-    additionalInformation: [
-      {
-        key: "GREAT FOR LAYERING",
-        value: "Mini waffle fabric construction",
-      },
-      {
-        key: "Colors",
-        value: "Wine Berry , Dirty Blue",
-      },
-      {
-        key: "LEGENDARY STYLING",
-        value: "Cute keyhole notch neck with custom",
-      },
-      {
-        key: "CUFF DETAILS",
-        value: "Velvet details with lace trim on the cuffs",
-      },
-      {
-        key: "FEMIMINE HEMLINE",
-        value: "Fashionable curved hem",
-      },
-      {
-        key: "Graphics Coprocessor",
-        value: "Exynos 9611, Octa Core (4x2.3GHz + 4x1.7GHz)",
-      },
-      {
-        key: "Wireless Type",
-        value: "802.11a/b/g/n/ac, Bluetooth",
-      },
-    ],
-    tags: ["awesome lip care", "cosmetics"],
-    featured: true,
-    sellCount: 1,
-    sizes: [],
-  },
-  {
-    id: "64252172253d81bc860d4dbe",
-    sku: "DGB7SDVX62",
-    img: "https://i.ibb.co/p06Mk0H/makeup-1.png",
-    title: "Wet Dewy Cream Beige",
-    slug: "wet-dewy-cream-beige",
-    unit: "12pcs",
-    imageURLs: [
-      {
-        color: {
-          name: "Lion",
-          clrCode: "#BE9770",
-        },
-        img: "https://i.ibb.co/p06Mk0H/makeup-1.png",
-      },
-      {
-        color: {
-          name: "Pickled Bean",
-          clrCode: "#654631",
-        },
-        img: "https://i.ibb.co/9ttBnfM/makeup-2.png",
-      },
-      {
-        color: {
-          name: "Tumbleweed",
-          clrCode: "#D4A987",
-        },
-        img: "https://i.ibb.co/sbpNm8n/makeup-3.png",
-      },
-      {
-        color: {
-          name: "Bullet Shell",
-          clrCode: "#BC955E",
-        },
-        img: "https://i.ibb.co/M5z3jP1/makeup-4.png",
-      },
-    ],
-    parent: "Facial Care",
-    children: "Makeup Brush",
-    price: 90,
-    discount: 5,
-    quantity: 6,
-    brand: {
-      name: "INIKA",
-    },
-    category: {
-      name: "Facial Care",
-    },
-    status: "in-stock",
-    reviews: [],
-    productType: "beauty",
-    description:
-      "Achieve that sun-kissed glow with the Baked Mineral Bronzer from INIKA. Perfect for contouring, the loose powder adds a subtle and natural tanned tone to skin, perfectly complementing fair to medium complexions. Lightweight and non-cakey, it effortlessly sculpts and defines cheekbones to leave skin looking healthy and radiant. Certified Vegan. Cruelty free.",
-    additionalInformation: [
-      {
-        key: "GREAT FOR LAYERING",
-        value: "Mini waffle fabric construction",
-      },
-      {
-        key: "Colors",
-        value: "Wine Berry , Dirty Blue",
-      },
-      {
-        key: "LEGENDARY STYLING",
-        value: "Cute keyhole notch neck with custom",
-      },
-      {
-        key: "CUFF DETAILS",
-        value: "Velvet details with lace trim on the cuffs",
-      },
-      {
-        key: "FEMIMINE HEMLINE",
-        value: "Fashionable curved hem",
-      },
-      {
-        key: "Graphics Coprocessor",
-        value: "Exynos 9611, Octa Core (4x2.3GHz + 4x1.7GHz)",
-      },
-      {
-        key: "Wireless Type",
-        value: "802.11a/b/g/n/ac, Bluetooth",
-      },
-    ],
-    tags: ["facial care", "makeup brush"],
-    featured: false,
-    sellCount: 1,
-  },
-  {
-    id: "6426a68a253d81bc860d5ea6",
-    sku: "EGB7SDVX68",
-    img: "https://i.ibb.co/mvRsPK5/cosmetics-4.png",
-    title: "Tea Tree Lemon For Fine Hair",
-    slug: "tea-tree-lemon-for-fine-hair",
-    unit: "100ml",
-    imageURLs: [
-      {
-        color: {
-          name: "Rangoon Green",
-          clrCode: "#142014",
-        },
-        img: "https://i.ibb.co/mvRsPK5/cosmetics-4.png",
-      },
-      {
-        color: {
-          name: "Rangoon Green",
-          clrCode: "#142014",
-        },
-        img: "https://i.ibb.co/rkk6dXX/cosmetics-5.png",
-      },
-      {
-        color: {
-          name: "Rangoon Green",
-          clrCode: "#142014",
-        },
-        img: "https://i.ibb.co/TMJPG3B/cosmetics-6.png",
-      },
-    ],
-    parent: "Discover Skincare",
-    children: "Makeup Brush",
-    price: 45,
-    discount: 0,
-    quantity: 8,
-    brand: {
-      name: "INIKA",
-    },
-    category: {
-      name: "Discover Skincare",
-    },
-    status: "in-stock",
-    reviews: [],
-    productType: "beauty",
-    description:
-      "Achieve that sun-kissed glow with the Baked Mineral Bronzer from INIKA. Perfect for contouring, the loose powder adds a subtle and natural tanned tone to skin, perfectly complementing fair to medium complexions. Lightweight and non-cakey, it effortlessly sculpts and defines cheekbones to leave skin looking healthy and radiant. Certified Vegan. Cruelty free.",
-    additionalInformation: [
-      {
-        key: "GREAT FOR LAYERING",
-        value: "Mini waffle fabric construction",
-      },
-      {
-        key: "Colors",
-        value: "Wine Berry , Dirty Blue",
-      },
-      {
-        key: "LEGENDARY STYLING",
-        value: "Cute keyhole notch neck with custom",
-      },
-      {
-        key: "CUFF DETAILS",
-        value: "Velvet details with lace trim on the cuffs",
-      },
-      {
-        key: "FEMIMINE HEMLINE",
-        value: "Fashionable curved hem",
-      },
-      {
-        key: "Graphics Coprocessor",
-        value: "Exynos 9611, Octa Core (4x2.3GHz + 4x1.7GHz)",
-      },
-      {
-        key: "Wireless Type",
-        value: "802.11a/b/g/n/ac, Bluetooth",
-      },
-    ],
-    tags: ["discover skincare", "makeup brush"],
-    featured: false,
-    sellCount: 0,
-  },
-  {
-    id: "6426ab33253d81bc860d5f86",
-    sku: "FGB7SDVX68",
-    img: "https://i.ibb.co/bdKTWYy/skin-1.png",
-    title: "Mielle Rosemary Mint Scalp",
-    slug: "mielle-rosemary-mint-scalp",
-    unit: "200ml",
-    imageURLs: [
-      {
-        color: {
-          name: "Iridium",
-          clrCode: "#3C3C3D",
-        },
-        img: "https://i.ibb.co/bdKTWYy/skin-1.png",
-      },
-      {
-        color: {
-          name: "Iridium",
-          clrCode: "#3C3C3D",
-        },
-        img: "https://i.ibb.co/1GtZ2qC/skin-2.png",
-      },
-      {
-        color: {
-          name: "Iridium",
-          clrCode: "#3C3C3D",
-        },
-        img: "https://i.ibb.co/qN95THF/skin-3.png",
-      },
-    ],
-    parent: "Beauty of Skin",
-    children: "Skin",
-    price: 62,
-    discount: 4,
-    quantity: 10,
-    brand: {
-      name: "Antec",
-    },
-    category: {
-      name: "Beauty of Skin",
-    },
-    status: "in-stock",
-    reviews: [],
-    productType: "beauty",
-    description:
-      "Achieve that sun-kissed glow with the Baked Mineral Bronzer from INIKA. Perfect for contouring, the loose powder adds a subtle and natural tanned tone to skin, perfectly complementing fair to medium complexions. Lightweight and non-cakey, it effortlessly sculpts and defines cheekbones to leave skin looking healthy and radiant. Certified Vegan. Cruelty free.",
-    additionalInformation: [
-      {
-        key: "GREAT FOR LAYERING",
-        value: "Mini waffle fabric construction",
-      },
-      {
-        key: "Colors",
-        value: "Wine Berry , Dirty Blue",
-      },
-      {
-        key: "LEGENDARY STYLING",
-        value: "Cute keyhole notch neck with custom",
-      },
-      {
-        key: "CUFF DETAILS",
-        value: "Velvet details with lace trim on the cuffs",
-      },
-      {
-        key: "FEMIMINE HEMLINE",
-        value: "Fashionable curved hem",
-      },
-      {
-        key: "Graphics Coprocessor",
-        value: "Exynos 9611, Octa Core (4x2.3GHz + 4x1.7GHz)",
-      },
-      {
-        key: "Wireless Type",
-        value: "802.11a/b/g/n/ac, Bluetooth",
-      },
-    ],
-    tags: ["beauty of skin", "skin"],
-    featured: false,
-    sellCount: 2,
-  },
-  {
-    id: "6426adba253d81bc860d6132",
-    sku: "FCB7SDVX68",
-    img: "https://i.ibb.co/T04BRtd/cream-1.png",
-    title: "Innisfree Face Wash",
-    slug: "innisfree face wash",
-    unit: "150ml",
-    imageURLs: [
-      {
-        color: {
-          name: "Faded Green",
-          clrCode: "#80AF6B",
-        },
-        img: "https://i.ibb.co/T04BRtd/cream-1.png",
-      },
-      {
-        color: {
-          name: "Summer Green",
-          clrCode: "#A6B7A5",
-        },
-        img: "https://i.ibb.co/8YGVKhd/cream-2.png",
-      },
-      {
-        color: {
-          name: "Dark Green",
-          clrCode: "#1A2419",
-        },
-        img: "https://i.ibb.co/D1Hw4f4/cream-3.png",
-      },
-    ],
-    parent: "Awesome Lip Care",
-    children: "Cream",
-    price: 68,
-    discount: 3,
-    quantity: 12,
-    brand: {
-      name: "INIKA",
-    },
-    category: {
-      name: "Awesome Lip Care",
-    },
-    status: "in-stock",
-    reviews: [],
-    productType: "beauty",
-    description:
-      "Achieve that sun-kissed glow with the Baked Mineral Bronzer from INIKA. Perfect for contouring, the loose powder adds a subtle and natural tanned tone to skin, perfectly complementing fair to medium complexions. Lightweight and non-cakey, it effortlessly sculpts and defines cheekbones to leave skin looking healthy and radiant. Certified Vegan. Cruelty free.",
-    additionalInformation: [
-      {
-        key: "GREAT FOR LAYERING",
-        value: "Mini waffle fabric construction",
-      },
-      {
-        key: "Colors",
-        value: "Wine Berry , Dirty Blue",
-      },
-      {
-        key: "LEGENDARY STYLING",
-        value: "Cute keyhole notch neck with custom",
-      },
-      {
-        key: "CUFF DETAILS",
-        value: "Velvet details with lace trim on the cuffs",
-      },
-      {
-        key: "FEMIMINE HEMLINE",
-        value: "Fashionable curved hem",
-      },
-      {
-        key: "Graphics Coprocessor",
-        value: "Exynos 9611, Octa Core (4x2.3GHz + 4x1.7GHz)",
-      },
-      {
-        key: "Wireless Type",
-        value: "802.11a/b/g/n/ac, Bluetooth",
-      },
-    ],
-    tags: ["awesome lip care", "cream"],
-    featured: false,
-    sellCount: 5,
-  },
-  {
-    id: "6426b217253d81bc860d6217",
-    sku: "FEB7SDVX68",
-    img: "https://i.ibb.co/XsZ9vLT/beauty-1.png",
-    title: "Blue Rescue Face Mask",
-    slug: "blue-rescue-face-mask",
-    unit: "150ml",
-    imageURLs: [
-      {
-        color: {
-          name: "Flame",
-          clrCode: "#D74E27",
-        },
-        img: "https://i.ibb.co/XsZ9vLT/beauty-1.png",
-      },
-      {
-        color: {
-          name: "Flame",
-          clrCode: "#D74E27",
-        },
-        img: "https://i.ibb.co/9qnGsJq/beauty-2.png",
-      },
-      {
-        color: {
-          name: "Flame",
-          clrCode: "#D74E27",
-        },
-        img: "https://i.ibb.co/1JWCCnS/beauty-3.png",
-      },
-    ],
-    parent: "Facial Care",
-    children: "Powder",
-    price: 72,
-    discount: 5,
-    quantity: 15,
-    brand: {
-      name: "INIKA",
-    },
-    category: {
-      name: "Facial Care",
-    },
-    status: "in-stock",
-    reviews: [],
-    productType: "beauty",
-    description:
-      "Achieve that sun-kissed glow with the Baked Mineral Bronzer from INIKA. Perfect for contouring, the loose powder adds a subtle and natural tanned tone to skin, perfectly complementing fair to medium complexions. Lightweight and non-cakey, it effortlessly sculpts and defines cheekbones to leave skin looking healthy and radiant. Certified Vegan. Cruelty free.",
-    additionalInformation: [
-      {
-        key: "GREAT FOR LAYERING",
-        value: "Mini waffle fabric construction",
-      },
-      {
-        key: "Colors",
-        value: "Wine Berry , Dirty Blue",
-      },
-      {
-        key: "LEGENDARY STYLING",
-        value: "Cute keyhole notch neck with custom",
-      },
-      {
-        key: "CUFF DETAILS",
-        value: "Velvet details with lace trim on the cuffs",
-      },
-      {
-        key: "FEMIMINE HEMLINE",
-        value: "Fashionable curved hem",
-      },
-      {
-        key: "Graphics Coprocessor",
-        value: "Exynos 9611, Octa Core (4x2.3GHz + 4x1.7GHz)",
-      },
-      {
-        key: "Wireless Type",
-        value: "802.11a/b/g/n/ac, Bluetooth",
-      },
-    ],
-    tags: ["facial care", "powder"],
-    featured: false,
-    sellCount: 0,
-  },
-  {
-    id: "6431364df5a812bd37e765ac",
-    sku: "AEB7SDVX70",
-    img: "https://i.ibb.co/J7C8xSR/bracelet-1.png",
-    title: "Robert Lee Bangle Bracelet",
-    slug: "robert-lee-bangle-bracelet",
-    unit: "18 kt",
-    imageURLs: [
-      {
-        img: "https://i.ibb.co/J7C8xSR/bracelet-1.png",
-      },
-      {
-        img: "https://i.ibb.co/8g1W4Pp/bracelet-2.png",
-      },
-      {
-        img: "https://i.ibb.co/2W3S5Xc/bracelet-3.png",
-      },
-    ],
-    parent: "Bracelets",
-    children: "Gold",
-    price: 250,
-    discount: 3,
-    quantity: 15,
-    brand: {
-      name: "Louis Vuitton",
-    },
-    category: {
-      name: "Bracelets",
-    },
-    status: "in-stock",
-    reviews: [],
-    productType: "jewelry",
-    description:
-      "Achieve that sun-kissed glow with the Baked Mineral Bronzer from INIKA. Perfect for contouring, the loose powder adds a subtle and natural tanned tone to skin, perfectly complementing fair to medium complexions. Lightweight and non-cakey, it effortlessly sculpts and defines cheekbones to leave skin looking healthy and radiant. Certified Vegan. Cruelty free.",
-    additionalInformation: [
-      {
-        key: "GREAT FOR LAYERING",
-        value: "Mini waffle fabric construction",
-      },
-      {
-        key: "LEGENDARY STYLING",
-        value: "Cute keyhole notch neck with custom",
-      },
-      {
-        key: "CUFF DETAILS",
-        value: "Velvet details with lace trim on the cuffs",
-      },
-    ],
-    tags: ["bracelets", "gold"],
-    featured: true,
-    sellCount: 0,
-    sizes: [],
-  },
-  {
-    id: "64313abdf5a812bd37e765bc",
-    sku: "ABC7SDVX70",
-    img: "https://i.ibb.co/s2gB5tt/earring-1.png",
-    title: "Fortuna Creole Earring",
-    slug: "fortuna-creole-earring",
-    unit: "18 kt",
-    imageURLs: [
-      {
-        img: "https://i.ibb.co/s2gB5tt/earring-1.png",
-      },
-      {
-        img: "https://i.ibb.co/4TTyyZ2/earring-2.png",
-      },
-      {
-        img: "https://i.ibb.co/k0x8r9r/earring-3.png",
-      },
-    ],
-    parent: "Earrings",
-    children: "Gold",
-    price: 180,
-    discount: 0,
-    quantity: 10,
-    brand: {
-      name: "Louis Vuitton",
-    },
-    category: {
-      name: "Earrings",
-    },
-    status: "in-stock",
-    reviews: [],
-    productType: "jewelry",
-    description:
-      "Achieve that sun-kissed glow with the Baked Mineral Bronzer from INIKA. Perfect for contouring, the loose powder adds a subtle and natural tanned tone to skin, perfectly complementing fair to medium complexions. Lightweight and non-cakey, it effortlessly sculpts and defines cheekbones to leave skin looking healthy and radiant. Certified Vegan. Cruelty free.",
-    additionalInformation: [
-      {
-        key: "GREAT FOR LAYERING",
-        value: "Mini waffle fabric construction",
-      },
-      {
-        key: "LEGENDARY STYLING",
-        value: "Cute keyhole notch neck with custom",
-      },
-      {
-        key: "CUFF DETAILS",
-        value: "Velvet details with lace trim on the cuffs",
-      },
-    ],
-    tags: ["earrings", "gold"],
-    featured: true,
-    sellCount: 0,
-  },
-  {
-    id: "64313e92f5a812bd37e765cf",
-    sku: "ADC7SDVX70",
-    img: "https://i.ibb.co/KsZ69S3/necklaces-1.png",
-    title: "asiyah necklace",
-    slug: "asiyah-necklace",
-    unit: "15 kt",
-    imageURLs: [
-      {
-        img: "https://i.ibb.co/KsZ69S3/necklaces-1.png",
-      },
-      {
-        img: "https://i.ibb.co/WPMYcmL/necklaces-2.png",
-      },
-      {
-        img: "https://i.ibb.co/kBB1p6F/necklaces-3.png",
-      },
-    ],
-    parent: "Necklaces",
-    children: "Gold",
-    price: 200,
-    discount: 2,
-    quantity: 8,
-    brand: {
-      name: "Louis Vuitton",
-    },
-    category: {
-      name: "Necklaces",
-    },
-    status: "in-stock",
-    reviews: [],
-    productType: "jewelry",
-    description:
-      "Achieve that sun-kissed glow with the Baked Mineral Bronzer from INIKA. Perfect for contouring, the loose powder adds a subtle and natural tanned tone to skin, perfectly complementing fair to medium complexions. Lightweight and non-cakey, it effortlessly sculpts and defines cheekbones to leave skin looking healthy and radiant. Certified Vegan. Cruelty free.",
-    additionalInformation: [
-      {
-        key: "GREAT FOR LAYERING",
-        value: "Mini waffle fabric construction",
-      },
-      {
-        key: "LEGENDARY STYLING",
-        value: "Cute keyhole notch neck with custom",
-      },
-      {
-        key: "CUFF DETAILS",
-        value: "Velvet details with lace trim on the cuffs",
-      },
-    ],
-    tags: ["necklaces", "gold"],
-    featured: true,
-    sellCount: 0,
-    sizes: [],
-  },
-  {
-    id: "6431418c5e1d915c39ada44b",
-    sku: "AEC7SDVX70",
-    img: "https://i.ibb.co/nnxXBTh/bracelet-4.png",
-    title: "Fortuna Bangle Three-row",
-    slug: "fortuna-bangle-three-row",
-    unit: "14 kt",
-    imageURLs: [
-      {
-        img: "https://i.ibb.co/nnxXBTh/bracelet-4.png",
-      },
-      {
-        img: "https://i.ibb.co/rvmPWxc/bracelet-5.png",
-      },
-      {
-        img: "https://i.ibb.co/VqGrnz9/bracelet-6.png",
-      },
-      {
-        img: "https://i.ibb.co/CKkRNnQ/bracelet-7.png",
-      },
-    ],
-    parent: "Bracelets",
-    children: "Silver",
-    price: 110,
-    discount: 0,
-    quantity: 18,
-    brand: {
-      name: "Louis Vuitton",
-    },
-    category: {
-      name: "Bracelets",
-    },
-    status: "in-stock",
-    reviews: [],
-    productType: "jewelry",
-    description:
-      "Achieve that sun-kissed glow with the Baked Mineral Bronzer from INIKA. Perfect for contouring, the loose powder adds a subtle and natural tanned tone to skin, perfectly complementing fair to medium complexions. Lightweight and non-cakey, it effortlessly sculpts and defines cheekbones to leave skin looking healthy and radiant. Certified Vegan. Cruelty free.",
-    additionalInformation: [
-      {
-        key: "GREAT FOR LAYERING",
-        value: "Mini waffle fabric construction",
-      },
-      {
-        key: "LEGENDARY STYLING",
-        value: "Cute keyhole notch neck with custom",
-      },
-      {
-        key: "CUFF DETAILS",
-        value: "Velvet details with lace trim on the cuffs",
-      },
-    ],
-    tags: ["bracelets", "silver"],
-    featured: true,
-    sellCount: 0,
-  },
-  {
-    id: "64323fd99814bb139594c443",
-    sku: "BAC7SDVX70",
-    img: "https://i.ibb.co/s12Fy6m/earring-4.png",
-    title: "Palm Ring",
-    slug: "palm-ring",
-    unit: "18 kt",
-    imageURLs: [
-      {
-        img: "https://i.ibb.co/s12Fy6m/earring-4.png",
-      },
-      {
-        img: "https://i.ibb.co/7rL5bgs/earring-5.png",
-      },
-      {
-        img: "https://i.ibb.co/p2BCQrp/earring-6.png",
-      },
-      {
-        img: "https://i.ibb.co/JBnqqJH/earring-7.png",
-      },
-    ],
-    parent: "Earrings",
-    children: "Silver",
-    price: 135,
-    discount: 0,
-    quantity: 13,
-    brand: {
-      name: "Louis Vuitton",
-    },
-    category: {
-      name: "Earrings",
-    },
-    status: "in-stock",
-    reviews: [],
-    productType: "jewelry",
-    description:
-      "Achieve that sun-kissed glow with the Baked Mineral Bronzer from INIKA. Perfect for contouring, the loose powder adds a subtle and natural tanned tone to skin, perfectly complementing fair to medium complexions. Lightweight and non-cakey, it effortlessly sculpts and defines cheekbones to leave skin looking healthy and radiant. Certified Vegan. Cruelty free.",
-    additionalInformation: [
-      {
-        key: "GREAT FOR LAYERING",
-        value: "Mini waffle fabric construction",
-      },
-      {
-        key: "LEGENDARY STYLING",
-        value: "Cute keyhole notch neck with custom",
-      },
-      {
-        key: "CUFF DETAILS",
-        value: "Velvet details with lace trim on the cuffs",
-      },
-    ],
-    tags: ["earrings", "silver"],
-    featured: true,
-    sellCount: 3,
-  },
-  {
-    id: "6432433c9814bb139594c44c",
-    sku: "BCC7SDVX54",
-    img: "https://i.ibb.co/cwzhf2G/necklaces-4.png",
-    title: "Birthstone Necklace for Women",
-    slug: "birthstone-necklace-for-women",
-    unit: "14 kt",
-    imageURLs: [
-      {
-        img: "https://i.ibb.co/cwzhf2G/necklaces-4.png",
-      },
-      {
-        img: "https://i.ibb.co/fCMG4Fb/necklaces-5.png",
-      },
-      {
-        img: "https://i.ibb.co/FDB60xJ/necklaces-6.png",
-      },
-    ],
-    parent: "Necklaces",
-    children: "Silver",
-    price: 100,
-    discount: 3,
-    quantity: 13,
-    brand: {
-      name: "Louis Vuitton",
-    },
-    category: {
-      name: "Necklaces",
-    },
-    status: "in-stock",
-    reviews: [],
-    productType: "jewelry",
-    description:
-      "Achieve that sun-kissed glow with the Baked Mineral Bronzer from INIKA. Perfect for contouring, the loose powder adds a subtle and natural tanned tone to skin, perfectly complementing fair to medium complexions. Lightweight and non-cakey, it effortlessly sculpts and defines cheekbones to leave skin looking healthy and radiant. Certified Vegan. Cruelty free.",
-    additionalInformation: [
-      {
-        key: "GREAT FOR LAYERING",
-        value: "Mini waffle fabric construction",
-      },
-      {
-        key: "LEGENDARY STYLING",
-        value: "Cute keyhole notch neck with custom",
-      },
-      {
-        key: "CUFF DETAILS",
-        value: "Velvet details with lace trim on the cuffs",
-      },
-    ],
-    tags: ["necklaces", "silver"],
-    featured: false,
-    sellCount: 0,
-  },
-  {
-    id: "643249b49814bb139594c454",
-    sku: "BAD7SDVX55",
-    img: "https://i.ibb.co/SvdvsxT/bracelet-8.png",
-    title: "Asiyah Bangle Bracelet",
-    slug: "asiyah-bangle-bracelet",
-    unit: "10 kt",
-    imageURLs: [
-      {
-        img: "https://i.ibb.co/SvdvsxT/bracelet-8.png",
-      },
-      {
-        img: "https://i.ibb.co/nRtHQf5/bracelet-9.png",
-      },
-      {
-        img: "https://i.ibb.co/1LJ7nnR/bracelet-10.png",
-      },
-    ],
-    parent: "Bracelets",
-    children: "Silver",
-    price: 118,
-    discount: 0,
-    quantity: 15,
-    brand: {
-      name: "Louis Vuitton",
-    },
-    category: {
-      name: "Bracelets",
-    },
-    status: "in-stock",
-    reviews: [],
-    productType: "jewelry",
-    description:
-      "Achieve that sun-kissed glow with the Baked Mineral Bronzer from INIKA. Perfect for contouring, the loose powder adds a subtle and natural tanned tone to skin, perfectly complementing fair to medium complexions. Lightweight and non-cakey, it effortlessly sculpts and defines cheekbones to leave skin looking healthy and radiant. Certified Vegan. Cruelty free.",
-    additionalInformation: [
-      {
-        key: "GREAT FOR LAYERING",
-        value: "Mini waffle fabric construction",
-      },
-      {
-        key: "LEGENDARY STYLING",
-        value: "Cute keyhole notch neck with custom",
-      },
-      {
-        key: "CUFF DETAILS",
-        value: "Velvet details with lace trim on the cuffs",
-      },
-    ],
-    tags: ["bracelets", "silver"],
-    featured: true,
-    sellCount: 0,
-  },
-  {
-    id: "64324f0c9814bb139594c47c",
-    sku: "BDC7SDVX88",
-    img: "https://i.ibb.co/Bf0gXqY/earring-8.png",
-    title: "Fortuna Creole Hoop",
-    slug: "fortuna-creole-hoop",
-    unit: "12 kt",
-    imageURLs: [
-      {
-        img: "https://i.ibb.co/Bf0gXqY/earring-8.png",
-      },
-      {
-        img: "https://i.ibb.co/FX5VyWP/earring-9.png",
-      },
-      {
-        img: "https://i.ibb.co/zQzsWqW/earring-10.png",
-      },
-    ],
-    parent: "Earrings",
-    children: "Silver",
-    price: 99,
-    discount: 0,
-    quantity: 9,
-    brand: {
-      name: "Louis Vuitton",
-    },
-    category: {
-      name: "Earrings",
-    },
-    status: "in-stock",
-    reviews: [],
-    productType: "jewelry",
-    description:
-      "Achieve that sun-kissed glow with the Baked Mineral Bronzer from INIKA. Perfect for contouring, the loose powder adds a subtle and natural tanned tone to skin, perfectly complementing fair to medium complexions. Lightweight and non-cakey, it effortlessly sculpts and defines cheekbones to leave skin looking healthy and radiant. Certified Vegan. Cruelty free.",
-    additionalInformation: [
-      {
-        key: "GREAT FOR LAYERING",
-        value: "Mini waffle fabric construction",
-      },
-      {
-        key: "LEGENDARY STYLING",
-        value: "Cute keyhole notch neck with custom",
-      },
-      {
-        key: "CUFF DETAILS",
-        value: "Velvet details with lace trim on the cuffs",
-      },
-    ],
-    tags: ["earrings", "silver"],
-    featured: true,
-    sellCount: 2,
-  },
+  }
 ];
 
 export default product_data;

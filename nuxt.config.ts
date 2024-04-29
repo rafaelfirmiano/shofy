@@ -14,7 +14,7 @@ export default defineNuxtConfig({
   ],
   app: {
     head: {
-      title: "Shofy - Multipurpose eCommerce Vue Nuxt 3 Template",
+      title: "Midwayautorv.com",
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       script: [
@@ -22,6 +22,11 @@ export default defineNuxtConfig({
           src: "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js",
         },
       ],
+      link: [
+        { rel:'preconnect',href:'https://fonts.googleapis.com' },
+        { rel:'preconnect',href:'https://fonts.gstatic.com' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' }
+      ]
     }
   },
   css: [
@@ -29,7 +34,8 @@ export default defineNuxtConfig({
     "swiper/css/bundle",
     "@/assets/css/font-awesome-pro.css",
     "@/assets/css/flaticon_shofy.css",
+    "@/assets/css/custom.css",
     "@/assets/scss/main.scss",
   ],
-  
+
 })

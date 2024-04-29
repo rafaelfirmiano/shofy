@@ -3,7 +3,7 @@
       <ui-nice-select
         :options="[
           { value: 'default-sorting', text: 'Default Sorting' },
-          { value: 'low-to-high', text: 'Low to Hight' },
+          { value: 'low-to-high', text: 'Low to High' },
           { value: 'high-to-low', text: 'High to Low' },
           { value: 'new-added', text: 'New Added' },
           { value: 'on-sale', text: 'On Sale' },

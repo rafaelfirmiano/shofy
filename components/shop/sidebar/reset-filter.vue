@@ -1,6 +1,5 @@
 <template>
    <div class="tp-shop-widget mb-50">
-      <h3 class="tp-shop-widget-title">Reset Filter</h3>
       <button
         @click="handleFilterReset"
         class="tp-btn"

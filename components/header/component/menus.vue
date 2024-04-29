@@ -1,81 +1,137 @@
 <template>
-  <ul>
+  <ul class="main-menu">
     <li v-for="(item,i) in menu_data" :key="i" :class="`${item.drop_down?'has-dropdown':item.mega_menu?'has-dropdown has-mega-menu':''}`">
-      <nuxt-link :href="item.link">{{item.title}}</nuxt-link>
-      <div v-if="item.home_pages" class="home-menu tp-submenu tp-mega-menu">
-        <div class="row row-cols-1 row-cols-lg-4 row-cols-xl-4">
-          <div v-for="(home,i) in item.home_pages" :key="i" class="col">
-            <div class="home-menu-item">
-              <nuxt-link :href="home.link">
-                <div class="home-menu-thumb p-relative fix">
-                  <img :src="home.img" alt="image" />
-                </div>
-                <div class="home-menu-content">
-                  <h5 class="home-menu-title">{{home.title}}</h5>
-                </div>
-              </nuxt-link>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div v-if="item.shop_mega_menus" class="shop-mega-menu tp-submenu tp-mega-menu">
-        <div class="row">
-          <div v-for="(shop_m,i) in item.shop_mega_menus" :key="i" class="col-lg-2">
-            <div class="shop-mega-menu-list">
-              <nuxt-link :href="shop_m.link" class="shop-mega-menu-title">{{shop_m.title}}</nuxt-link>
-              <ul>
-                <li v-for="(shop_sm,i) in shop_m.list_menus" :key="i">
-                  <nuxt-link :href="shop_sm.link">{{shop_sm.title}}</nuxt-link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="shop-mega-menu-img">
-              <img src="/img/menu/product/menu-product-img-1.jpg" alt="" />
-              <div class="shop-mega-menu-btn">
-                <nuxt-link
-                  href="/shop?category=mobile-tablets"
-                  class="tp-menu-showcase-btn tp-menu-showcase-btn-2"
-                  >Phones
-                </nuxt-link>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="shop-mega-menu-img">
-              <img src="/img/menu/product/menu-product-img-2.jpg" alt="" />
-              <div class="shop-mega-menu-btn">
-                <nuxt-link
-                  href="/shop?category=headphones"
-                  class="tp-menu-showcase-btn tp-menu-showcase-btn-2"
-                  >Headphones</nuxt-link
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <nuxt-link v-if="!item.drop_down" :href="item.link" :id="item.attr_id">{{item.title}}</nuxt-link>
 
-      <ul v-if="item.product_menus" class="tp-submenu tp-mega-menu mega-menu-style-2">
-        <!-- first col -->
-        <li v-for="(prd_m,i) in item.product_menus" :key="i" class="has-dropdown">
-          <nuxt-link href="/shop" class="mega-menu-title">Shop Page</nuxt-link>
-          <ul class="tp-submenu">
-            <li v-for="(prd_sm,i) in prd_m.dropdown_menus" :key="i">
-              <nuxt-link :href="prd_sm.link">{{prd_sm.title}}</nuxt-link>
+      <nuxt-link v-else class="dropdown-toggle" :href="item.link" role="button" :id="item.attr_id" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+        {{ item.title }}
+      </nuxt-link>
+      <ul v-if="item.drop_down && item.drop_down_type == 'shop'" class="dropdown-menu dropdown-parent" :aria-labelledby="item.attr_id" >
+        <li>
+          <a class="dropdown-item" href="#" role="button" id="RVDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+            <div class="inner-text">
+              <div class="image-menu-item RV">
+                <svg-rv />
+              </div>
+              RVs<div class="arrow-right"></div>
+              <div class="gradient-line"></div>
+            </div>
+          </a>
+
+          <ul class="dropdown-menu dropdown-submenu" aria-labelledby="RVDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" href="/shop/rvs">Browse All RVs
+                <div class="gradient-line"></div>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Toy Haulers
+                <div class="gradient-line"></div>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">5th Wheels
+                <div class="gradient-line"></div>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Travel Trailers
+                <div class="gradient-line"></div>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Motorhomes</a>
             </li>
           </ul>
         </li>
-      </ul>
-
-      <ul v-if="item.drop_down" class="tp-submenu">
-        <li v-for="(drop_m,i) in item.dropdown_menus" :key="i" >
-          <nuxt-link :href="drop_m.link">{{drop_m.title}}</nuxt-link>
+        <li>
+          <a class="dropdown-item" href="#" role="button" id="vehiclesDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+            <div class="inner-text">
+              <div class="image-menu-item Vehicles">
+                <svg-vehicles />
+              </div>
+              Vehicles<div class="arrow-right"></div>
+              <div class="gradient-line"></div>
+            </div>
+          </a>
+          <ul class="dropdown-menu dropdown-submenu" aria-labelledby="vehiclesDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" href="#">Cars
+                <div class="gradient-line"></div>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Trucks
+                <div class="gradient-line"></div>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">SUV
+                <div class="gradient-line"></div>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Vans</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="dropdown-item" href="#" role="button" id="PowersportsDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+            <div class="inner-text">
+              <div class="image-menu-item Powersports">
+                <svg-powersports />
+              </div>
+              Powersports<div class="arrow-right"></div>
+              <div class="gradient-line"></div>
+            </div>
+          </a>
+          <ul class="dropdown-menu dropdown-submenu" aria-labelledby="PowersportsDropdownMenuLink">
+            <li>
+              <a class="dropdown-item" href="#">Motorhomes
+                <div class="gradient-line"></div>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">ATV
+                <div class="gradient-line"></div>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Utility</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="dropdown-item" href="#">
+            <div class="inner-text">
+              <div class="image-menu-item Boats">
+                <svg-boats />
+              </div>
+              Boats
+            </div>
+          </a>
         </li>
       </ul>
-      
+      <ul v-if="item.drop_down && item.drop_down_type == 'default'" class="dropdown-menu dropdown-parent default" :aria-labelledby="item.attr_id" >
+        <li>
+          <a class="dropdown-item" href="/company/about">
+            About Us
+            <div class="gradient-line"></div>
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/company/team">
+            Our Team
+            <div class="gradient-line"></div>
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="/company/contact">
+            Contact Us
+          </a>
+        </li>
+      </ul>
     </li>
   </ul>
 </template>
