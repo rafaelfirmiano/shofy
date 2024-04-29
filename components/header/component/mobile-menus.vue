@@ -21,16 +21,16 @@
                 <a class="dropdown-item" href="/shop/rvs">Browse All RVs</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">Toy Haulers</a>
+                <a class="dropdown-item" href="/shop/rvs">Toy Haulers</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">5th Wheels</a>
+                <a class="dropdown-item" href="/shop/rvs">5th Wheels</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">Travel Trailers</a>
+                <a class="dropdown-item" href="/shop/rvs">Travel Trailers</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">Motorhomes</a>
+                <a class="dropdown-item" href="/shop/rvs">Motorhomes</a>
               </li>
             </ul>
           </li>
@@ -43,16 +43,16 @@
             </a>
             <ul class="dropdown-menu dropdown-submenu" aria-labelledby="vehiclesDropdownMenuLink">
               <li>
-                <a class="dropdown-item" href="#">Cars</a>
+                <a class="dropdown-item" href="/shop/rvs">Cars</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">Trucks</a>
+                <a class="dropdown-item" href="/shop/rvs">Trucks</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">SUV</a>
+                <a class="dropdown-item" href="/shop/rvs">SUV</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">Vans</a>
+                <a class="dropdown-item" href="/shop/rvs">Vans</a>
               </li>
             </ul>
           </li>
@@ -66,18 +66,18 @@
             </a>
             <ul class="dropdown-menu dropdown-submenu" aria-labelledby="PowersportsDropdownMenuLink">
               <li>
-                <a class="dropdown-item" href="#">Motorhomes</a>
+                <a class="dropdown-item" href="/shop/rvs">Motorhomes</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">ATV</a>
+                <a class="dropdown-item" href="/shop/rvs">ATV</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">Utility</a>
+                <a class="dropdown-item" href="/shop/rvs">Utility</a>
               </li>
             </ul>
           </li>
           <li>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" href="/shop/rvs">
               <div class="image-menu-item Boats">
                 <svg-boats />
               </div>

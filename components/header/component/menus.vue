@@ -26,22 +26,22 @@
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Toy Haulers
+              <a class="dropdown-item" href="/shop/rvs">Toy Haulers
                 <div class="gradient-line"></div>
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">5th Wheels
+              <a class="dropdown-item" href="/shop/rvs">5th Wheels
                 <div class="gradient-line"></div>
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Travel Trailers
+              <a class="dropdown-item" href="/shop/rvs">Travel Trailers
                 <div class="gradient-line"></div>
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Motorhomes</a>
+              <a class="dropdown-item" href="/shop/rvs">Motorhomes</a>
             </li>
           </ul>
         </li>
@@ -57,22 +57,22 @@
           </a>
           <ul class="dropdown-menu dropdown-submenu" aria-labelledby="vehiclesDropdownMenuLink">
             <li>
-              <a class="dropdown-item" href="#">Cars
+              <a class="dropdown-item" href="/shop/rvs">Cars
                 <div class="gradient-line"></div>
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Trucks
+              <a class="dropdown-item" href="/shop/rvs">Trucks
                 <div class="gradient-line"></div>
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">SUV
+              <a class="dropdown-item" href="/shop/rvs">SUV
                 <div class="gradient-line"></div>
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Vans</a>
+              <a class="dropdown-item" href="/shop/rvs">Vans</a>
             </li>
           </ul>
         </li>
@@ -88,22 +88,22 @@
           </a>
           <ul class="dropdown-menu dropdown-submenu" aria-labelledby="PowersportsDropdownMenuLink">
             <li>
-              <a class="dropdown-item" href="#">Motorhomes
+              <a class="dropdown-item" href="/shop/rvs">Motorhomes
                 <div class="gradient-line"></div>
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">ATV
+              <a class="dropdown-item" href="/shop/rvs">ATV
                 <div class="gradient-line"></div>
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">Utility</a>
+              <a class="dropdown-item" href="/shop/rvs">Utility</a>
             </li>
           </ul>
         </li>
         <li>
-          <a class="dropdown-item" href="#">
+          <a class="dropdown-item" href="/shop/rvs">
             <div class="inner-text">
               <div class="image-menu-item Boats">
                 <svg-boats />
