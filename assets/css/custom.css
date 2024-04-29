@@ -2225,3 +2225,13 @@ span.tp-header-action-badge {
 .tp-product-item-2 h3, .tp-product-item-2 h3 a {
     transition: none !important;
 }
+
+@media(max-width: 389px){
+    .quick-search-container .container ul.category-links li {
+        width: 100%;
+        text-align: center;
+    }
+    .quick-search-container .container ul.category-links li a {
+        width: 100%;
+    }
+}
