@@ -19,7 +19,7 @@
             <i class="fa-regular fa-xmark"></i>
           </button>
           <!-- product details thumb start -->
-          <product-details-thumb :product="utilityStore.product" />
+          <!-- <product-details-thumb :product="utilityStore.product" /> -->
           <!-- product details thumb end -->
 
           <!-- product details wrapper -->

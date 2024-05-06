@@ -6,7 +6,7 @@
       </nuxt-link>
 
       <!-- product action -->
-      <div style="display: none;" class="tp-product-action-2 tp-product-action-blackStyle">
+      <div class="tp-product-action-2 tp-product-action-blackStyle">
         <div class="tp-product-action-item-2 d-flex flex-column">
           <button
               @click="wishlistStore.add_wishlist_product(item)"
