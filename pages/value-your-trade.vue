@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="/img/custom/value-your-trade.png" />
+    <img src="/img/custom/RVs.png" />
   </div>
 </template>
 <style scoped>

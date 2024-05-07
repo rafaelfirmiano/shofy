@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="/img/custom/services.jpg" />
+    <img src="/img/custom/Services.png" />
   </div>
 </template>
 <style scoped>

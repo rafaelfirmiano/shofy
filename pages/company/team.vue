@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="/img/custom/team.png" />
+    <nuxt-link href="/team-member"><img src="/img/custom/Team.png" /></nuxt-link>
   </div>
 </template>
 <style scoped>
