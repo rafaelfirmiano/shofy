@@ -10,6 +10,7 @@
               <span><nuxt-link href="/">{{page}}</nuxt-link></span>
               <span>{{current}}</span>
             </div>
+            <p>{{subtitle}}</p>
           </div>
         </div>
       </div>
@@ -21,6 +22,7 @@
 defineProps<{
   title: string;
   page: string;
+  subtitle: string;
   current: string;
 }>();
 </script>
