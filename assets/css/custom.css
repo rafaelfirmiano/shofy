@@ -2522,7 +2522,7 @@ div#our-values-section .row .col {
         line-height: 24px;
         letter-spacing: -0.16px;
     }
-    figure img {
+    #about-section figure img {
         width: 100%;
     }
     .text-content {
@@ -2564,10 +2564,62 @@ div#our-values-section .row .col {
     div#our-values-section .col:last-child{
         margin-bottom: 0;
     }
+    div#video-overlay iframe {
+        width: 90% !important;
+    }
 }
 
 @media(min-width: 768px) and (max-width: 1170px){
     #our-values-section h2 {
         
+    }
+    #about-section h2 {
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: 0.3px;
+    }
+    #about-section figure {
+        text-align: center;
+    }
+    #about-section p {
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.18px;
+    }
+    #about-section figure img {
+        width: 100%;
+        max-width: 768px;
+    }
+    div#about-section .row:nth-child(1) .col:nth-child(1) {
+        margin-bottom: 72px;
+    }
+    .text-content {
+        margin: 0 auto;
+    }
+    div#about-section .row:nth-child(even) .col:last-child {
+        padding-left: calc(var(--bs-gutter-x)* 0.5);
+        order: 1;
+        margin-bottom: 48px;
+    }
+    div#about-section .row:nth-child(even) .col:first-child {
+        order: 2;
+    }
+    div#about-section .row {
+        margin-bottom: 150px;
+    }
+    div#about-section .row:nth-child(3) .col {
+        margin-bottom: 48px;
+    }
+    div#video-overlay iframe {
+        width: 90% !important;
+    }
+    .tp-product-details-thumb-video-btn {
+        left: 50% !important;
+    }
+}
+
+@media(min-width: 1171px) and (max-width:1399px) {
+    #about-section figure img {
+        width: 100%;
     }
 }
