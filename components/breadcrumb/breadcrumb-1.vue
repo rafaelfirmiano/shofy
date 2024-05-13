@@ -11,6 +11,9 @@
               <span>{{current}}</span>
             </div>
             <p>{{subtitle}}</p>
+            <div class="breadcrumb-button" v-if="is_button">
+              <nuxt-link :href="button_url">{{ button_text }}</nuxt-link>
+            </div>
           </div>
         </div>
       </div>
@@ -24,5 +27,8 @@ defineProps<{
   page: string;
   subtitle: string;
   current: string;
+  is_button: string;
+  button_url: string;
+  button_text: string;
 }>();
 </script>
