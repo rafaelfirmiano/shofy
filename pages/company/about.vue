@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="about-us-page">
     <!-- breadcrumb start -->
     <breadcrumb-1
         title="About us"

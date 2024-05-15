@@ -66,6 +66,12 @@ div#header-sticky-2 {
     background-color: #ED3036;
     border-color: #101315;
 }
+#about-us-page .breadcrumb__area {
+    background-image: url(public/img/custom/bg-gradient.png);
+    background-repeat: no-repeat;
+    background-position: center -102px;
+    padding: 64px 0 61px;
+}
 @media(max-width: 768px){
     .logo img {
         width: 150px;
@@ -811,12 +817,17 @@ div#listing-container .tp-shop-items-wrapper.active {
         line-height: 64px; /* 114.286% */
         letter-spacing: 2.24px;
         text-transform: uppercase;
+        margin-bottom: 16px;
     }
     .breadcrumb-title:before,
     .breadcrumb-title:after {
         width: 154px;
         height: 18px;
         top: -20px;
+    }
+
+    .breadcrumb-list {
+        margin-bottom: 16px;
     }
 
 }
@@ -1374,7 +1385,9 @@ ul.tp-footer-widget-contact svg {
         width: 309px;
     }
 }
-
+div#about-section {
+    padding: 116px 0 96px;
+}
 @media(min-width: 768px) and (max-width: 1199px){
     .bottom-banner {
         padding-top: 85px;
@@ -1395,6 +1408,14 @@ ul.tp-footer-widget-contact svg {
 
     .bottom-banner .red-button {
         width: 330px;
+    }
+    #about-us-page .breadcrumb__area {
+        background-image: url(public/img/custom/bg-gradient-tablet.png);
+        padding: 86px 0 54px;
+        background-position: center -129px;
+    }
+    div#about-section {
+        padding: 72px 0 96px;
     }
 }
 
@@ -1832,6 +1853,11 @@ section.tp-product-arrival-area .swiper-pagination-bullet-active {
         font-size: 14px;
         line-height: 18px; /* 128.571% */
         letter-spacing: -0.14px;
+    }
+    #about-us-page .breadcrumb__area {
+        background-image: url(public/img/custom/bg-gradient-mobile.png);
+        background-position-y: -64px;
+        padding: 40px 0 88px;
     }
 }
 
@@ -2378,7 +2404,7 @@ div#member-section {
         line-height: 40px;
     }
     .breadcrumb__area p {
-        max-width: 768px;
+        max-width: 704px;
     }
     .member-box {
         padding: 40px 0;
@@ -2434,20 +2460,16 @@ figure img {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    max-width: 592px;
+    max-width: 93%;
 }
-div#about-section .row:nth-child(even) .col:last-child {
-    padding-left: 64px;
-}
+
 div#about-section .row {
     margin-bottom: 96px;
 }
 div#about-section .row:last-child {
     margin-bottom: 0;
 }
-div#about-section {
-    padding: 80px 0 96px;
-}
+
 .tp-product-details-thumb-video-btn {
     left: 54% !important;
     top: 46% !important;
@@ -2515,6 +2537,7 @@ div#our-values-section .row .col {
 }
 
 @media(max-width: 767px){
+
     #about-section h2 {
         font-size: 26px;
         line-height: 32px;
@@ -2572,7 +2595,7 @@ div#our-values-section .row .col {
     }
 }
 
-@media(min-width: 768px) and (max-width: 1170px){
+@media(min-width: 768px) and (max-width: 900px){
     #our-values-section h2 {
         
     }
@@ -2610,7 +2633,7 @@ div#our-values-section .row .col {
     div#about-section .row {
         margin-bottom: 150px;
     }
-    div#about-section .row:nth-child(3) .col {
+    div#about-section .row:nth-child(3) .col:first-child {
         margin-bottom: 48px;
     }
     div#video-overlay iframe {
@@ -2621,9 +2644,29 @@ div#our-values-section .row .col {
     }
 }
 
-@media(min-width: 1171px) and (max-width:1399px) {
+@media(min-width: 901px) and (max-width:1399px) {
+    div#about-section .row:nth-child(even) .col:last-child .text-content {
+        padding-left: 64px;
+    }
     #about-section figure img {
         width: 100%;
+    }
+    div#about-section .container .row:nth-child(odd) .col:first-child {
+        padding-right: 0;
+    }
+    div#about-section .container .row:nth-child(odd) .col:last-child {
+        padding-left: 0;
+    }
+    div#about-section .container .row:nth-child(even) .col:first-child {
+        padding-right: 0;
+    }
+    div#about-section .container .row:nth-child(even) .col:last-child {
+        padding-left: 0;
+    }
+}
+@media(min-width: 1400px){
+    div#about-section .row:nth-child(even) .col:last-child .text-content {
+        padding-left: 64px;
     }
 }
 
@@ -2760,3 +2803,5 @@ div#our-values-section .row .col {
     max-width: 1088px;
 }
 /*********** end - article details page ************/
+
+
