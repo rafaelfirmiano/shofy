@@ -1,4 +1,7 @@
 /**** HEADER BEGIN ****/
+body {
+    background-color: #1D2024;
+}
 body * {
     font-family: Kanit !important;
 }
@@ -2623,3 +2626,137 @@ div#our-values-section .row .col {
         width: 100%;
     }
 }
+
+/*********** begin - article details page ************/
+.article-status {
+    color: #F0F2F4;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    max-width: 170px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.14px;
+    display: flex;
+    padding: 4px 16px;
+    align-items: center;
+    border-radius: 9999px;
+    background: #AC0006;
+    margin: 0 auto;
+}
+
+#article-details-page {
+
+}
+#article-details-page {
+
+}
+
+#article-details-page {
+    padding-bottom: 50px;
+}
+
+
+#article-details-page .full-article {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+#article-details-page figure.full-image {
+    text-align: center;
+}
+
+#article-details-page figure.full-image img {
+
+}
+
+#article-details-page .full-article {
+
+}
+
+#article-details-page .full-article h2 {
+    color: #F0F2F4;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.32px;
+}
+
+#article-details-page .full-article p,
+#article-details-page .full-article li {
+    color: rgba(240, 242, 244, 0.80);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: -0.18px;
+}
+
+#article-details-page .full-article h2 {
+
+}
+
+#article-details-page .full-article figure.article-image {
+
+}
+
+#article-details-page .full-article figure.article-image img {
+    width: 100%;
+}
+
+#article-details-page .full-article figure.article-image .caption {
+    color: rgba(240, 242, 244, 0.80);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+#article-details-page .full-article figure.article-image .caption a {
+    text-decoration: underline;
+}
+
+#article-details-page .full-article figure.article-image .caption svg {
+    margin-right: 6px;
+}
+
+#article-details-page .full-article blockquote {
+    color: #F0F2F4;
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 32px;
+    padding: 5px 0 5px 20px;
+    background-color: transparent;
+    border-left: 2px solid #ED3036;
+}
+
+#article-details-page .full-article blockquote span.author {
+    color: rgba(240, 242, 244, 0.80);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: -0.16px;
+    display: block;
+    margin-top: 32px;
+}
+
+#article-details-page .full-article ol {
+
+}
+
+#article-details-page .full-article ol li {
+
+}
+
+#article-details-page .full-article .conclusion {
+
+}
+#article-details-page figure.full-image img {
+    width: 100%;
+    max-width: 1088px;
+}
+/*********** end - article details page ************/

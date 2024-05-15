@@ -4,6 +4,11 @@
       <div class="row">
         <div class="col">
           <div class="breadcrumb-content">
+            <!-- article status -->
+            <div v-if="article_status" class="article-status">
+              {{ article_status }}
+            </div>
+            <!-- article status -->
             <h3 class="breadcrumb-title">{{title}}</h3>
             <div class="breadcrumb-list">
               <span><nuxt-link href="/">Home</nuxt-link></span>
@@ -23,12 +28,13 @@
 
 <script setup lang="ts">
 defineProps<{
-  title: string;
-  page: string;
-  subtitle: string;
-  current: string;
-  is_button: string;
-  button_url: string;
-  button_text: string;
+  title?: string;
+  page?: string;
+  subtitle?: string;
+  current?: string;
+  is_button?: string;
+  button_url?: string;
+  button_text?: string;
+  article_status?: string;
 }>();
 </script>
