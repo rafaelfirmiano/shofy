@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- filter container start -->
+    <!-- filter container start (todo: move to a component) -->
     <div class="quick-search-container">
       <div class="container">
         <ul class="category-links">
@@ -177,6 +177,7 @@
     <shop-filter-offcanvas-area/>
     <!-- shop filter offcanvas area end -->
 
+    <!-- begin - bottom banner (todo: move to a component) -->
     <div class="bottom-banner">
 
       <div class="container">
@@ -190,6 +191,7 @@
         </div>
       </div>
     </div>
+    <!-- begin - bottom banner -->
 
     <!-- offcanvas sidebar start -->
     <offcanvas-sidebar/>

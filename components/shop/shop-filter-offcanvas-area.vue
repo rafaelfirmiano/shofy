@@ -9,13 +9,14 @@
                 <div class="col-md-12 col-xl-6">
                   <div class="tp-shop-top-left  d-md-flex">
                     <div class="tp-shop-top-filter">
+                      <!-- hide the button to open the filter on mobile and tablet for now  -->
                       <!--                      <button @click="prdStore.handleOpenFilterOffcanvas()" type="button" class="tp-filter-btn filter-open-dropdown-btn">-->
                       <!--                          <span>-->
                       <!--                             <svg-filter/>-->
                       <!--                          </span>-->
                       <!--                        Filter-->
                       <!--                      </button>-->
-                      <button type="button" class="tp-filter-btn filter-open-dropdown-btn desktop-left-filter-btn">
+                      <button type="button" @click="openLeftFilterDesktop" class="tp-filter-btn filter-open-dropdown-btn desktop-left-filter-btn">
                           <span>
                              <svg-filter/>
                           </span>
@@ -155,7 +156,7 @@ const active_tab = ref<string>("grid");
 const store = useProductFilterStore();
 const prdStore = useProductStore();
 
-const activeFilterDesktop = ref(false);
+const activeFilterDesktop = ref(true);
 
 let filteredProductsItems = ref<IProduct[]>(store.filteredProducts!);
 let startIndex = ref<number>(0);

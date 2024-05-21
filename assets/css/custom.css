@@ -513,7 +513,6 @@ button.tp-product-action-btn-2.tp-product-add-to-wishlist-btn.active {
 
 }
 .tp-product-item-2 {
-    border: 2px solid #232629;
     border-radius: 8px;
 }
 
@@ -2805,3 +2804,101 @@ div#our-values-section .row .col {
 /*********** end - article details page ************/
 
 
+.main-filter .accordion-item {
+    border: none;
+    background: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+    border-radius: 0;
+}
+div#main-filter {
+    padding-right: 32px;
+}
+.main-filter button.accordion-button {
+    border: none !important;
+    background: none !important;
+
+    color: #F0F2F4;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: 0.18px;
+}
+.main-filter button.accordion-button:focus,
+.main-filter button.accordion-button:hover,
+.main-filter .accordion-button:not(.collapsed) {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none;
+}
+
+.main-filter .accordion-button::after {
+    flex-shrink: inherit;
+    background: none;
+    width: 0;
+    border-radius: 2px;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid #FFFFFF;
+    transform: none;
+    opacity: 0.56;
+}
+
+.main-filter .accordion-button:not(.collapsed)::after {
+
+    border-top: 10px solid;
+    border-right: 7px solid transparent;
+    border-bottom: 0;
+    border-left: 7px solid transparent;
+}
+
+.custom-checkbox {
+
+}
+.custom-checkbox .checkbox-item {
+    position: relative;
+}
+.custom-checkbox label {
+    padding-left: 55px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.16px;
+    cursor: pointer;
+}
+.custom-checkbox label input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.custom-checkbox label svg {
+    position: relative;
+    top: -7px;
+    left: -5px;
+}
+.custom-checkbox label span.checkmark {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    width: 18px;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    height: 18px;
+    border-radius: 2px;
+}
+.custom-checkbox label svg path {
+    fill: transparent;
+}
+
+.custom-checkbox label input:checked ~ .checkmark {
+    background-color: #ED3036;
+    border: 2px solid #ED3036;
+}
+.custom-checkbox label input:checked ~ .checkmark svg path {
+    fill: white;
+}
