@@ -3,7 +3,7 @@ body {
     background-color: #1D2024;
 }
 body * {
-    font-family: Kanit !important;
+    font-family: Kanit;
 }
 /** MOBILE FIRST **/
 header#main-header {
@@ -393,10 +393,10 @@ button.btn-loadmore:focus {
 #productTab .nav-item[role="presentation"]:first-child {
     margin-right: 6px;
 }
-#productTab .nav-item[role="presentation"]:first-child button {
+#productTab .nav-item[role="presentation"] button.active {
     background-color: #FFFFFF;
 }
-#productTab .nav-item[role="presentation"]:last-child button {
+#productTab .nav-item[role="presentation"] button {
     border: 1px solid rgba(246, 246, 246, 0.26);
 }
 section.tp-shop-area .tp-shop-main-wrapper .tp-shop-top-result p {
@@ -673,8 +673,6 @@ button.tp-product-action-btn-2.tp-product-add-to-wishlist-btn.active svg path {
 .desktop-left-filter.active {
     width: 306px;
     z-index: inherit;
-    /*margin-right: 16px;*/
-    /*border-right: 1px solid rgba(255, 255, 255, 0.21);*/
 }
 .desktop-left-filter .tp-shop-sidebar {
     position: absolute;
@@ -2901,4 +2899,49 @@ div#main-filter {
 }
 .custom-checkbox label input:checked ~ .checkmark svg path {
     fill: white;
+}
+
+@media screen and (max-width: 1080px) {
+    div#listing-container .tp-shop-items-wrapper.active {
+        width: 100%;
+        padding-top: 32px;
+        border-top: 1px solid rgba(255, 255, 255, 0.21);
+        border-left: unset;
+        padding-left: unset;
+    }
+    div#main-filter {
+        padding-right: unset;
+    }
+    .desktop-left-filter {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        height: 100%;
+        transition: 0.5s;
+        background: #101215;
+        width: 100% !important;
+    }
+    .desktop-left-filter.active {
+        top: 0;
+        z-index: 99;
+    }
+    .desktop-left-filter .tp-shop-sidebar {
+        width: 100%;
+    }
+    .desktop-left-filter .tp-shop-widget{
+        padding: 20px;
+    }
+    .tp-shop-widget .close-btn {
+        display: block !important;
+    }
+}
+
+.accordion-collapse .dropdown-menu {
+    max-height: 250px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+.accordion-collapse .dropdown-menu::-webkit-scrollbar { 
+    display: none; 
 }

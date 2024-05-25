@@ -12,9 +12,7 @@ export const useProductFilterStore = defineStore("product_filter", () => {
     selectVal.value = e.value;
   }
 
-  const maxProductPrice = product_data.reduce((max, product) => {
-    return product.price > max ? product.price : max;
-  }, 0);
+  const maxProductPrice = 10000;
 
   let priceValues = ref([0, maxProductPrice]);
 

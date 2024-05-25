@@ -2,14 +2,14 @@
   <div class="tp-product-item-2">
     <div class="tp-product-thumb-2 p-relative z-index-1 fix w-img">
       <nuxt-link href="/details">
-        <img :src="item.img" alt="product-img" />
+        <img :src="`${BASE_IMG}/${item.imgmain}`" @error="handleImageError" alt="product-img" />
       </nuxt-link>
 
       <!-- product action -->
       <div class="tp-product-action-2 tp-product-action-blackStyle">
         <div class="tp-product-action-item-2 d-flex flex-column">
+          <!-- @click="wishlistStore.add_wishlist_product(item)" -->
           <button
-              @click="wishlistStore.add_wishlist_product(item)"
               type="button"
               :class="`tp-product-action-btn-2 tp-product-add-to-wishlist-btn ${isItemInWishlist(item)? 'active': ''}`"
           >
@@ -19,8 +19,6 @@
               type="button"
               class="tp-product-action-btn-2 tp-product-quick-view-btn"
               data-bs-toggle="modal"
-              :data-bs-target="`#${utilityStore.modalId}`"
-              @click="utilityStore.handleOpenModal(`product-modal-${item.id}`,item)"
           >
             <svg-quick-view />
           </button>
@@ -29,21 +27,25 @@
     </div>
     <div class="tp-product_content">
       <h3 class="tp-product_title">
-        <nuxt-link href="/details">2020 Chevrolet Blazer</nuxt-link>
+        <nuxt-link href="/details">{{ item.exptitle }}</nuxt-link>
       </h3>
       <div class="tp-product_short_description">
         <ul>
-          <li><strong>Mileage:</strong>138,896</li>
-          <li><strong>Color</strong>silver</li>
-          <li><strong>Vin:</strong>WAUHFAFLXBN025144</li>
-          <li><strong>Location:</strong>Billings MT</li>
-          <li><strong>Stock:</strong>1449LB</li>
+          <li><strong>Mileage:</strong>{{ item.mileage }}</li>
+          <li><strong>Condition</strong>{{ item.condition }}</li>
+          <li><strong>Sleeps:</strong>{{ item.seats }}</li>
+          <li><strong>Location:</strong>{{ item.street }} MT</li>
+          <li><strong>Stock:</strong>{{ item.stocknum }}</li>
+          <li><strong>Lenght:</strong>{{ item.length }}</li>
         </ul>
+        <p>{{ styleLabel }}</p>
       </div>
       <div class="divider"></div>
       <div class="tp-product_price">
         <div>
-          <span class="price">As Low As $800/Month</span>
+          <span class="price">
+            As Low As {{ price }} /Month
+          </span>
         </div>
       </div>
     </div>
@@ -51,21 +53,40 @@
 </template>
 
 <script setup lang="ts">
-import { type IProduct } from "@/types/product-type";
-import { useUtilityStore } from "@/pinia/useUtilityStore";
+import { type IVehicleData } from "@/types/product-type";
 import { useWishlistStore } from "@/pinia/useWishlistStore";
 
 const wishlistStore = useWishlistStore();
-const utilityStore = useUtilityStore();
+const BASE_IMG = 'https://www.midwayautorv.com/media/com_expautospro/images/middle'
 
-function isItemInWishlist(product: IProduct) {
+function isItemInWishlist(product: IVehicleData) {
   return wishlistStore.wishlists.some((prd) => prd.id === product.id);
 }
 
+const handleImageError = (e: Event) => {
+  if (e.target instanceof HTMLImageElement) {
+    e.target.src = `${BASE_IMG}/no_photo.jpg`
+  }
+}
+
 const props = withDefaults(
-    defineProps<{ item: IProduct; spacing?: boolean }>(),
-    {
-      spacing: true,
-    }
+  defineProps<{ item: IVehicleData; spacing?: boolean }>(),
+  {
+    spacing: true,
+  }
 );
+
+const styleLabel = computed (() => {
+  let str = ''
+  str += props.item?.popup ? ' popup .' : props.item?.toyhauler ? ' Toy Hauler .' : props.item?.slidein ? ' slide in .' : ''
+  str += props.item.bodytype === '4' ? ' 5th Wheel .' : props.item.bodytype === '7' ? ' Motorhome .' : props.item.bodytype === '13' ? ' Travel Trailer': ''
+  return str
+})
+
+const price = computed(() => {
+  if (props.item.bprice) {
+    return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD'}).format(parseInt(props.item.bprice)).replace(/(\.|,)00$/g, '')
+  }
+  return 0
+}) 
 </script>

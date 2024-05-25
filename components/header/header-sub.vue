@@ -1,13 +1,11 @@
 <template>
-  <div>
-    <!-- filter container start -->
     <div class="quick-search-container">
       <div class="container">
         <ul class="category-links">
-          <li><a class="active" href="#">RVs</a></li>
-          <li><a href="#">Vehicles</a></li>
-          <li><a href="#">Boats</a></li>
-          <li><a href="#">Powersports</a></li>
+          <li><a class="active" href="/shop/rvs">RVs</a></li>
+          <li><a href="/shop/auto">Vehicles</a></li>
+          <li><a href="/shop/boat">Boats</a></li>
+          <li><a href="/shop/shop">Powersports</a></li>
         </ul>
         <div class="dropdown-filter">
           <ul>
@@ -167,38 +165,4 @@
         </div>
       </div>
     </div>
-    <!-- filter container end -->
-
-    <!-- breadcrumb start -->
-    <breadcrumb-1 title="RVs for sale in Montana" page="RVs" current="Motorhomes"/>
-    <!-- breadcrumb end -->
-
-    <!-- shop filter offcanvas area start -->
-    <shop-filter-offcanvas-area/>
-    <!-- shop filter offcanvas area end -->
-
-    <div class="bottom-banner">
-
-      <div class="container">
-
-        <div class="row">
-          <div class="col-12">
-            <h2>Navigate Your Journey: Trade-In Assessment and Financing Solutions.</h2>
-            <nuxt-link class="white-button">Value Your Trade</nuxt-link>
-            <nuxt-link class="red-button">Apply For Financing Today!</nuxt-link>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- offcanvas sidebar start -->
-    <offcanvas-sidebar/>
-    <!-- offcanvas sidebar end -->
-  </div>
 </template>
-
-<script setup lang="ts">
-useSeoMeta({ title: "Shop Filter Offcanvas Page" });
-
-
-</script>

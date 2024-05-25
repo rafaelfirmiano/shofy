@@ -11,7 +11,16 @@ export default defineNuxtConfig({
         ],
       },
     ],
+    'nuxt-directus'
   ],
+  runtimeConfig: {
+    public: {
+      directus: {
+        url: "https://yp7ns4.stackhero-network.com",
+        token: 'BQbfvSpOT46-lsokoDYleqBf7ctI-KaZ'
+      }
+    }
+  },
   app: {
     head: {
       title: "Midwayautorv.com",
