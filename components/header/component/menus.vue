@@ -26,31 +26,31 @@
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="/shop/rvs?style=5th-wheel">5th Wheels
+              <a class="dropdown-item" href="/shop/rvs?style=4">5th Wheels
                 <div class="gradient-line"></div>
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="/shop/rvs?style=motorhome">Motorhomes</a>
+              <a class="dropdown-item" href="/shop/rvs?style=7">Motorhomes</a>
               <div class="gradient-line"></div>
             </li>
             <li>
-              <a class="dropdown-item" href="/shop/rvs?style=travel-trailer">Travel Trailers
+              <a class="dropdown-item" href="/shop/rvs?style=13">Travel Trailers
                 <div class="gradient-line"></div>
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="/shop/rvs?style=toy-Hauler">Toy Haulers
+              <a class="dropdown-item" href="/shop/rvs?style=toyhauler">Toy Haulers
                 <div class="gradient-line"></div>
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="/shop/rvs?style=pop-up">Pop up
+              <a class="dropdown-item" href="/shop/rvs?style=popup">Pop up
                 <div class="gradient-line"></div>
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="/shop/rvs?style=slide-in">Slide In
+              <a class="dropdown-item" href="/shop/rvs?style=slidein">Slide In
               </a>
             </li>
           </ul>
@@ -72,17 +72,17 @@
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="/shop/auto?style=trucks">Trucks
+              <a class="dropdown-item" href="/shop/auto?style=55">Trucks
                 <div class="gradient-line"></div>
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="/shop/auto?style=suv">SUV
+              <a class="dropdown-item" href="/shop/auto?style=56">SUV
                 <div class="gradient-line"></div>
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="/shop/auto?style=vans">Vans</a>
+              <a class="dropdown-item" href="/shop/auto?style=60">Vans</a>
             </li>
           </ul>
         </li>

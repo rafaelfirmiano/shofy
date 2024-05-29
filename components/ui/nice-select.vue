@@ -9,13 +9,14 @@
     <span class="current">{{ current?.text || placeholder }}</span>
     <ul class="list" role="menubar" @click.prevent="$event.stopPropagation()">
       <li
-        :class="[`option`, { 'selected focus': item.value === current.value }]"
+        :class="[`option d-flex justify-content-between`, { 'selected focus': item.value === current.value }]"
         v-for="(item, index) in options"
         :key="`option-${index}`"
         @click.prevent="currentHandler(item, index)"
         role="menuitem"
       >
         {{ item.text }}
+        <i v-if="item.value === current.value && arrow" class="fas" :class="`fa-arrow-${arrow}`"></i>
       </li>
     </ul>
   </div>
@@ -37,6 +38,7 @@ export default defineComponent ({
     placeholder: String,
     className: String,
     name: String,
+    arrow: String
   },
   name: "NiceSelect",
   data() {

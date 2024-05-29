@@ -13,7 +13,7 @@
       <!-- breadcrumb end -->
   
       <!-- shop filter offcanvas area start -->
-      <shop-filter-offcanvas-area />
+      <shop-filter-offcanvas-area :bodyType="92" />
       <!-- shop filter offcanvas area end -->
   
       <!-- offcanvas sidebar start -->

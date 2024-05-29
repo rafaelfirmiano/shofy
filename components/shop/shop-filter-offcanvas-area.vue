@@ -11,37 +11,23 @@
                     <div class="tp-shop-top-filter">
                       <button type="button" @click="openLeftFilterDesktop" class="tp-filter-btn filter-open-dropdown-btn desktop-left-filter-btn">
                           <span>
-                             <svg-filter/>
+                            <svg-filter/>
                           </span>
                         Show Filter
                       </button>
                     </div>
                     <shop-sidebar-filter-select
-                        @handle-select-filter="onFilter"
+                      :asc="store.ascSort"
+                      @handle-select-filter="onSort"
                     />
-                    <div class="subcategory-select">
-                      <ui-nice-select
-                          :options="[
-                            { value: 'default-sorting', text: 'Subcategory' },
-                            { value: 'motorhome', text: 'Motorhome' },
-                            { value: 'low-to-high', text: 'Low to High' },
-                            { value: 'high-to-low', text: 'High to Low' },
-                            { value: 'new-added', text: 'New Added' },
-                            { value: 'on-sale', text: 'On Sale' },
-                          ]"
-                          name="Subcategory"
-                          :default-current="0"
-                      />
-                    </div>
-
                   </div>
                 </div>
                 <div class="col-md-12 col-xl-6">
                   <div class="tp-shop-top-right d-flex align-items-center">
                     <div class="tp-shop-top-result">
                       <p>
-                        Showing 1–{{ vehicles?.slice(0,perView).length }} of
-                        {{ vehicles.length }} results
+                        Showing 1–{{ store.vehicles?.slice(0,perView).length }} of
+                        {{ store.vehicles.length }} results
                       </p>
                     </div>
                     <div class="tp-shop-top-tab tp-tab">
@@ -71,7 +57,7 @@
             <div id="listing-container" class="d-flex">
               <!-- begin - left filter desktop -->
               <div class="desktop-left-filter" :class="{ 'active' : activeFilterDesktop }">
-                <shop-sidebar-option-filters @close="activeFilterDesktop = false" @filter="onFilter"/>
+                <shop-sidebar-option-filters @close="activeFilterDesktop = false" @filter="onFilter" :bodyType="bodyType"/>
               </div>
               <!-- end - left filter desktop -->
 
@@ -79,7 +65,7 @@
                 <div v-if="active_tab === 'grid'">
                   <div class="row infinite-container">
                     <div
-                        v-for="item in vehicles?.slice(0,perView)"
+                        v-for="item in store.vehicles?.slice(0,perView)"
                         :key="item.id"
                         class="col-xl-4 col-md-6 col-sm-6 infinite-item"
                     >
@@ -90,39 +76,20 @@
                     </div>
                   </div>
                 </div>
-
-                <!-- <div v-if="active_tab === 'list'">
-                  <div class="row">
-                    <div class="col-xl-12">
-                      <product-list-item
-                          v-for="item in vehicles?.slice(0,perView)"
-                          :key="item.id"
-                          :item="item"
-                      />
-                    </div>
+                <div class="d-flex justify-content-center my-4" v-if="store.loading">
+                  <div class="spinner-border" style="width: 10rem; height: 10rem;" role="status">
+                    <span class="visually-hidden">Loading...</span>
                   </div>
-                </div> -->
-
-                <button v-if="vehicles && perView < vehicles.length" @click="handlePerView" type="button" class="btn-loadmore tp-btn tp-btn-border tp-btn-border-primary">
-              <span>
-<!--                <svg-load />-->
-              </span>
+                 </div>
+                <button v-if="store.vehicles && perView < store.vehicles.length" @click="handlePerView" type="button" class="btn-loadmore tp-btn tp-btn-border tp-btn-border-primary">
                   Load More Products
                 </button>
-
-                <p v-else class="btn-loadmore-text">End Of Products</p>
-
+                <p v-else-if="!store.loading" class="btn-loadmore-text">End Of Products</p>
               </div>
-
-
-
             </div>
             <div class="divider listing"></div>
 
-
-
             <!-- product new arrivals area start -->
-
               <product-electronics-new-arrivals />
             <!-- product new arrivals area end -->
 
@@ -136,16 +103,14 @@
 <script setup lang="ts">
 import { ref, watch } from "vue";
 import { type LocationQueryRaw } from 'vue-router';
+import { useProductFilterStore } from "@/pinia/useProductFilterStore";
 
-import { type IVehicleData } from "@/types/product-type";
+const props = defineProps(['bodyType']);
+
 const route = useRoute();
 const router = useRouter();
 
 const active_tab = ref<string>("grid");
-const vehicles = ref<IVehicleData[]>([]);
-
-const path: 'rvs' | 'auto' | 'powersports' | 'boat' = route.path.split('/')[2] || 'rvs'
-
 const activeFilterDesktop = ref<boolean>(true);
 
 let perView = ref<number>(9);
@@ -162,7 +127,7 @@ function openLeftFilterDesktop(){
   activeFilterDesktop.value = !activeFilterDesktop.value;
 }
 
-const { getItems } = useDirectusItems();
+const store = useProductFilterStore();
 
 interface ConvertedObject {
   [key: string]: { _eq?: string, _lte?: number, _gte?: number, _between?: string[] };
@@ -171,6 +136,7 @@ interface ConvertedObject {
 interface filterObj {
   _or?: ConvertedObject[],
   _and?: ConvertedObject[],
+  condition?: string
 }
 
 const convertToObject = (key: string, values: string): ConvertedObject[] => {
@@ -205,13 +171,18 @@ interface ConnectObject {
   style?:filterObj,
   length?:filterObj,
   seats?:filterObj,
-  mileage?:filterObj
+  mileage?:filterObj,
+  condition?:filterObj
 }
 
-const fetchItems = async (val: any) => {
+const filters = (val: any) => {
   const con : ConnectObject = {}
   for (let key in val) {
     if (val.hasOwnProperty(key)) { 
+
+      if (key === 'condition') {
+        con[key] = { condition: val[key] }
+      }
 
       if (key === 'make' || key === 'model') {
         con[key] = { _or: convertToObject(key, val[key]) }
@@ -244,29 +215,32 @@ const fetchItems = async (val: any) => {
       }
     }
   }
-  const filters = { catid: category[path], _and: Object.values(con) };
-  vehicles.value = await getItems<IVehicleData>({ 
-    collection: 'expautos_admanager', 
-    params: {
-      filter: filters,
-    }
-  })
+  return { catid: store.categoryId, _and: Object.values(con), bodytype: props.bodyType };
 }
 
 watch(
   () => route.query,
   async (val, old) => {
-    await fetchItems(val)
+    store.currentFilters = filters(val)
+    await store.fetchItems()
   }
 );
-
-const category = { boat: '15', rvs: '2', auto: '3', powersports: '15'}
 
 const  onFilter = (qp: LocationQueryRaw) => {
   router.push({ query: qp });
 }
 
+const onSort = async (val: string) => {
+  if (val === store.sortType) {
+    store.ascSort = !store.ascSort
+  } else {
+    store.sortType = val
+  }
+  await store.fetchItems()
+}
+
 onMounted(async ()=> {
-  await fetchItems(route.query)
+  store.currentFilters = filters(route.query)
+  await store.fetchItems()
 })
 </script>

@@ -2,7 +2,7 @@
   <div class="tp-shop-sidebar mr-10">
     <div class="main-filter">
         <!-- reset filter start -->
-        <shop-sidebar-reset-filter @reset="resetFilters" @close="$emit('close')"/>
+        <shop-sidebar-reset-filter @reset="store.handleResetFilter" @close="$emit('close')"/>
         <!-- reset filter end -->
       <div class="accordion" id="main-filter">
         <!-- begin filter -->
@@ -20,6 +20,35 @@
           </div>
         <!-- begin filter -->
 
+        <!-- begin conditon -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="style-filter-accordion">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseC" aria-expanded="false" aria-controls="collapseC">
+              Condition
+            </button>
+          </h2>
+          <div id="collapseC" class="accordion-collapse collapse" aria-labelledby="style-filter-accordion" data-bs-parent="#main-filter">
+            <div class="accordion-body">
+              <div class="custom-checkbox">
+                <div class="checkbox-item" v-for="option in conditionOptions" :key="option.value">
+                  <label>{{ option.label }}
+                    <input type="radio"  :value="option.value" 
+                    name="flexRadioDefault"
+                    v-model="store.selectedOpt.condition" 
+                    class="invisible"
+                    :checked="store.selectedOpt.condition[0] === option.value"
+                    @change="onOptChange(option.value, 'condition')">
+                    <span class="checkmark">
+                      <svg-checkbox></svg-checkbox>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end condition -->  
+
         <!-- begin sleeps -->
         <div class="accordion-item" v-if="$route.name === 'shop-rvs'">
           <h2 class="accordion-header" id="style-filter-accordion">
@@ -33,7 +62,7 @@
                 <div class="checkbox-item" v-for="option in sleepsOptions" :key="option.value">
                   <label>{{ option.label }}
                     <input type="checkbox"  :value="option.value" 
-                    v-model="selectedOpt.seats" 
+                    v-model="store.selectedOpt.seats" 
                     @change="onOptChange(option.value, 'seats')">
                     <span class="checkmark">
                       <svg-checkbox></svg-checkbox>
@@ -62,8 +91,9 @@
                 >
                   <label>{{ option.label }}
                     <input type="checkbox"  :value="option.value" 
-                    v-model="selectedOpt.style" 
-                    @change="onOptChange(option.value, 'style')">
+                    v-model="store.selectedOpt.style" 
+                    @change="onOptChange(option.value, 'style')"
+                    :disabled="bodyType">
                     <span class="checkmark">
                       <svg-checkbox></svg-checkbox>
                     </span>
@@ -91,7 +121,7 @@
                 >
                   <label>{{ option.label }}
                     <input type="checkbox"  :value="option.id" 
-                    v-model="selectedOpt.make" 
+                    v-model="store.selectedOpt.make" 
                     @change="onOptChange(option.id, 'make')">
                     <span class="checkmark">
                       <svg-checkbox></svg-checkbox>
@@ -106,7 +136,7 @@
 
 
         <!-- begin Model -->
-        <div class="accordion-item" v-if="selectedOpt.make.length">
+        <div class="accordion-item" v-if="store.selectedOpt.make.length">
           <h2 class="accordion-header" id="model-filter-accordion">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseModel" aria-expanded="false" aria-controls="collapseModel">
               Model
@@ -116,12 +146,12 @@
             <div class="accordion-body">
               <div class="custom-checkbox">
                 <div class="checkbox-item" 
-                  v-for="option in modelOptions" 
+                  v-for="option in store.modelOptions" 
                   :key="option?.id"
                 >
                   <label>{{ option?.name }}
                     <input type="checkbox"  :value="option.id" 
-                    v-model="selectedOpt.model" 
+                    v-model="store.selectedOpt.model" 
                     @change="onOptChange(option.id, 'model')">
                     <span class="checkmark">
                       <svg-checkbox></svg-checkbox>
@@ -150,7 +180,7 @@
                     {{ selectedStartYear ? selectedStartYear : 'From' }}
                   </button>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li v-for="year in startYears" :key="year" :value="year"><a class="dropdown-item" @click="selectedStartYear=year">{{ year }}</a></li>
+                    <li v-for="year in store.startYears" :key="year" :value="year"><a class="dropdown-item" @click="selectedStartYear=year">{{ year }}</a></li>
                   </ul>
                 </div>
                 <div class="dropdown">
@@ -158,7 +188,7 @@
                     {{ selectedEndYear ? selectedEndYear : 'To' }}
                   </button>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li v-for="year in endYears" :key="year" :value="year"><a class="dropdown-item" @click="onYear(year)">{{ year }}</a></li>
+                    <li v-for="year in store.endYears" :key="year" :value="year"><a class="dropdown-item" @click="onYear(year)">{{ year }}</a></li>
                   </ul>
                 </div>
               </div>
@@ -180,7 +210,7 @@
                 <div class="checkbox-item" v-for="option in mileageOpts" :key="option.value">
                   <label>{{ option.label }}
                     <input type="checkbox"  :value="option.value" 
-                    v-model="selectedOpt.mileage" 
+                    v-model="store.selectedOpt.mileage" 
                     @change="onOptChange(option.value, 'mileage')">
                     <span class="checkmark">
                       <svg-checkbox></svg-checkbox>
@@ -206,7 +236,7 @@
                 <div class="checkbox-item" v-for="option in lenOptions" :key="option.value">
                   <label>{{ option.label }}
                     <input type="checkbox"  :value="option.value" 
-                    v-model="selectedOpt.length" 
+                    v-model="store.selectedOpt.length" 
                     @change="onOptChange(option.value, 'length')">
                     <span class="checkmark">
                       <svg-checkbox></svg-checkbox>
@@ -228,13 +258,17 @@
 import { ref } from 'vue';
 import { useRoute, type LocationQueryRaw } from 'vue-router';
 import { makesOptions, autoMakesOptions, othersMakesOptions} from "@/data/options-data";
-import type { IModel } from '@/types/product-type';
+import { useProductFilterStore } from "@/pinia/useProductFilterStore";
 
 const emit = defineEmits(['filter', 'close']);
 const route = useRoute();
+const store = useProductFilterStore();
+const props = defineProps(['bodyType']);
 
-const modelOptions = ref<IModel[]>()
-const { getItems } = useDirectusItems();
+const conditionOptions = ref([
+  { label: 'New', value: '1' },
+  { label: 'Used', value: '2' },
+]);
 
 const styleOptions = ref([
   { label: '5th Wheel', value: '4' },
@@ -247,7 +281,7 @@ const styleOptions = ref([
 
 const carStyleOptions = ref([
   { label: 'CAR', value: '57' },
-  { label: 'SUV', value: '60' },
+  { label: 'SUV', value: '56' },
   { label: 'TRUCK', value: '55' },
   { label: 'VAN', value: '60' },
   { label: 'WAGON', value: '62' },
@@ -288,48 +322,22 @@ const mileageOpts = ref([
   { label: "200+", value: "200000,1000000" }
 ])
 
-const selectedStartYear = ref<number | null>(parseInt(route.query?.start as string || ''));
-const selectedEndYear = ref<number | null>(parseInt(route.query?.end as string || ''));
-const startYears = ref<number[]>([]);
-const endYears = ref<number[]>([]);
+const selectedStartYear = ref<number | null>(Number(route.query?.start as string || ''));
+const selectedEndYear = ref<number | null>(Number(route.query?.end as string || ''));
 
-type opts = 'style' | 'seats' | 'make' | 'mileage' | 'length' | 'model';
-
-interface IOpt {
-  style: string[],
-  seats: string[],
-  make: string[],
-  length: string[],
-  mileage: string[],
-  model: string[]
-}
-
-const selectedOpt = ref<IOpt>({
-  style: [], seats: [], make: [], length: [], mileage: [], model: []
-});
+type opts = 'style' | 'seats' | 'make' | 'mileage' | 'length' | 'model' | 'condition';
 
 // Watch for changes in selected start year to update end years
 watch(selectedStartYear, (newStartYear) => {
   if (newStartYear !== null) {
     if (selectedStartYear.value !== null) {
-      // update end year options based on selected start year
-      const currentYear = new Date().getFullYear();
-      endYears.value = generateYears(selectedStartYear.value, currentYear);
+      store.updateEndYear(selectedStartYear.value);
       if (selectedEndYear.value !== null && selectedEndYear.value < selectedStartYear.value) {
         selectedEndYear.value = null;
       }
     }
   }
 });
-
-// Function to generate year options
-const generateYears = (startYear: number, endYear: number): number[] => {
-  const years: number[] = [];
-  for (let year = startYear; year <= endYear; year++) {
-    years.push(year);
-  }
-  return years;
-};
 
 function formPairs(arr: string[]) {
   const pairs = [];
@@ -343,10 +351,10 @@ const addToStateFromQuery = (opt: any) => {
   if (route.query[opt]) {
       const queryValue = route.query[opt] as string;
       if (queryValue.indexOf(',') === -1) {
-        selectedOpt.value[opt as opts] = [queryValue];
+        store.selectedOpt[opt as opts] = [queryValue];
       } else {
         queryValue.split(',').forEach((value) => { 
-          selectedOpt.value[opt as opts].push(value || '');
+          store.selectedOpt[opt as opts].push(value || '');
         });
       }
     }
@@ -354,13 +362,12 @@ const addToStateFromQuery = (opt: any) => {
 
 onMounted(async () => {
   // initaite selection values from query
-  ['style', 'make'].forEach((opt) => {
+  ['style', 'make', 'condition', 'model'].forEach((opt) => {
     addToStateFromQuery(opt)
   });
 
-  if (selectedOpt.value.make.length) {
-    await fetchModels()
-    addToStateFromQuery('model')
+  if (props.bodyType) {
+    store.selectedOpt.style.push(props.bodyType)
   }
 
   // initaite range values from query
@@ -369,18 +376,13 @@ onMounted(async () => {
       const pairs = formPairs(`${route.query[opt]}`.split(','))
       if (pairs.length > 1) {
         pairs.forEach((p) => { 
-          selectedOpt.value[opt as opts].push(p || '');
+          store.selectedOpt[opt as opts].push(p || '');
         });
       } else if (pairs.length === 1) {
-        selectedOpt.value[opt as opts] = pairs;
+        store.selectedOpt[opt as opts] = pairs;
       }
     }
   })
-
-  const startYear = 1978;
-  const currentYear = new Date().getFullYear();
-  startYears.value = generateYears(startYear, currentYear);
-  endYears.value = generateYears(startYear, currentYear);
 });
 
 const onYear = (year: number) => {
@@ -393,42 +395,25 @@ const onYear = (year: number) => {
   }
 }
 
-const fetchModels = async () => {
-  const filters = { makeid: selectedOpt.value.make.at(-1) };
-    modelOptions.value = await getItems<IModel>({ 
-      collection: 'expautos_model', 
-      params: {
-        filter: filters,
-      }
-    })
-}
-
 const onOptChange = async (q: string, key: opts) => {
   const non = route.query[key]?.indexOf(q) === -1
   const queryParams = { ...route.query };
   if (route.query[key] === undefined || non) {
     queryParams[key] = queryParams[key] ? `${queryParams[key]},${q}` : q;
   }
-  if(!non) {
-    queryParams[key] = selectedOpt.value[key].join(',')
+  if(!non && key !== 'condition') {
+    queryParams[key] = store.selectedOpt[key].join(',')
     if(!queryParams[key]) delete queryParams[key]
   }
 
-  if (key === 'make') {
-    await fetchModels()
+  if (key === 'condition') {
+    queryParams[key] = q
   }
+
   filterReq(queryParams)
 };
 
 const filterReq = (qp: LocationQueryRaw) => {
   emit('filter', qp)
-}
-
-const resetFilters = () => {
-  selectedOpt.value.style = []
-  selectedOpt.value.seats = []
-  selectedOpt.value.make = []
-  selectedOpt.value.length = []
-  selectedOpt.value.mileage = []
 }
 </script>

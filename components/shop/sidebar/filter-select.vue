@@ -2,22 +2,24 @@
     <div class="tp-shop-top-select text-md-end">
       <ui-nice-select
         :options="[
-          { value: 'default-sorting', text: 'Default Sorting' },
-          { value: 'low-to-high', text: 'Low to High' },
-          { value: 'high-to-low', text: 'High to Low' },
-          { value: 'new-added', text: 'New Added' },
-          { value: 'on-sale', text: 'On Sale' },
+          { value: '', text: 'Default' },
+          { value: 'bprice', text: 'Price' },
+          { value: 'year', text: 'Year' },
+          { value: 'make', text: 'Make' },
+          { value: 'mileage', text: 'Mileage' },
         ]"
         name="Select Category"
         :default-current="0"
         @onChange="handleSelect"
+        :arrow="asc ? 'up': 'down'"
       />
     </div>
 </template>
 
 <script setup lang="ts">
 const emit = defineEmits(['handleSelectFilter'])
+defineProps(['asc']);
 const handleSelect = (e: { value: string; text: string }) => {
-  emit('handleSelectFilter', e);
+  emit('handleSelectFilter', e.value);
 };
 </script>

@@ -27,16 +27,19 @@
     </div>
     <div class="tp-product_content">
       <h3 class="tp-product_title">
-        <nuxt-link href="/details">{{ item.exptitle }}</nuxt-link>
+        <nuxt-link href="/details" class="d-flex flex-column gap-2">
+          {{ item.year }} {{ item.make?.name }}
+          <span>{{ item.model?.name }} {{ item.specificmodel }}</span>
+        </nuxt-link>
       </h3>
       <div class="tp-product_short_description">
         <ul>
-          <li><strong>Mileage:</strong>{{ item.mileage }}</li>
-          <li><strong>Condition</strong>{{ item.condition }}</li>
-          <li><strong>Sleeps:</strong>{{ item.seats }}</li>
-          <li><strong>Location:</strong>{{ item.street }} MT</li>
+          <li v-if="Number(item.mileage) > 1"><strong>Mileage:</strong>{{ item.mileage }}</li>
+          <li><strong>Condition</strong>{{ item.condition == '1' ? 'New' : 'Used' }}</li>
+          <li v-if="item.seats"><strong>Sleeps:</strong>{{ item.seats }}</li>
+          <li><strong>Location:</strong>{{ item.city?.city_name }} {{ item.city?.city_state }}</li>
           <li><strong>Stock:</strong>{{ item.stocknum }}</li>
-          <li><strong>Lenght:</strong>{{ item.length }}</li>
+          <li v-if="Number(item.length)"><strong>Length:</strong>{{ `${item.length}' ${item.length_in}"` }}</li>
         </ul>
         <p>{{ styleLabel }}</p>
       </div>
@@ -85,7 +88,7 @@ const styleLabel = computed (() => {
 
 const price = computed(() => {
   if (props.item.bprice) {
-    return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD'}).format(parseInt(props.item.bprice)).replace(/(\.|,)00$/g, '')
+    return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD'}).format(Number(props.item.bprice)).replace(/(\.|,)00$/g, '')
   }
   return 0
 }) 

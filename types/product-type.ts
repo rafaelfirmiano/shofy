@@ -74,6 +74,53 @@ export interface IMakesOptions {
   value: string,
 }
 
+interface IMake {
+  id: string;
+  parent_id: string;
+  catid: string;
+  name: string;
+  alias: string;
+  regex_name: string;
+  ordering: string;
+  description: string;
+  shortdesc: string;
+  state: boolean;
+  access: number;
+  website: string;
+  metakey: string;
+  metadesc: string;
+  language: string;
+  image: string;
+  map: string;
+  ecount: number;
+}
+
+interface ICity {
+  id: string;
+  catid: string;
+  city_zip: string;
+  city_name: string;
+  city_state: string;
+  city_latitude: number;
+  city_longitude: number;
+  city_county: string;
+  expicon: string;
+  ordering: string;
+  state: boolean;
+  language: string;
+  city_url: string;
+}
+
+export interface IOpt {
+  style: string[],
+  seats: string[],
+  make: string[],
+  length: string[],
+  mileage: string[],
+  model: string[],
+  condition: string[]
+}
+
 export interface IShop {
   rvs: IProduct[],
   auto: IProduct[],
@@ -91,8 +138,6 @@ export interface IVehicleData {
   id: string;
   catid: string;
   extract_id: string;
-  make: string;
-  model: string;
   country: string;
   condition: string;
   user: string;
@@ -173,7 +218,7 @@ export interface IVehicleData {
   extrafield1: string;
   extrafield2: string;
   extrafield3: string;
-  city: string;
+  city: ICity;
   vattext: boolean;
   stocknum: string;
   expstate: string;
@@ -212,4 +257,6 @@ export interface IVehicleData {
   locked: boolean;
   thirdparty: boolean;
   features: boolean;
+  make: IMake;
+  model: IModel;
 }

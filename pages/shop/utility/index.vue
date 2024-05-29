@@ -6,14 +6,14 @@
   
       <!-- breadcrumb start -->
       <breadcrumb-1
-        title="ATV for sale"
-        page="powersports"
-        current="ATV"
+        title="Utility for sale"
+        page="Powersports"
+        :current="$route.query.style ? `${$route.query.style}` : 'Utiltiy'"
       />
       <!-- breadcrumb end -->
   
       <!-- shop filter offcanvas area start -->
-      <shop-filter-offcanvas-area :bodyType="86" />
+      <shop-filter-offcanvas-area :bodyType="91" />
       <!-- shop filter offcanvas area end -->
   
       <!-- offcanvas sidebar start -->
@@ -23,6 +23,6 @@
   </template>
   
   <script setup lang="ts">
-  useSeoMeta({ title: "ATV Offcanvas Page" });
+  useSeoMeta({ title: "Utility Offcanvas Page" });
   </script>
   
