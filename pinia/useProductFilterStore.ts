@@ -6,7 +6,7 @@ export const useProductFilterStore = defineStore("product_filter", () => {
   const { getItems } = useDirectusItems();
   const route = useRoute();
 
-  const maxProductPrice = ref<number>(10000)
+  const maxProductPrice = ref<number>(0)
   const priceValues = ref([0, maxProductPrice.value]);
   const currentFilters = ref()
   const sortType = ref<string>('')
@@ -25,7 +25,7 @@ export const useProductFilterStore = defineStore("product_filter", () => {
   const categoryId = computed(() => category[path])
 
   const selectedOpt = ref<IOpt>({
-    style: [], seats: [], make: [], length: [], mileage: [], model: [], condition: ['']
+    style: [], seats: [], make: [], length: [], mileage: [], model: [], condition: []
   });
 
   // Function to generate year options
@@ -56,7 +56,7 @@ export const useProductFilterStore = defineStore("product_filter", () => {
     }
 
     loading.value = false
-    if (selectedOpt.value.make.length) {
+    if (!modelOptions.value || (selectedOpt.value.make.length && selectedOpt.value.model.length === 0)) {
       modelOptions.value = getUniqueModels(vehicles.value)
     }
   }
@@ -80,11 +80,8 @@ export const useProductFilterStore = defineStore("product_filter", () => {
     const resp = await getItems<IVehicleData>({ collection: 'expautos_admanager', 
       params: { filter: currentFilters.value, fields: ['bprice'], sort: ['-bprice'], limit: 1 }
     })
-    maxProductPrice.value = resp.length ? Number(resp[0].bprice || '10000') : 10000
-    if (categoryId.value !== '3') {
-      maxProductPrice.value = calculateMonthlyPayment(maxProductPrice.value)
-    }
-    priceValues.value = [0, maxProductPrice.value];
+    maxProductPrice.value = resp.length ? Number(resp[0].bprice || '0') : 0
+    priceValues.value = [priceValues.value[0], maxProductPrice.value];
   }
 
   const calculateMonthlyPayment = (price: number) => {
@@ -117,14 +114,14 @@ export const useProductFilterStore = defineStore("product_filter", () => {
     return Math.round(monthlyPayment);
   }
 
-  const handleResetFilter = () => {
-    priceValues.value = [0, 10000];
+  const handleResetFilter = async () => {
+    priceValues.value = [0, 0];
     selectedOpt.value.style = []
     selectedOpt.value.seats = []
     selectedOpt.value.make = []
     selectedOpt.value.length = []
     selectedOpt.value.mileage = []
-    selectedOpt.value.condition = ['']
+    selectedOpt.value.condition = []
   };
 
   const startYears = ref<number[]>([]);

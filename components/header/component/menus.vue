@@ -21,9 +21,8 @@
 
           <ul class="dropdown-menu dropdown-submenu" aria-labelledby="RVDropdownMenuLink">
             <li>
-              <a class="dropdown-item" href="/shop/rvs">Browse All RVs
+              <a class="dropdown-item" href="/shop/rvs">Browse All RVs</a>
                 <div class="gradient-line"></div>
-              </a>
             </li>
             <li>
               <a class="dropdown-item" href="/shop/rvs?style=4">5th Wheels
@@ -31,8 +30,9 @@
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="/shop/rvs?style=7">Motorhomes</a>
-              <div class="gradient-line"></div>
+              <a class="dropdown-item" href="/shop/rvs?style=7">Motorhomes
+                <div class="gradient-line"></div>
+              </a>
             </li>
             <li>
               <a class="dropdown-item" href="/shop/rvs?style=13">Travel Trailers
@@ -108,7 +108,12 @@
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="/shop/utility">Utility</a>
+              <a class="dropdown-item" href="/shop/utility">Utility
+                <div class="gradient-line"></div>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/shop/trailer">Trailer</a>
             </li>
           </ul>
         </li>

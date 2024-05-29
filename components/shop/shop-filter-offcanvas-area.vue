@@ -30,7 +30,7 @@
                         {{ store.vehicles.length }} results
                       </p>
                     </div>
-                    <div class="tp-shop-top-tab tp-tab">
+                    <div class="tp-shop-top-tab tp-tab d-none">
                       <ul class="nav nav-tabs" id="productTab" role="tablist">
                         <li class="nav-item" role="presentation">
                           <button
@@ -63,7 +63,12 @@
 
               <div class="tp-shop-items-wrapper tp-shop-item-primary" :class="{ 'active' : activeFilterDesktop }">
                 <div v-if="active_tab === 'grid'">
-                  <div class="row infinite-container">
+                  <div class="d-flex justify-content-center mt-4 pt-4" v-if="store.loading">
+                    <div class="spinner-border" style="width: 10rem; height: 10rem;" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                  </div>
+                  <div class="row infinite-container" v-else>
                     <div
                         v-for="item in store.vehicles?.slice(0,perView)"
                         :key="item.id"
@@ -76,15 +81,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="d-flex justify-content-center my-4" v-if="store.loading">
-                  <div class="spinner-border" style="width: 10rem; height: 10rem;" role="status">
-                    <span class="visually-hidden">Loading...</span>
-                  </div>
-                 </div>
-                <button v-if="store.vehicles && perView < store.vehicles.length" @click="handlePerView" type="button" class="btn-loadmore tp-btn tp-btn-border tp-btn-border-primary">
-                  Load More Products
-                </button>
-                <p v-else-if="!store.loading" class="btn-loadmore-text">End Of Products</p>
+                <div v-if="!store.loading && store.vehicles.length">
+                  <button v-if="perView < store.vehicles.length" @click="handlePerView" type="button" class="btn-loadmore tp-btn tp-btn-border tp-btn-border-primary">
+                    Load More Products
+                  </button>
+                  <p v-else class="btn-loadmore-text">End Of Products</p>
+                </div>
               </div>
             </div>
             <div class="divider listing"></div>
@@ -135,8 +137,7 @@ interface ConvertedObject {
 
 interface filterObj {
   _or?: ConvertedObject[],
-  _and?: ConvertedObject[],
-  condition?: string
+  _and?: ConvertedObject[]
 }
 
 const convertToObject = (key: string, values: string): ConvertedObject[] => {
@@ -180,11 +181,7 @@ const filters = (val: any) => {
   for (let key in val) {
     if (val.hasOwnProperty(key)) { 
 
-      if (key === 'condition') {
-        con[key] = { condition: val[key] }
-      }
-
-      if (key === 'make' || key === 'model') {
+      if (key === 'make' || key === 'model' || key === 'condition') {
         con[key] = { _or: convertToObject(key, val[key]) }
       }
 

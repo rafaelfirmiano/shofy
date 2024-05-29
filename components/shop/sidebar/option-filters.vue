@@ -32,11 +32,8 @@
               <div class="custom-checkbox">
                 <div class="checkbox-item" v-for="option in conditionOptions" :key="option.value">
                   <label>{{ option.label }}
-                    <input type="radio"  :value="option.value" 
-                    name="flexRadioDefault"
+                    <input type="checkbox"  :value="option.value" 
                     v-model="store.selectedOpt.condition" 
-                    class="invisible"
-                    :checked="store.selectedOpt.condition[0] === option.value"
                     @change="onOptChange(option.value, 'condition')">
                     <span class="checkmark">
                       <svg-checkbox></svg-checkbox>
@@ -92,8 +89,7 @@
                   <label>{{ option.label }}
                     <input type="checkbox"  :value="option.value" 
                     v-model="store.selectedOpt.style" 
-                    @change="onOptChange(option.value, 'style')"
-                    :disabled="bodyType">
+                    @change="bodyType ? $router.push(`/shop/${option.label}`) : onOptChange(option.value, 'style')">
                     <span class="checkmark">
                       <svg-checkbox></svg-checkbox>
                     </span>
@@ -401,13 +397,9 @@ const onOptChange = async (q: string, key: opts) => {
   if (route.query[key] === undefined || non) {
     queryParams[key] = queryParams[key] ? `${queryParams[key]},${q}` : q;
   }
-  if(!non && key !== 'condition') {
+  if(!non) {
     queryParams[key] = store.selectedOpt[key].join(',')
     if(!queryParams[key]) delete queryParams[key]
-  }
-
-  if (key === 'condition') {
-    queryParams[key] = q
   }
 
   filterReq(queryParams)
