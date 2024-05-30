@@ -8,6 +8,9 @@ export const useProductFilterStore = defineStore("product_filter", () => {
 
   const maxProductPrice = ref<number>(0)
   const priceValues = ref([0, maxProductPrice.value]);
+  const minYear = ref<number>(0);
+  const selectedStartYear = ref<number>(0);
+  const selectedEndYear = ref<number>(0);
   const currentFilters = ref()
   const sortType = ref<string>('')
   const ascSort = ref<boolean>(true)
@@ -31,7 +34,7 @@ export const useProductFilterStore = defineStore("product_filter", () => {
   // Function to generate year options
   const generateYears = (startYear: number, endYear: number): number[] => {
     const years: number[] = [];
-    for (let year = startYear; year <= endYear; year++) {
+    for (let year = endYear; year >= startYear; year--) {
       years.push(year);
     }
     return years;
@@ -44,7 +47,7 @@ export const useProductFilterStore = defineStore("product_filter", () => {
       collection: 'expautos_admanager', 
       params: {
         filter: currentFilters.value,
-        fields: ['*', 'make.*', 'model.*', 'city.*'],
+        fields: ['*', 'make.*', 'model.*', 'city.*', 'extcolor.*'],
         sort: [`${ascSort.value ? '': '-' }${sortType.value}`]
       }
     })
@@ -114,6 +117,17 @@ export const useProductFilterStore = defineStore("product_filter", () => {
     return Math.round(monthlyPayment);
   }
 
+  // Watch for changes in selected start year to update end years
+  watch(selectedStartYear, (newStartYear) => {
+    if (selectedStartYear.value && newStartYear) {
+      // update end year options based on selected start year
+      endYears.value = generateYears(selectedStartYear.value, currentYear);
+      if (selectedEndYear.value !== 0 && selectedEndYear.value < selectedStartYear.value) {
+        selectedEndYear.value = 0;
+      }
+    }
+  });
+
   const handleResetFilter = async () => {
     priceValues.value = [0, 0];
     selectedOpt.value.style = []
@@ -122,20 +136,26 @@ export const useProductFilterStore = defineStore("product_filter", () => {
     selectedOpt.value.length = []
     selectedOpt.value.mileage = []
     selectedOpt.value.condition = []
+    selectedStartYear.value = 0
+    selectedEndYear.value = 0
   };
 
   const startYears = ref<number[]>([]);
   const endYears = ref<number[]>([]);
-  const startYear = 1978;
   const currentYear = new Date().getFullYear();
 
-  startYears.value = generateYears(startYear, currentYear);
-  endYears.value = generateYears(startYear, currentYear);
-
-  const updateEndYear = (val: any) => {
-    // update end year options based on selected start year
-    const currentYear = new Date().getFullYear();
-    endYears.value = generateYears(val, currentYear);
+  const fetchMinYear = async () => {
+    const resp = await getItems<IVehicleData>({ collection: 'expautos_admanager', 
+      params: { filter: {...currentFilters.value, year: {"_gte": 1}}, fields: ['year'], sort: ['year'], limit: 1 }
+    })
+    const min = resp.length ? Number(resp[0].year || '0') : minYear.value
+    if (min !== minYear.value) {
+      minYear.value = min
+      selectedStartYear.value < min && (selectedStartYear.value = 0)
+      selectedEndYear.value < min && (selectedEndYear.value = 0)
+      startYears.value = generateYears(min, currentYear);
+      endYears.value = generateYears(min, currentYear);
+    }
   }
 
   // filteredProducts
@@ -157,7 +177,6 @@ export const useProductFilterStore = defineStore("product_filter", () => {
     selectedOpt,
     startYears,
     endYears,
-    updateEndYear,
     maxProductPrice,
     currentFilters,
     modelOptions,
@@ -166,6 +185,9 @@ export const useProductFilterStore = defineStore("product_filter", () => {
     ascSort,
     sortType,
     loading,
-    categoryId
+    categoryId,
+    selectedStartYear,
+    selectedEndYear,
+    fetchMinYear
   };
 });

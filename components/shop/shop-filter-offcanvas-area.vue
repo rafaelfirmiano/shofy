@@ -239,5 +239,8 @@ const onSort = async (val: string) => {
 onMounted(async ()=> {
   store.currentFilters = filters(route.query)
   await store.fetchItems()
+  await store.fetchMinYear()
+  store.selectedStartYear = Number(route.query?.start as string) || 0
+  store.selectedEndYear = Number(route.query?.end as string) || 0
 })
 </script>

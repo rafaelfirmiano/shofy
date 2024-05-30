@@ -1,11 +1,12 @@
 <template>
-  <div>
+<div>
+    {{ $route.params.id }}
     <img src="/img/custom/Details.png" />
-  </div>
+</div>
 </template>
 <style scoped>
 div img {
-  width: 100%;
+width: 100%;
 }
 </style>
 <script setup lang="ts">
