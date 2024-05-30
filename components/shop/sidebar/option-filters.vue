@@ -21,7 +21,7 @@
         <!-- begin filter -->
 
         <!-- begin conditon -->
-        <div class="accordion-item">
+        <div class="accordion-item" v-if="$route.name === 'shop-rvs'">
           <h2 class="accordion-header" id="style-filter-accordion">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseC" aria-expanded="false" aria-controls="collapseC">
               Condition
@@ -172,19 +172,19 @@
             <div class="accordion-body">
               <div class="d-flex gap-4">
                 <div class="dropdown">
-                  <button class="btn btn-secondary dropdown-toggle pe-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    {{ selectedStartYear ? selectedStartYear : 'From' }}
+                  <button class="btn btn-secondary dropdown-toggle price-ranges" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    {{ store.selectedStartYear ? store.selectedStartYear : 'From' }}
                   </button>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li v-for="year in store.startYears" :key="year" :value="year"><a class="dropdown-item" @click="selectedStartYear=year">{{ year }}</a></li>
+                    <li v-for="year in store.startYears" :key="year" :value="year"><a class="dropdown-item" @click="store.selectedStartYear=year;onYear()">{{ year }}</a></li>
                   </ul>
                 </div>
                 <div class="dropdown">
-                  <button class="btn btn-secondary dropdown-toggle pe-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    {{ selectedEndYear ? selectedEndYear : 'To' }}
+                  <button class="btn btn-secondary dropdown-toggle price-ranges" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    {{ store.selectedEndYear ? store.selectedEndYear : 'To' }}
                   </button>
                   <ul class="dropdown-menu dropdown-menu-dark">
-                    <li v-for="year in store.endYears" :key="year" :value="year"><a class="dropdown-item" @click="onYear(year)">{{ year }}</a></li>
+                    <li v-for="year in store.endYears" :key="year" :value="year"><a class="dropdown-item" @click="store.selectedEndYear=year;onYear()">{{ year }}</a></li>
                   </ul>
                 </div>
               </div>
@@ -318,22 +318,7 @@ const mileageOpts = ref([
   { label: "200+", value: "200000,1000000" }
 ])
 
-const selectedStartYear = ref<number | null>(Number(route.query?.start as string || ''));
-const selectedEndYear = ref<number | null>(Number(route.query?.end as string || ''));
-
 type opts = 'style' | 'seats' | 'make' | 'mileage' | 'length' | 'model' | 'condition';
-
-// Watch for changes in selected start year to update end years
-watch(selectedStartYear, (newStartYear) => {
-  if (newStartYear !== null) {
-    if (selectedStartYear.value !== null) {
-      store.updateEndYear(selectedStartYear.value);
-      if (selectedEndYear.value !== null && selectedEndYear.value < selectedStartYear.value) {
-        selectedEndYear.value = null;
-      }
-    }
-  }
-});
 
 function formPairs(arr: string[]) {
   const pairs = [];
@@ -381,12 +366,11 @@ onMounted(async () => {
   })
 });
 
-const onYear = (year: number) => {
-  selectedEndYear.value = year
-  if (selectedStartYear.value) {
+const onYear = () => {
+  if (store.selectedEndYear && store.selectedStartYear) {
     const queryParams = { ...route.query };
-    queryParams['start'] = `${selectedStartYear.value}`
-    queryParams['end'] = `${selectedEndYear.value}`
+    queryParams['start'] = `${store.selectedStartYear}`
+    queryParams['end'] = `${store.selectedEndYear}`
     filterReq(queryParams)
   }
 }
@@ -405,7 +389,7 @@ const onOptChange = async (q: string, key: opts) => {
   filterReq(queryParams)
 };
 
-const filterReq = (qp: LocationQueryRaw) => {
+const filterReq = async (qp: LocationQueryRaw) => {
   emit('filter', qp)
 }
 </script>

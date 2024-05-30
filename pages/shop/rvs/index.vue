@@ -5,7 +5,7 @@
     <!-- filter container end -->
 
     <!-- breadcrumb start -->
-    <breadcrumb-1 title="RVs for sale in Montana" page="RVs" :current="$route.query.style ? `${$route.query.style}` : 'All' "/>
+    <breadcrumb-1 :title="`${title} for sale`" page="RVs" :current="title"/>
     <!-- breadcrumb end -->
 
     <!-- shop filter offcanvas area start -->
@@ -36,4 +36,7 @@
 
 <script setup lang="ts">
 useSeoMeta({ title: "Shop Filter Offcanvas Page" });
+const route =  useRoute()
+const title = computed(() => /^[+-]?\d+$/.test(`${route.query.style}`) ? lables[route.query.style as string] : 'Rvs')
+const lables: any = { 4: '5th wheel', 7: 'Motorhome', 13: 'Travel Trailer' }
 </script>

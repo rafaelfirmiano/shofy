@@ -13,7 +13,7 @@
         class="tp-shop-widget-filter-info d-flex align-items-center justify-content-between"
       >
         <span class="input-range text-light" v-if="store.maxProductPrice">
-          ${{ store.priceValues[0] }} - {{ new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD'}).format(Number(store.priceValues[1])).replace(/(\.|,)00$/g, '') }}
+          {{ lowPriceVal }} - {{ highPriceVal }}
         </span>
         <button
           @click="handlePriceFilter"
@@ -43,6 +43,14 @@ const handlePriceFilter = () => {
   queryParams['maxPrice'] = store.priceValues[1]
   emit('priceChange', queryParams);
 };
+
+const lowPriceVal = computed(() =>
+  new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD'}).format(Number(store.priceValues[0])).replace(/(\.|,)00$/g, '')
+)
+
+const highPriceVal = computed(() =>
+  new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD'}).format(Number(store.priceValues[1])).replace(/(\.|,)00$/g, '')
+)
 
 onMounted(() => {
   if (route.query.minPrice && route.query.maxPrice) {

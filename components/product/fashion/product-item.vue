@@ -1,8 +1,10 @@
 <template>
   <div class="tp-product-item-2">
     <div class="tp-product-thumb-2 p-relative z-index-1 fix w-img">
-      <nuxt-link href="/details">
-        <img :src="`${BASE_IMG}/${item.imgmain}`" @error="handleImageError" alt="product-img" />
+      <nuxt-link :href="`/details/${item.id}`">
+        <div class="image-container">
+          <img :src="`${BASE_IMG}/${item.imgmain}`" @error="handleImageError" alt="product-img" loading="lazy" />
+        </div>
       </nuxt-link>
 
       <!-- product action -->
@@ -10,8 +12,8 @@
         <div class="tp-product-action-item-2 d-flex flex-column">
           <!-- @click="wishlistStore.add_wishlist_product(item)" -->
           <button
-              type="button"
-              :class="`tp-product-action-btn-2 tp-product-add-to-wishlist-btn ${isItemInWishlist(item)? 'active': ''}`"
+            type="button"
+            :class="`tp-product-action-btn-2 tp-product-add-to-wishlist-btn ${isItemInWishlist(item)? 'active': ''}`"
           >
             <svg-wishlist-2 />
           </button>
@@ -34,12 +36,22 @@
       </h3>
       <div class="tp-product_short_description">
         <ul>
-          <li v-if="Number(item.mileage) > 1"><strong>Mileage:</strong>{{ item.mileage }}</li>
-          <li><strong>Condition</strong>{{ item.condition == '1' ? 'New' : 'Used' }}</li>
-          <li v-if="item.seats"><strong>Sleeps:</strong>{{ item.seats }}</li>
-          <li><strong>Location:</strong>{{ item.city?.city_name }} {{ item.city?.city_state }}</li>
+          <div v-if="$route.name === 'shop-rvs'">
+            <li v-if="item.seats"><strong>Sleeps:</strong>{{ item.seats }}</li>
+            <li v-if="Number(item.length)"><strong>Length:</strong>{{ `${item.length}' ${item.length_in}"` }}</li>
+            <li v-if="Number(item.grweight)"><strong>Weight:</strong>{{ `${item.grweight}' lbs` }}</li>
+          </div>
+          <div v-else>
+            <li v-if="Number(item.mileage) > 1"><strong>Mileage:</strong>{{ item.mileage }}</li>
+            <li v-if="item.specificcolor"><strong>Color:</strong>{{ item.specificcolor }}</li>
+          </div>
+          <li v-if="item.city?.city_name"><strong>Location:</strong>{{ item.city?.city_name }} {{ item.city?.city_state }}</li>
           <li><strong>Stock:</strong>{{ item.stocknum }}</li>
-          <li v-if="Number(item.length)"><strong>Length:</strong>{{ `${item.length}' ${item.length_in}"` }}</li>
+        </ul>
+        <ul class="d-flex flex-column mt-1">
+          <li><strong>Vin:</strong>{{ item.vincode }}</li>
+          <li v-if="item?.toyhauler"><strong>Garage:</strong>{{ item.hits }} feet</li>
+          <li><strong>Condition:</strong>{{ item.condition == '1' ? 'New' : 'Used' }}</li>
         </ul>
         <p>{{ styleLabel }}</p>
       </div>
@@ -47,7 +59,7 @@
       <div class="tp-product_price">
         <div>
           <span class="price">
-            As Low As {{ price }} /Month
+            {{ item.catid === '3' ? '' : 'As Low As' }} {{ price }} {{ item.catid === '3' ? '' : '/Month' }}
           </span>
         </div>
       </div>
