@@ -41,7 +41,7 @@
                 </div>
 
                 <div class="checkbox-item">
-                  <label>Motorhome
+                  <label>Motorhomes
                     <input type="checkbox" >
                     <span class="checkmark">
                       <svg-checkbox></svg-checkbox>

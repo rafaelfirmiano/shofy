@@ -2,6 +2,13 @@ import { type IMakesOptions } from "@/types/product-type";
 
 export const makesOptions: IMakesOptions[] = [
   {
+    id: "30",
+    parent_id: "0",
+    catid: "2",
+    label:"Alliance",
+    value: "alliance"
+  },
+  {
     id: "213",
     parent_id: "413",
     catid: "2",

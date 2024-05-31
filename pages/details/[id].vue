@@ -8,7 +8,7 @@
             <Carousel id="gallery" :items-to-show="1" :wrap-around="false" v-model="currentSlide">
                 <Slide v-for="slide in 10" :key="slide">
                     <div class="carousel__item">
-                        <img :src="`${BASE_IMG_BIG}/${item?.alias}-${`${item?.stocknum}`.toLowerCase()}-${slide + 1}.jpg`" />
+                        <img :src="`${BASE_IMG}big/${item?.alias}-${`${item?.stocknum}`.toLowerCase()}-${slide + 1}.jpg`" @error="(e) => handleImageError(e, true)"/>
                     </div>
                 </Slide>
             </Carousel>
@@ -23,7 +23,7 @@
             >
                 <Slide v-for="slide in 10" :key="slide">
                     <div class="carousel__item" @click="slideTo(slide - 1)" :class="{'border border-2 border-danger': slide - 1 === currentSlide}">
-                        <img :src="`${BASE_IMG}/${item?.alias}-${`${item?.stocknum}`.toLowerCase()}-${slide + 1}.jpg`" />
+                        <img :src="`${BASE_IMG}thumbs/${item?.alias}-${`${item?.stocknum}`.toLowerCase()}-${slide + 1}.jpg`" @error="handleImageError"/>
                     </div>
                 </Slide>
                 <template #addons>
@@ -74,10 +74,16 @@ const currentSlide = ref<number>(0)
 onMounted(async () => {
     await fetchItem()
 })
-const BASE_IMG_BIG = 'https://www.midwayautorv.com/media/com_expautospro/images/big'
-const BASE_IMG = 'https://www.midwayautorv.com/media/com_expautospro/images/thumbs'
+const BASE_IMG = 'https://www.midwayautorv.com/media/com_expautospro/images/'
+
 const  slideTo = (val: number) => {
     currentSlide.value = val
+}
+
+const handleImageError = (e: Event, big?: boolean) => {
+  if (e.target instanceof HTMLImageElement) {
+    e.target.src = `${BASE_IMG}${big ? '':'thumbs'}/no_photo.jpg`
+  }
 }
 const fetchItem = async () => {
   try {

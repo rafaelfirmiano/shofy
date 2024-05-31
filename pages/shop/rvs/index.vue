@@ -39,5 +39,5 @@ useSeoMeta({ title: "Shop Filter Offcanvas Page" });
 const route =  useRoute()
 const title = computed(() => /^[+-]?\d+$/.test(`${route.query.style}`) ? lables[route.query.style as string] : 'RVs')
 const titleC = computed(() => /^[+-]?\d+$/.test(`${route.query.style}`) ? lables[route.query.style as string] : 'All')
-const lables: any = { 4: '5th wheel', 7: 'Motorhome', 13: 'Travel Trailer' }
+const lables: any = { 4: '5th wheel', 7: 'Motorhomes', 13: 'Travel Trailer' }
 </script>

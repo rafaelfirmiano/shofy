@@ -51,12 +51,12 @@
           <!-- <li v-if="item?.toyhauler"><strong>Garage:</strong>{{ item.hits }} feet</li> -->
           <li><strong>Condition:</strong>{{ item.condition == '1' ? 'New' : 'Pre-Owned' }}</li>
           <li v-if="styleLabel"><strong>Style:</strong>{{ styleLabel }}</li>
-          <li class="d-flex align-items-center"><strong>Vin:</strong><p class="mb-0">{{ item.vincode }}</p></li>
+          <li class="text-center mt-2"><strong>Vin:</strong>{{ item.vincode }}</li>
         </ul>
       </div>
       <div class="divider"></div>
       <div class="tp-product_price">
-        <div>
+        <div v-if="Number(item.bprice)">
           <span class="price">
             {{ item.catid === '3' ? '' : 'As Low As' }} {{ price }} {{ item.catid === '3' ? '' : '/Month' }}
           </span>
@@ -94,7 +94,7 @@ const props = withDefaults(
 const styleLabel = computed (() => {
   let str = ''
   str += props.item?.popup ? ' popup .' : props.item?.toyhauler ? ' Toy Hauler .' : props.item?.slidein ? ' slide in .' : ''
-  str += props.item.bodytype === '4' ? ' 5th Wheel .' : props.item.bodytype === '7' ? ' Motorhome .' : props.item.bodytype === '13' ? ' Travel Trailer': ''
+  str += props.item.bodytype === '4' ? ' 5th Wheel .' : props.item.bodytype === '7' ? ' Motorhomes .' : props.item.bodytype === '13' ? ' Travel Trailer': ''
   return str
 })
 

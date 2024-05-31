@@ -24,11 +24,11 @@
 <script setup lang="ts">
 import type { IVehicleData } from '@/types/product-type';
 const category: any = { 2: 'RVs', 3: 'Auto', 15: 'Powersports'}
-const props = defineProps<{item:IVehicleData}>()
+const props = defineProps<{item:IVehicleData | undefined}>()
 const styleLabel = computed (() => {
   let str = ''
   str = props.item?.popup ? ' popup' : props.item?.toyhauler ? ' Toy Hauler' : props.item?.slidein ? 'slide in' : ''
-  str = props.item.bodytype === '4' ? ' 5th Wheel' : props.item.bodytype === '7' ? ' Motorhome' : props.item.bodytype === '13' ? ' Travel Trailer': ''
+  str = props.item?.bodytype === '4' ? ' 5th Wheel' : props.item?.bodytype === '7' ? ' Motorhomes' : props.item?.bodytype === '13' ? ' Travel Trailer': ''
   return str
 })
 </script>

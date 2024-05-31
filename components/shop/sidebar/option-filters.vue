@@ -268,7 +268,7 @@ const conditionOptions = ref([
 
 const styleOptions = ref([
   { label: '5th Wheel', value: '4' },
-  { label: 'Motorhome', value: '7' },
+  { label: 'Motorhomes', value: '7' },
   { label: 'Travel Trailer', value: '13' },
   { label: 'Toy Hauler', value: 'toyhauler' },
   { label: 'Pop up', value: 'popup' },

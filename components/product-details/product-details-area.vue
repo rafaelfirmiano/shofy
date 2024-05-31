@@ -74,7 +74,7 @@
 
 <script setup lang="ts">
 import { type IVehicleData } from "@/types/product-type";
- const props = defineProps<{ item: IVehicleData; }>()
+ const props = defineProps<{ item: IVehicleData | undefined }>()
 
  const BASE_IMG_BIG = 'https://www.midwayautorv.com/media/com_expautospro/images/big'
 
@@ -117,6 +117,10 @@ const handleActiveMarker = (event: MouseEvent) => {
     value: props.item?.make,
   },
 ])
+
+onMounted(() => {
+  document.getElementById("nav-description-tab")?.click()
+})
 </script>
 <style>
 .tp-product-details-additional-info table tr td:first-child {
