@@ -1,11 +1,13 @@
 import { defineStore } from "pinia";
 import { ref, computed, watch } from "vue";
 import type { IModel, IVehicleData, IOpt } from '@/types/product-type';
+import { useUtilityStore } from "@/pinia/useUtilityStore";
 
 export const useProductFilterStore = defineStore("product_filter", () => {
   const { getItems } = useDirectusItems();
   const route = useRoute();
-
+  const utilsStore = useUtilityStore();
+  
   const maxProductPrice = ref<number>(0)
   const priceValues = ref([0, maxProductPrice.value]);
   const minYear = ref<number>(0);
@@ -59,7 +61,7 @@ export const useProductFilterStore = defineStore("product_filter", () => {
 
     if (categoryId.value !== '3') {
       vehicles.value = vehicles.value.map(v => { 
-        return { ...v, bprice: `${calculateMonthlyPayment(Number(v.bprice))}` } 
+        return { ...v, bprice: `${utilsStore.calculateMonthlyPayment(Number(v.bprice))}` } 
       })
     }
 
@@ -90,36 +92,6 @@ export const useProductFilterStore = defineStore("product_filter", () => {
     })
     maxProductPrice.value = resp.length ? Number(resp[0].bprice || '0') : 0
     priceValues.value = [priceValues.value[0], maxProductPrice.value];
-  }
-
-  const calculateMonthlyPayment = (price: number) => {
-    const downPaymentRate = 0.20;
-    const annualInterestRate = 8.99 / 100;
-    const monthlyInterestRate = annualInterestRate / 12;
-    let loanTermMonths;
-
-    // Determine the loan term based on the price range
-    if (price >= 1 && price <= 14999) {
-        loanTermMonths = 120;
-    } else if (price >= 15000 && price <= 24999) {
-        loanTermMonths = 144;
-    } else if (price >= 25000 && price <= 49999) {
-        loanTermMonths = 180;
-    } else if (price >= 50000) {
-        loanTermMonths = 240;
-    } else {
-      return 0;
-    }
-
-    // Calculate the down payment and the loan amount
-    const downPayment = price * downPaymentRate;
-    const loanAmount = price - downPayment;
-
-    // Calculate the monthly payment using the loan formula
-    const monthlyPayment = (loanAmount * monthlyInterestRate * Math.pow(1 + monthlyInterestRate, loanTermMonths)) /
-                           (Math.pow(1 + monthlyInterestRate, loanTermMonths) - 1);
-
-    return Math.round(monthlyPayment);
   }
 
   // Watch for changes in selected start year to update end years

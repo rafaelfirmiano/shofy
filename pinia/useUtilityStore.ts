@@ -74,6 +74,36 @@ export const useUtilityStore = defineStore("utility", () => {
     }
   };
 
+  const calculateMonthlyPayment = (price: number) => {
+    const downPaymentRate = 0.20;
+    const annualInterestRate = 8.99 / 100;
+    const monthlyInterestRate = annualInterestRate / 12;
+    let loanTermMonths;
+  
+    // Determine the loan term based on the price range
+    if (price >= 1 && price <= 14999) {
+        loanTermMonths = 120;
+    } else if (price >= 15000 && price <= 24999) {
+        loanTermMonths = 144;
+    } else if (price >= 25000 && price <= 49999) {
+        loanTermMonths = 180;
+    } else if (price >= 50000) {
+        loanTermMonths = 240;
+    } else {
+      return 0;
+    }
+  
+    // Calculate the down payment and the loan amount
+    const downPayment = price * downPaymentRate;
+    const loanAmount = price - downPayment;
+  
+    // Calculate the monthly payment using the loan formula
+    const monthlyPayment = (loanAmount * monthlyInterestRate * Math.pow(1 + monthlyInterestRate, loanTermMonths)) /
+                           (Math.pow(1 + monthlyInterestRate, loanTermMonths) - 1);
+  
+    return Math.round(monthlyPayment);
+  }
+
   watch(() => route.path, () => {
     openSearchBar.value = false;
     openMobileMenus.value = false;
@@ -92,5 +122,6 @@ export const useUtilityStore = defineStore("utility", () => {
     iframeElement,
     closeVideo,
     removeBackdrop,
+    calculateMonthlyPayment
   };
 });

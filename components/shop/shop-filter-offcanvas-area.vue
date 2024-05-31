@@ -9,7 +9,7 @@
                 <div class="col-md-12 col-xl-6">
                   <div class="tp-shop-top-left  d-md-flex">
                     <div class="tp-shop-top-filter">
-                      <button type="button" @click="openLeftFilterDesktop" class="tp-filter-btn filter-open-dropdown-btn desktop-left-filter-btn">
+                      <button type="button" @click="openLeftFilterDesktop" class="tp-filter-btn filter-open-dropdown-btn desktop-left-filter-btn" :class="{'gray': !activeFilterDesktop}">
                           <span>
                             <svg-filter/>
                           </span>
@@ -113,9 +113,9 @@ const route = useRoute();
 const router = useRouter();
 
 const active_tab = ref<string>("grid");
-const activeFilterDesktop = ref<boolean>(true);
+const activeFilterDesktop = ref<boolean>(false);
 
-let perView = ref<number>(9);
+let perView = ref<number>(12);
 
 function handleActiveTab(tab: string) {
   active_tab.value = tab;
@@ -244,3 +244,8 @@ onMounted(async ()=> {
   store.selectedEndYear = Number(route.query?.end as string) || 0
 })
 </script>
+<style scoped>
+.tp-shop-top-filter button.gray {
+  background-color: gray !important;
+}
+</style>
