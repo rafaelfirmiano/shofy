@@ -40,6 +40,11 @@ export const useProductFilterStore = defineStore("product_filter", () => {
     return years;
   };
 
+  const defaultSort = computed(() => {
+    if(ascSort.value) return ['make.name', 'model.name', 'year']
+    return ['-make.name', '-model.name', '-year']
+  })
+
   const fetchItems = async () => {
     loading.value = true
     await fetchMaxPriceProduct()
@@ -48,7 +53,7 @@ export const useProductFilterStore = defineStore("product_filter", () => {
       params: {
         filter: currentFilters.value,
         fields: ['*', 'make.*', 'model.*', 'city.*', 'extcolor.*'],
-        sort: [`${ascSort.value ? '': '-' }${sortType.value}`]
+        sort: sortType.value ? [`${ascSort.value ? '': '-' }${sortType.value}`] : defaultSort.value
       }
     })
 
