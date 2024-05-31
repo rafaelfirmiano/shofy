@@ -1,11 +1,10 @@
 <template>
   <div class="tp-product-item-2">
+  <nuxt-link :href="`/details/${item.id}`">
     <div class="tp-product-thumb-2 p-relative z-index-1 fix w-img">
-      <nuxt-link :href="`/details/${item.id}`">
         <div class="image-container">
           <img :src="`${BASE_IMG}/${item.imgmain}`" @error="handleImageError" alt="product-img" loading="lazy" />
         </div>
-      </nuxt-link>
 
       <!-- product action -->
       <div class="tp-product-action-2 tp-product-action-blackStyle">
@@ -39,21 +38,21 @@
           <div v-if="$route.name === 'shop-rvs'">
             <li v-if="item.seats"><strong>Sleeps:</strong>{{ item.seats }}</li>
             <li v-if="Number(item.length)"><strong>Length:</strong>{{ `${item.length}' ${item.length_in}"` }}</li>
-            <li v-if="Number(item.grweight)"><strong>Weight:</strong>{{ `${item.grweight}' lbs` }}</li>
+            <li v-if="Number(item.grweight)"><strong>Weight:</strong>{{ `${item.grweight} lbs` }}</li>
           </div>
           <div v-else>
-            <li v-if="Number(item.mileage) > 1"><strong>Mileage:</strong>{{ item.mileage }}</li>
+            <li v-if="Number(item.mileage) > 1"><strong>Mileage:</strong>{{ Number(item.mileage).toLocaleString() }}</li>
             <li v-if="item.specificcolor"><strong>Color:</strong>{{ item.specificcolor }}</li>
           </div>
           <li v-if="item.city?.city_name"><strong>Location:</strong>{{ item.city?.city_name }} {{ item.city?.city_state }}</li>
           <li><strong>Stock:</strong>{{ item.stocknum }}</li>
         </ul>
         <ul class="d-flex flex-column mt-1">
-          <li><strong>Vin:</strong>{{ item.vincode }}</li>
-          <li v-if="item?.toyhauler"><strong>Garage:</strong>{{ item.hits }} feet</li>
-          <li><strong>Condition:</strong>{{ item.condition == '1' ? 'New' : 'Used' }}</li>
+          <!-- <li v-if="item?.toyhauler"><strong>Garage:</strong>{{ item.hits }} feet</li> -->
+          <li><strong>Condition:</strong>{{ item.condition == '1' ? 'New' : 'Pre-Owned' }}</li>
+          <li v-if="styleLabel"><strong>Style:</strong>{{ styleLabel }}</li>
+          <li class="d-flex align-items-center"><strong>Vin:</strong><p class="mb-0">{{ item.vincode }}</p></li>
         </ul>
-        <p>{{ styleLabel }}</p>
       </div>
       <div class="divider"></div>
       <div class="tp-product_price">
@@ -64,6 +63,7 @@
         </div>
       </div>
     </div>
+  </nuxt-link>
   </div>
 </template>
 

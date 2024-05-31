@@ -2,10 +2,17 @@
     <div class="quick-search-container">
       <div class="container">
         <ul class="category-links">
-          <li><a class="active" href="/shop/rvs">RVs</a></li>
-          <li><a href="/shop/auto">Vehicles</a></li>
-          <li><a href="/shop/boat">Boats</a></li>
-          <li><a href="/shop/shop">Powersports</a></li>
+          <li><a :class="{'active': $route.name === 'shop-rvs'}" href="/shop/rvs">RVs</a></li>
+          <li><a :class="{'active': $route.name === 'shop-auto'}" href="/shop/auto">Vehicles</a></li>
+          <li><a :class="{'active': $route.name === 'shop-boat'}" href="/shop/boat">Boats</a></li>
+          <li>
+            <a 
+              :class="{'active': urls.includes($route.name as string)}" 
+              href="/shop/powersports"
+            >
+              Powersports
+            </a>
+          </li>
         </ul>
         <div class="dropdown-filter">
           <ul>
@@ -166,3 +173,6 @@
       </div>
     </div>
 </template>
+<script setup lang="ts">
+const urls = ['shop-powersports', 'shop-mototcycle', 'shop-atv', 'shop-utility', 'shop-trailer']
+</script>

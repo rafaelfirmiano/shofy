@@ -8,7 +8,7 @@
     <breadcrumb-1
       :title="`${title} for sale`"
       page="Cars"
-      :current="title"
+      :current="titleC"
     />
     <!-- breadcrumb end -->
 
@@ -27,4 +27,5 @@ useSeoMeta({ title: "Cars Offcanvas Page" });
 const route = useRoute()
 const lables: any = { 55: 'Truck', 56: 'SUV', 57: 'CARS', 60: 'VAN', 62: 'WAGON' }
 const title = computed(()=> /^[+-]?\d+$/.test(`${route.query.style}`) ? lables[route.query.style as string] : 'Cars')
+const titleC = computed(()=> /^[+-]?\d+$/.test(`${route.query.style}`) ? lables[route.query.style as string] : 'All')
 </script>
