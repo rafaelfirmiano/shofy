@@ -18,11 +18,11 @@
               <nav class="tp-footer-menu">
                 <ul>
                   <li><nuxt-link href="/">Home</nuxt-link></li>
-                  <li><nuxt-link href="/services">Services</nuxt-link></li>
-                  <li><nuxt-link href="/value-your-trade">Values your trade</nuxt-link></li>
+<!--                  <li><nuxt-link href="/services">Services</nuxt-link></li>-->
+<!--                  <li><nuxt-link href="/value-your-trade">Values your trade</nuxt-link></li>-->
                   <li><nuxt-link href="/finance">Finance</nuxt-link></li>
-                  <li><nuxt-link href="/news">News</nuxt-link></li>
-                  <li><nuxt-link href="#">Privacy Policy</nuxt-link></li>
+<!--                  <li><nuxt-link href="/news">News</nuxt-link></li>-->
+<!--                  <li><nuxt-link href="#">Privacy Policy</nuxt-link></li>-->
                 </ul>
               </nav>
             </div>
@@ -34,8 +34,8 @@
       <div class="tp-footer-bottom">
         <div class="container">
           <div class="tp-footer-bottom-wrapper">
-            <div class="row">
-              <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-3">
+              <div class="col">
                 <div class="tp-footer-widget">
                   <h4 class="tp-footer-widget-title">Midway Auto & RV - Cody</h4>
                   <ul class="tp-footer-widget-contact">
@@ -58,16 +58,16 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="col">
                 <div class="tp-footer-widget">
-                  <h4 class="tp-footer-widget-title">Midway Auto & RV - Cody</h4>
+                  <h4 class="tp-footer-widget-title">Midway Auto & RV - Worland</h4>
                   <ul class="tp-footer-widget-contact">
                     <li>
                       <div class="tp-footer-contact-icon">
                         <svg-location-2 />
                       </div>
                       <div class="tp-footer-contact-content">
-                        2226 Big Horn Ave Cody, WY 82414
+                        500 Big Horn Ave Worland, WY 82401
                       </div>
                     </li>
                     <li>
@@ -75,22 +75,22 @@
                         <svg-phone />
                       </div>
                       <div class="tp-footer-contact-content">
-                        (307) 587-7571
+                        (307) 347-4123
                       </div>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-sm-12 col-md-12 col-lg-4">
+              <div class="col">
                 <div class="tp-footer-widget">
-                  <h4 class="tp-footer-widget-title">Midway Auto & RV - Cody</h4>
+                  <h4 class="tp-footer-widget-title">Midway Auto & RV - Sheridan</h4>
                   <ul class="tp-footer-widget-contact">
                     <li>
                       <div class="tp-footer-contact-icon">
                         <svg-location-2 />
                       </div>
                       <div class="tp-footer-contact-content">
-                        2226 Big Horn Ave Cody, WY 82414
+                        1506 N Main St. Sheridan, WY 82801
                       </div>
                     </li>
                     <li>
@@ -98,7 +98,30 @@
                         <svg-phone />
                       </div>
                       <div class="tp-footer-contact-content">
-                        (307) 587-7571
+                        (307) 456-4304
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col">
+                <div class="tp-footer-widget">
+                  <h4 class="tp-footer-widget-title">Midway Auto & RV - Billings</h4>
+                  <ul class="tp-footer-widget-contact">
+                    <li>
+                      <div class="tp-footer-contact-icon">
+                        <svg-location-2 />
+                      </div>
+                      <div class="tp-footer-contact-content">
+                        6260 S. Frontage Rd. Billings, MT 59101
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tp-footer-contact-icon">
+                        <svg-phone />
+                      </div>
+                      <div class="tp-footer-contact-content">
+                        (406) 831-7232
                       </div>
                     </li>
                   </ul>

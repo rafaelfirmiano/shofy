@@ -15,26 +15,33 @@
             <div class="col-xl-8 col-lg-8 d-none d-lg-block">
               <!-- top header start -->
               <div id="top-header">
-                <div class="row">
-                  <div class="col-xl-4 col-lg-4">
+                <div class="row row-cols-md-4 row-cols-xl-4 g-3">
+                  <div class="col">
                     <div class="location-text">
                       <svg-location />
-                      <address>Billings, MT</address>
+                      <address>Cody, WY</address>
                       <a href="tel:(307) 587-7571">(307) 587-7571</a>
                     </div>
                   </div>
-                  <div class="col-xl-4 col-lg-4">
+                  <div class="col">
                     <div class="location-text">
                       <svg-location />
-                      <address>Billings, MT</address>
-                      <a href="tel:(307) 587-7571">(307) 587-7571</a>
+                      <address>Worland, WY</address>
+                      <a href="tel:(307) 347-4123">(307) 347-4123</a>
                     </div>
                   </div>
-                  <div class="col-xl-4 col-lg-4">
+                  <div class="col">
+                    <div class="location-text">
+                      <svg-location />
+                      <address>Sheridan, WY</address>
+                      <a href="tel:(307) 456-4304">(307) 456-4304</a>
+                    </div>
+                  </div>
+                  <div class="col">
                     <div class="location-text">
                       <svg-location />
                       <address>Billings, MT</address>
-                      <a href="tel:(307) 587-7571">(307) 587-7571</a>
+                      <a href="tel:(406) 831-7232">(406) 831-7232</a>
                     </div>
                   </div>
                 </div>
