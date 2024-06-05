@@ -1327,7 +1327,7 @@ ul.tp-footer-widget-contact svg {
     font-style: normal;
     font-weight: 400;
     line-height: 56px;
-    max-width: 900px;
+    max-width: 1060px;
     margin: 0 auto 40px;
 }
 
@@ -3029,6 +3029,10 @@ div#main-filter {
     position: relative;
     top: -117px;
 }
+.category-circle-container .col:nth-child(1) .category-circle svg {
+    position: relative;
+    top: 7px;
+}
 .category-circle-container .col:nth-child(2) .category-circle svg {
     position: relative;
     top: -11px;
@@ -3490,7 +3494,10 @@ div#home-featured-products .container .row {
     background: #ED3036;
     border-color: #ED3036;
 }
-
+#banner-section .quick-search-container .dropdown-filter > ul li button.browse-all {
+    background: transparent !important;
+    border-color: #FFFFFF !important;
+}
 .subtitle-item {
     position: relative;
     margin-top: 47px;
@@ -3573,7 +3580,7 @@ div#banner-section .dropdown-filter {
         width: 172px;
     }
     #banner-section .quick-search-container .dropdown-filter ul li a {
-        width: 220px;
+        width: 215px;
     }
 }
 @media(max-width: 380px){
@@ -4011,6 +4018,12 @@ div#what-s-new {
     .navigation-instructions {
         margin-top: -55px;
     }
+    #home-cards-container .home-card-item .text {
+        padding: 0 15px;
+    }
+    #home-cards-container .home-card-item {
+        min-height: 210px;
+    }
 }
 div#home-featured-products .tp-product-item .tp-product-content .tp-product-title a:hover {
     color: #FFFFFF;
@@ -4027,4 +4040,22 @@ div#what-s-new .swiper-slide figure {
 }
 .category-circle-container .col:nth-child(1) .category-circle .back li {
     margin-bottom: 8px !important;
+}
+
+@media(min-width: 1120px){
+    #banner-section .quick-search-container .dropdown-filter ul li button {
+        width: 152px;
+        display: inline-flex;
+    }
+    #banner-section .quick-search-container .dropdown-filter ul li a {
+        width: 252px;
+        border: none;
+    }
+    #banner-section .quick-search-container .dropdown-filter ul li button.browse-all {
+        margin-right: 7px;
+        width: 125px;
+
+        display: inline-flex;
+        vertical-align: top;
+    }
 }

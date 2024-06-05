@@ -8,7 +8,7 @@
             <div class="col-xl-3 col-lg-3 col-md-4 col-6">
               <div class="logo">
                 <nuxt-link href="/">
-                  <img src="/img/custom/logo.svg" alt="logo" />
+                  <img src="/img/custom/MidwayRV-Logo.png" alt="logo" />
                 </nuxt-link>
               </div>
             </div>
@@ -19,15 +19,15 @@
                   <div class="col">
                     <div class="location-text">
                       <svg-location />
-                      <address>Cody, WY</address>
-                      <a href="tel:(307) 587-7571">(307) 587-7571</a>
+                      <address>Billings, MT</address>
+                      <a href="tel:(406) 831-7232">(406) 831-7232</a>
                     </div>
                   </div>
                   <div class="col">
                     <div class="location-text">
                       <svg-location />
-                      <address>Worland, WY</address>
-                      <a href="tel:(307) 347-4123">(307) 347-4123</a>
+                      <address>Cody, WY</address>
+                      <a href="tel:(307) 587-7571">(307) 587-7571</a>
                     </div>
                   </div>
                   <div class="col">
@@ -40,8 +40,8 @@
                   <div class="col">
                     <div class="location-text">
                       <svg-location />
-                      <address>Billings, MT</address>
-                      <a href="tel:(406) 831-7232">(406) 831-7232</a>
+                      <address>Worland, WY</address>
+                      <a href="tel:(307) 347-4123">(307) 347-4123</a>
                     </div>
                   </div>
                 </div>
