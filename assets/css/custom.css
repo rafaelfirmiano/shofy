@@ -3029,6 +3029,10 @@ div#main-filter {
     position: relative;
     top: -117px;
 }
+.category-circle-container .col:nth-child(1) .category-circle svg {
+    position: relative;
+    top: 7px;
+}
 .category-circle-container .col:nth-child(2) .category-circle svg {
     position: relative;
     top: -11px;
