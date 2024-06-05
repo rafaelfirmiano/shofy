@@ -37,6 +37,29 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-3">
               <div class="col">
                 <div class="tp-footer-widget">
+                  <h4 class="tp-footer-widget-title">Midway Auto & RV - Billings</h4>
+                  <ul class="tp-footer-widget-contact">
+                    <li>
+                      <div class="tp-footer-contact-icon">
+                        <svg-location-2 />
+                      </div>
+                      <div class="tp-footer-contact-content">
+                        6260 S. Frontage Rd. Billings, MT 59101
+                      </div>
+                    </li>
+                    <li>
+                      <div class="tp-footer-contact-icon">
+                        <svg-phone />
+                      </div>
+                      <div class="tp-footer-contact-content">
+                        (406) 831-7232
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col">
+                <div class="tp-footer-widget">
                   <h4 class="tp-footer-widget-title">Midway Auto & RV - Cody</h4>
                   <ul class="tp-footer-widget-contact">
                     <li>
@@ -53,29 +76,6 @@
                       </div>
                       <div class="tp-footer-contact-content">
                         (307) 587-7571
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col">
-                <div class="tp-footer-widget">
-                  <h4 class="tp-footer-widget-title">Midway Auto & RV - Worland</h4>
-                  <ul class="tp-footer-widget-contact">
-                    <li>
-                      <div class="tp-footer-contact-icon">
-                        <svg-location-2 />
-                      </div>
-                      <div class="tp-footer-contact-content">
-                        500 Big Horn Ave Worland, WY 82401
-                      </div>
-                    </li>
-                    <li>
-                      <div class="tp-footer-contact-icon">
-                        <svg-phone />
-                      </div>
-                      <div class="tp-footer-contact-content">
-                        (307) 347-4123
                       </div>
                     </li>
                   </ul>
@@ -106,14 +106,14 @@
               </div>
               <div class="col">
                 <div class="tp-footer-widget">
-                  <h4 class="tp-footer-widget-title">Midway Auto & RV - Billings</h4>
+                  <h4 class="tp-footer-widget-title">Midway Auto & RV - Worland</h4>
                   <ul class="tp-footer-widget-contact">
                     <li>
                       <div class="tp-footer-contact-icon">
                         <svg-location-2 />
                       </div>
                       <div class="tp-footer-contact-content">
-                        6260 S. Frontage Rd. Billings, MT 59101
+                        500 Big Horn Ave Worland, WY 82401
                       </div>
                     </li>
                     <li>
@@ -121,7 +121,7 @@
                         <svg-phone />
                       </div>
                       <div class="tp-footer-contact-content">
-                        (406) 831-7232
+                        (307) 347-4123
                       </div>
                     </li>
                   </ul>
