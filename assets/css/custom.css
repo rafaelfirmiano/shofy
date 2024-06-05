@@ -1327,7 +1327,7 @@ ul.tp-footer-widget-contact svg {
     font-style: normal;
     font-weight: 400;
     line-height: 56px;
-    max-width: 900px;
+    max-width: 1060px;
     margin: 0 auto 40px;
 }
 
@@ -4010,6 +4010,12 @@ div#what-s-new {
     }
     .navigation-instructions {
         margin-top: -55px;
+    }
+    #home-cards-container .home-card-item .text {
+        padding: 0 15px;
+    }
+    #home-cards-container .home-card-item {
+        min-height: 210px;
     }
 }
 div#home-featured-products .tp-product-item .tp-product-content .tp-product-title a:hover {
