@@ -8,7 +8,7 @@
             <div class="col-xl-3 col-lg-3 col-md-4 col-6">
               <div class="logo">
                 <nuxt-link href="/">
-                  <img src="/img/custom/logo.svg" alt="logo" />
+                  <img src="/img/custom/MidwayRV-Logo.png" alt="logo" />
                 </nuxt-link>
               </div>
             </div>
