@@ -176,7 +176,7 @@
       </div>
       <div id="sub-title-1" :class="{'d-none': currentSubtitle !== 1}" class="subtitle-item">
         <span class="sub-title-1"><svg-spin-arrow1 /><svg-spin-arrow2 /></span>
-        <p>Sweet new & pre-owned 5th wheels, pull-behinds, toy haulers & motorized campers. Find the perfect floor plan!</p>
+        <p>Sweet new & pre-owned 5<sup>th</sup> wheels, pull-behinds, toy haulers & motorized campers. Find the perfect floor plan!</p>
       </div>
       <div id="sub-title-2" :class="{'d-none': currentSubtitle !== 2}" class="subtitle-item">
         <span class="sub-title-2"><svg-spin-arrow2 /><svg-spin-arrow3 /></span>
