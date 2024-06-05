@@ -8,7 +8,7 @@
               <svg-rv2 />
               <div class="content">
                 <div class="category-title">RVs</div>
-                <nuxt-link class="options">219 options <span class="arrow-right"></span></nuxt-link>
+                <nuxt-link class="options">219 Amazing Floor Plans <span class="arrow-right"></span></nuxt-link>
               </div>
             </div>
           </div>
@@ -34,7 +34,7 @@
               <svg-vehicles2 />
               <div class="content">
                 <div class="category-title">Vehicles</div>
-                <nuxt-link class="options">101 options <span class="arrow-right"></span></nuxt-link>
+                <nuxt-link class="options">101 Sweet Deals <span class="arrow-right"></span></nuxt-link>
               </div>
             </div>
           </div>
@@ -58,7 +58,7 @@
               <svg-boats2 />
               <div class="content">
                 <div class="category-title">Boats</div>
-                <nuxt-link class="options">10 options <span class="arrow-right"></span></nuxt-link>
+                <nuxt-link class="options">10 Fun Choices <span class="arrow-right"></span></nuxt-link>
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@
               <svg-powersports2 />
               <div class="content">
                 <div class="category-title">Powersports</div>
-                <div class="options">32 options <span class="arrow-right"></span></div>
+                <div class="options">32 Unique Selections <span class="arrow-right"></span></div>
               </div>
             </div>
           </div>
